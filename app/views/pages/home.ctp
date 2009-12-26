@@ -1,9 +1,6 @@
-<h2>Welcome to a test version of Submittr</h2>
+<h2>Welcome to a test version of sbmittr</h2>
 
 
-<p>
-This is the submission form for people who wish to suggest their work to be presented at EMERGEANDSEE.
-</p>
 <p>
 You will need some basic information about yourself and your work. If you come across any problems during
 the submission process, don't worry, you can come back and edit your stuff.
