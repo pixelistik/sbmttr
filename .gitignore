@@ -1,0 +1,4 @@
+*~
+app/tmp/*
+app/config/database.php
+*.marks

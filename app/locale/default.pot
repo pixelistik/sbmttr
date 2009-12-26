@@ -1,0 +1,1300 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  Revision: 7945 /app/controllers/app_controller.php
+#  Revision: 7945 /app/views/layouts/default.ctp
+#  Revision: 7945 /app/webroot/test.php
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2009-07-13 00:06+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /controllers/app_controller.php:49
+msgid "Login failed. Please try again."
+msgstr ""
+
+#: /controllers/artists_controller.php:15;56
+msgid "Invalid Artist."
+msgstr ""
+
+#: /controllers/artists_controller.php:40
+msgid "Your artist account was created."
+msgstr ""
+
+#: /controllers/artists_controller.php:48
+msgid "Your artist information could not be saved. Please check the data you entered."
+msgstr ""
+
+#: /controllers/artists_controller.php:61
+msgid "The Artist has been saved"
+msgstr ""
+
+#: /controllers/artists_controller.php:64
+msgid "The Artist could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/artists_controller.php:74
+msgid "Invalid id for Artist"
+msgstr ""
+
+#: /controllers/artists_controller.php:78
+msgid "Artist deleted"
+msgstr ""
+
+#: /controllers/artists_controller.php:104
+msgid "You might want to choose a password, so you can come back later. Or just click \"Log out\" again. You can always use the \"Forgot password\" function later."
+msgstr ""
+
+#: /controllers/artists_controller.php:127
+msgid "Your new password has been saved"
+msgstr ""
+
+#: /controllers/artists_controller.php:131
+msgid "Your new password could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/artists_controller.php:133
+msgid "Your password is not secure."
+msgstr ""
+
+#: /controllers/artists_controller.php:137
+msgid "The two fields do not match."
+msgstr ""
+
+#: /controllers/artists_controller.php:171
+msgid "Please check your email (Spam folder, too) and click the recovery link."
+msgstr ""
+
+#: /controllers/artists_controller.php:173
+msgid "There was an error sending the email. Please try again or contact us."
+msgstr ""
+
+#: /controllers/artists_controller.php:177
+msgid "Password recovery failed. Please try again or contact us via email."
+msgstr ""
+
+#: /controllers/artists_controller.php:182
+msgid "Sorry, your email address is unknown to us. Are you sure you used this one?"
+msgstr ""
+
+#: /controllers/artists_controller.php:191
+msgid "Please choose a new password now"
+msgstr ""
+
+#: /controllers/artists_controller.php:195
+msgid "Your recovery link is not valid or too old. Please request a new one."
+msgstr ""
+
+#: /controllers/pictures_controller.php:14
+msgid "Invalid Picture."
+msgstr ""
+
+#: /controllers/pictures_controller.php:35
+msgid "You are not logged in or not allowed to edit this piece."
+msgstr ""
+
+#: /controllers/pictures_controller.php:47
+msgid "You did not choose a file."
+msgstr ""
+
+#: /controllers/pictures_controller.php:52
+msgid "The image file is too big."
+msgstr ""
+
+#: /controllers/pictures_controller.php:56
+msgid "Only JPEG images are allowed."
+msgstr ""
+
+#: /controllers/pictures_controller.php:60
+msgid "Upload Error."
+msgstr ""
+
+#: /controllers/pictures_controller.php:73
+msgid "The Picture has been saved. Add another one, if you like."
+msgstr ""
+
+#: /controllers/pictures_controller.php:77
+msgid "The Picture could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/pictures_controller.php:80
+msgid "Image Error:"
+msgstr ""
+
+#: /controllers/pictures_controller.php:94
+msgid "Invalid id for Picture"
+msgstr ""
+
+#: /controllers/pictures_controller.php:98
+msgid "Picture deleted"
+msgstr ""
+
+#: /controllers/pieces_controller.php:23
+msgid "Invalid Piece."
+msgstr ""
+
+#: /controllers/pieces_controller.php:146
+msgid "Your submission has been saved. Thank you. You can add images now."
+msgstr ""
+
+#: /controllers/pieces_controller.php:150
+msgid "Your submission has been saved. Thank you. Here is an overview for printing/saving"
+msgstr ""
+
+#: /controllers/pieces_controller.php:154
+msgid "Something is wrong or missing. Please check the error messages below the input fields."
+msgstr ""
+
+#: /controllers/pieces_controller.php:191
+msgid "Invalid Piece"
+msgstr ""
+
+#: /controllers/pieces_controller.php:196
+msgid "The Piece has been saved"
+msgstr ""
+
+#: /controllers/pieces_controller.php:199
+msgid "The Piece could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/pieces_controller.php:217
+msgid "Invalid id for Piece"
+msgstr ""
+
+#: /controllers/pieces_controller.php:221
+msgid "Piece deleted"
+msgstr ""
+
+#: /controllers/requirements_controller.php:18
+msgid "Your changes have been saved"
+msgstr ""
+
+#: /controllers/requirements_controller.php:21
+msgid "There was an error saving your changes"
+msgstr ""
+
+#: /controllers/requirements_controller.php:35
+msgid "Invalid Requirement."
+msgstr ""
+
+#: /controllers/requirements_controller.php:45;62
+msgid "The Requirement has been saved"
+msgstr ""
+
+#: /controllers/requirements_controller.php:48;65
+msgid "The Requirement could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/requirements_controller.php:57
+msgid "Invalid Requirement"
+msgstr ""
+
+#: /controllers/requirements_controller.php:77
+msgid "Invalid id for Requirement"
+msgstr ""
+
+#: /controllers/requirements_controller.php:81
+msgid "Requirement deleted"
+msgstr ""
+
+#: /controllers/screening_formats_controller.php:15
+msgid "Invalid ScreeningFormat."
+msgstr ""
+
+#: /controllers/screening_formats_controller.php:25;42
+msgid "The ScreeningFormat has been saved"
+msgstr ""
+
+#: /controllers/screening_formats_controller.php:28;45
+msgid "The ScreeningFormat could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/screening_formats_controller.php:37
+msgid "Invalid ScreeningFormat"
+msgstr ""
+
+#: /controllers/screening_formats_controller.php:57
+msgid "Invalid id for ScreeningFormat"
+msgstr ""
+
+#: /controllers/screening_formats_controller.php:61
+msgid "ScreeningFormat deleted"
+msgstr ""
+
+#: /controllers/searches_controller.php:14
+msgid "Invalid Search."
+msgstr ""
+
+#: /controllers/searches_controller.php:23
+msgid "Please run a search. You can then save it."
+msgstr ""
+
+#: /controllers/searches_controller.php:32;56
+msgid "The Search has been saved"
+msgstr ""
+
+#: /controllers/searches_controller.php:35;59
+msgid "The Search could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/searches_controller.php:42
+msgid "No search was specified."
+msgstr ""
+
+#: /controllers/searches_controller.php:51
+msgid "Invalid Search"
+msgstr ""
+
+#: /controllers/searches_controller.php:69
+msgid "Invalid id for Search"
+msgstr ""
+
+#: /controllers/searches_controller.php:73
+msgid "Search deleted"
+msgstr ""
+
+#: /controllers/sections_controller.php:14
+msgid "Invalid Section."
+msgstr ""
+
+#: /controllers/sections_controller.php:37;54
+msgid "The Section has been saved"
+msgstr ""
+
+#: /controllers/sections_controller.php:40;57
+msgid "The Section could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/sections_controller.php:49
+msgid "Invalid Section"
+msgstr ""
+
+#: /controllers/sections_controller.php:69
+msgid "Invalid id for Section"
+msgstr ""
+
+#: /controllers/sections_controller.php:73
+msgid "Section deleted"
+msgstr ""
+
+#: /controllers/shooting_formats_controller.php:15
+msgid "Invalid ShootingFormat."
+msgstr ""
+
+#: /controllers/shooting_formats_controller.php:25;40
+msgid "The ShootingFormat has been saved"
+msgstr ""
+
+#: /controllers/shooting_formats_controller.php:28;43
+msgid "The ShootingFormat could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/shooting_formats_controller.php:35
+msgid "Invalid ShootingFormat"
+msgstr ""
+
+#: /controllers/shooting_formats_controller.php:53
+msgid "Invalid id for ShootingFormat"
+msgstr ""
+
+#: /controllers/shooting_formats_controller.php:57
+msgid "ShootingFormat deleted"
+msgstr ""
+
+#: /controllers/tags_controller.php:15
+msgid "Invalid Tag."
+msgstr ""
+
+#: /controllers/tags_controller.php:25;42
+msgid "The Tag has been saved"
+msgstr ""
+
+#: /controllers/tags_controller.php:28;45
+msgid "The Tag could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/tags_controller.php:37
+msgid "Invalid Tag"
+msgstr ""
+
+#: /controllers/tags_controller.php:57
+msgid "Invalid id for Tag"
+msgstr ""
+
+#: /controllers/tags_controller.php:61
+msgid "Tag deleted"
+msgstr ""
+
+#: /controllers/types_controller.php:37
+msgid "Invalid Type."
+msgstr ""
+
+#: /controllers/types_controller.php:47;62
+msgid "The Type has been saved"
+msgstr ""
+
+#: /controllers/types_controller.php:50;65
+msgid "The Type could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/types_controller.php:57
+msgid "Invalid Type"
+msgstr ""
+
+#: /controllers/types_controller.php:75
+msgid "Invalid id for Type"
+msgstr ""
+
+#: /controllers/types_controller.php:79
+msgid "Type deleted"
+msgstr ""
+
+#: /views/artists/add.ctp:4;7
+msgid "Please enter a name"
+msgstr ""
+
+#: /views/artists/add.ctp:10
+msgid "Please enter a valid email address"
+msgstr ""
+
+#: /views/artists/add.ctp:11
+msgid "Your Email Adress is already registered. If you forgot your password, please click on 'login' and use the 'Forgot Password' function."
+msgstr ""
+
+#: /views/artists/add.ctp:14
+msgid "This does not look like a valid URL"
+msgstr ""
+
+#: /views/artists/add.ctp:21
+msgid "You"
+msgstr ""
+
+#: /views/artists/add.ctp:23
+msgid "Please tell us some things about yourself. Or %s if you've submitted before."
+msgstr ""
+
+#: /views/artists/add.ctp:23
+msgid "log in"
+msgstr ""
+
+#: /views/artists/add.ctp:28
+msgid "We will never give your address to other people!"
+msgstr ""
+
+#: /views/artists/add.ctp:29
+msgid "URL of your website, portfolio or profile"
+msgstr ""
+
+#: /views/artists/add.ctp:30
+msgid "If you like: Portrait (JPEG Image, %d KB max)"
+msgstr ""
+
+#: /views/artists/add.ctp:33
+#: /views/pieces/add.ctp:149
+#: /views/types/select.ctp:15
+msgid "Continue"
+msgstr ""
+
+#: /views/artists/change_password.ctp:4
+#: /views/layouts/default.ctp:58
+msgid "Change Password"
+msgstr ""
+
+#: /views/artists/change_password.ctp:9
+msgid "New password"
+msgstr ""
+
+#: /views/artists/change_password.ctp:10
+msgid "Repeat new password"
+msgstr ""
+
+#: /views/artists/edit.ctp:4
+#: /views/artists/view.ctp:38
+msgid "Edit Artist"
+msgstr ""
+
+#: /views/artists/edit.ctp:18
+#: /views/artists/index.ctp:49
+#: /views/pieces/edit.ctp:29
+#: /views/requirements/edit.ctp:17
+#: /views/requirements/index.ctp:30
+#: /views/requirements/show_by_type.ctp:39
+#: /views/screening_formats/edit.ctp:15
+#: /views/screening_formats/index.ctp:33
+#: /views/screening_formats/view.ctp:77
+#: /views/searches/edit.ctp:15
+#: /views/searches/index.ctp:33
+#: /views/sections/edit.ctp:18
+#: /views/sections/index.ctp:49
+#: /views/shooting_formats/edit.ctp:14
+#: /views/shooting_formats/index.ctp:33
+#: /views/shooting_formats/view.ctp:77
+#: /views/tags/edit.ctp:15
+#: /views/tags/index.ctp:33
+#: /views/tags/view.ctp:81
+#: /views/types/edit.ctp:15
+#: /views/types/index.ctp:38
+msgid "Delete"
+msgstr ""
+
+#: /views/artists/edit.ctp:18
+#: /views/artists/index.ctp:49
+#: /views/artists/view.ctp:39
+#: /views/pieces/edit.ctp:29
+#: /views/requirements/edit.ctp:17
+#: /views/requirements/index.ctp:30
+#: /views/requirements/show_by_type.ctp:39
+#: /views/requirements/view.ctp:29
+#: /views/screening_formats/edit.ctp:15
+#: /views/screening_formats/index.ctp:33
+#: /views/screening_formats/view.ctp:19;77
+#: /views/searches/edit.ctp:15
+#: /views/searches/index.ctp:33
+#: /views/searches/view.ctp:24
+#: /views/sections/edit.ctp:18
+#: /views/sections/index.ctp:49
+#: /views/sections/view.ctp:39
+#: /views/shooting_formats/edit.ctp:14
+#: /views/shooting_formats/index.ctp:33
+#: /views/shooting_formats/view.ctp:19;77
+#: /views/tags/edit.ctp:15
+#: /views/tags/index.ctp:33
+#: /views/tags/view.ctp:19;81
+#: /views/types/edit.ctp:15
+#: /views/types/index.ctp:38
+#: /views/types/view.ctp:31
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: /views/artists/edit.ctp:19
+#: /views/artists/view.ctp:40
+msgid "List Artists"
+msgstr ""
+
+#: /views/artists/forgot_password.ctp:4
+msgid "Forgot Password"
+msgstr ""
+
+#: /views/artists/forgot_password.ctp:6
+msgid "Please enter your email address. You will get an email with a reset link."
+msgstr ""
+
+#: /views/artists/forgot_password.ctp:9
+msgid "Email Address"
+msgstr ""
+
+#: /views/artists/forgot_password.ctp:12
+msgid "Submit"
+msgstr ""
+
+#: /views/artists/index.ctp:2
+msgid "Artists"
+msgstr ""
+
+#: /views/artists/index.ctp:6
+#: /views/pieces/search.ctp:36
+#: /views/screening_formats/index.ctp:6
+#: /views/searches/index.ctp:6
+#: /views/sections/index.ctp:6
+#: /views/shooting_formats/index.ctp:6
+#: /views/tags/index.ctp:6
+#: /views/types/index.ctp:6
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr ""
+
+#: /views/artists/index.ctp:17
+#: /views/screening_formats/index.ctp:13
+#: /views/screening_formats/view.ctp:47
+#: /views/searches/index.ctp:13
+#: /views/sections/index.ctp:17
+#: /views/shooting_formats/index.ctp:13
+#: /views/shooting_formats/view.ctp:47
+#: /views/tags/index.ctp:13
+#: /views/tags/view.ctp:49
+#: /views/types/index.ctp:14
+msgid "Actions"
+msgstr ""
+
+#: /views/artists/index.ctp:47
+#: /views/requirements/index.ctp:28
+#: /views/requirements/show_by_type.ctp:37
+#: /views/screening_formats/index.ctp:31
+#: /views/screening_formats/view.ctp:75
+#: /views/sections/index.ctp:47
+#: /views/shooting_formats/index.ctp:31
+#: /views/shooting_formats/view.ctp:75
+#: /views/tags/index.ctp:31
+#: /views/tags/view.ctp:79
+#: /views/types/index.ctp:36
+msgid "View"
+msgstr ""
+
+#: /views/artists/index.ctp:48
+#: /views/requirements/index.ctp:29
+#: /views/requirements/show_by_type.ctp:38
+#: /views/screening_formats/index.ctp:32
+#: /views/screening_formats/view.ctp:76
+#: /views/searches/index.ctp:32
+#: /views/sections/index.ctp:48
+#: /views/shooting_formats/index.ctp:32
+#: /views/shooting_formats/view.ctp:76
+#: /views/tags/index.ctp:32
+#: /views/tags/view.ctp:80
+#: /views/types/index.ctp:37
+msgid "Edit"
+msgstr ""
+
+#: /views/artists/index.ctp:56
+#: /views/pieces/search.ctp:77
+#: /views/screening_formats/index.ctp:40
+#: /views/searches/index.ctp:40
+#: /views/sections/index.ctp:56
+#: /views/shooting_formats/index.ctp:40
+#: /views/tags/index.ctp:40
+#: /views/types/index.ctp:45
+msgid "previous"
+msgstr ""
+
+#: /views/artists/index.ctp:58
+#: /views/pieces/search.ctp:79
+#: /views/screening_formats/index.ctp:42
+#: /views/searches/index.ctp:42
+#: /views/sections/index.ctp:58
+#: /views/shooting_formats/index.ctp:42
+#: /views/tags/index.ctp:42
+#: /views/types/index.ctp:47
+msgid "next"
+msgstr ""
+
+#: /views/artists/index.ctp:62
+#: /views/artists/view.ctp:41
+msgid "New Artist"
+msgstr ""
+
+#: /views/artists/login.ctp:6
+msgid "Password"
+msgstr ""
+
+#: /views/artists/login.ctp:12
+msgid "I forgot my password"
+msgstr ""
+
+#: /views/artists/view.ctp:2
+#: /views/pieces/view.ctp:30
+msgid "Artist"
+msgstr ""
+
+#: /views/artists/view.ctp:4
+#: /views/requirements/view.ctp:4
+#: /views/screening_formats/view.ctp:4;31
+#: /views/searches/view.ctp:4
+#: /views/sections/view.ctp:4
+#: /views/shooting_formats/view.ctp:4;31
+#: /views/tags/view.ctp:4;31
+#: /views/types/view.ctp:4
+msgid "Id"
+msgstr ""
+
+#: /views/artists/view.ctp:9
+#: /views/screening_formats/view.ctp:9
+#: /views/shooting_formats/view.ctp:9
+msgid "Name"
+msgstr ""
+
+#: /views/artists/view.ctp:14
+msgid "Surname"
+msgstr ""
+
+#: /views/artists/view.ctp:19
+msgid "Email"
+msgstr ""
+
+#: /views/artists/view.ctp:24
+msgid "Url"
+msgstr ""
+
+#: /views/artists/view.ctp:29
+#: /views/pieces/view.ctp:142
+msgid "Picture"
+msgstr ""
+
+#: /views/artists/view.ctp:39
+msgid "Delete Artist"
+msgstr ""
+
+#: /views/elements/progress_steps.ctp:9
+msgid "Step"
+msgstr ""
+
+#: /views/elements/progress_steps.ctp:13
+msgid "of"
+msgstr ""
+
+#: /views/elements/saved_searches.ctp:2
+msgid "Saved Searches"
+msgstr ""
+
+#: /views/elements/saved_searches.ctp:13
+msgid "(show all)"
+msgstr ""
+
+#: /views/layouts/default.ctp:47
+msgid "Logged in as "
+msgstr ""
+
+#: /views/layouts/default.ctp:50
+msgid "Overview"
+msgstr ""
+
+#: /views/layouts/default.ctp:52
+#: /views/pieces/search.ctp:4
+#: /views/searches/view.ctp:2
+msgid "Search"
+msgstr ""
+
+#: /views/layouts/default.ctp:55
+msgid "My Submissions"
+msgstr ""
+
+#: /views/layouts/default.ctp:60
+msgid "Log out"
+msgstr ""
+
+#: /views/layouts/default.ctp:77
+msgid "Login"
+msgstr ""
+
+#: /views/layouts/default.ctp:79
+#: /views/pages/about.ctp:1
+msgid "About"
+msgstr ""
+
+#: /views/pages/home.ctp:16
+msgid "english"
+msgstr ""
+
+#: /views/pages/home.ctp:19
+msgid "deutsch"
+msgstr ""
+
+#: /views/pictures/add.ctp:4
+msgid "Add Pictures to "
+msgstr ""
+
+#: /views/pictures/add.ctp:10
+msgid "JPEG Image File, %d KB max"
+msgstr ""
+
+#: /views/pictures/add.ctp:13
+msgid "Upload"
+msgstr ""
+
+#: /views/pictures/add.ctp:19
+msgid "Back to your "
+msgstr ""
+
+#: /views/pieces/add.ctp:8
+msgid "Add additional Artist"
+msgstr ""
+
+#: /views/pieces/add.ctp:70
+msgid "Your Work"
+msgstr ""
+
+#: /views/pieces/add.ctp:80
+#: /views/pieces/view.ctp:40
+#: /views/screening_formats/view.ctp:35
+#: /views/shooting_formats/view.ctp:35
+#: /views/tags/view.ctp:35
+msgid "Synopsis"
+msgstr ""
+
+#: /views/pieces/add.ctp:82;92;97
+msgid "- Please select -"
+msgstr ""
+
+#: /views/pieces/add.ctp:84
+#: /views/pieces/view.ctp:56
+msgid "Notes"
+msgstr ""
+
+#: /views/pieces/add.ctp:90
+msgid "Duration (mm:ss)"
+msgstr ""
+
+#: /views/pieces/add.ctp:94
+msgid "Available Screening Formats"
+msgstr ""
+
+#: /views/pieces/add.ctp:107
+msgid "How will we get a preview copy?"
+msgstr ""
+
+#: /views/pieces/add.ctp:109
+msgid "Via normal Mail (send us a DVD or miniDV tape)"
+msgstr ""
+
+#: /views/pieces/add.ctp:109
+msgid "I want to upload it (we'll tell you how)"
+msgstr ""
+
+#: /views/pieces/add.ctp:109
+msgid "It is online anyway (tell us the URL)"
+msgstr ""
+
+#: /views/pieces/add.ctp:118
+msgid "Who has created this?"
+msgstr ""
+
+#: /views/pieces/add.ctp:119
+msgid "What was your contribution/function to this work?"
+msgstr ""
+
+#: /views/pieces/add.ctp:119
+msgid "Should other people be credited as well?"
+msgstr ""
+
+#: /views/pieces/add.ctp:124;133;142
+msgid "Additional Artist:"
+msgstr ""
+
+#: /views/pieces/add.ctp:126;135;144
+msgid "Function"
+msgstr ""
+
+#: /views/pieces/edit.ctp:4
+msgid "Edit Piece"
+msgstr ""
+
+#: /views/pieces/edit.ctp:30
+#: /views/screening_formats/add.ctp:15
+#: /views/screening_formats/edit.ctp:17
+#: /views/screening_formats/index.ctp:47
+#: /views/screening_formats/view.ctp:22
+#: /views/shooting_formats/add.ctp:14
+#: /views/shooting_formats/edit.ctp:16
+#: /views/shooting_formats/index.ctp:47
+#: /views/shooting_formats/view.ctp:22
+#: /views/tags/add.ctp:15
+#: /views/tags/edit.ctp:17
+#: /views/tags/index.ctp:47
+#: /views/tags/view.ctp:22
+msgid "List Pieces"
+msgstr ""
+
+#: /views/pieces/index.ctp:2
+msgid "Your Submissions"
+msgstr ""
+
+#: /views/pieces/index.ctp:6
+msgid "id"
+msgstr ""
+
+#: /views/pieces/index.ctp:7
+#: /views/pieces/search.ctp:12
+#: /views/searches/view.ctp:9
+#: /views/sections/view.ctp:9
+#: /views/tags/view.ctp:9
+#: /views/types/view.ctp:9
+msgid "Title"
+msgstr ""
+
+#: /views/pieces/index.ctp:8
+msgid "Submitted to"
+msgstr ""
+
+#: /views/pieces/index.ctp:9
+#: /views/pieces/view.ctp:120
+msgid "Submitted"
+msgstr ""
+
+#: /views/pieces/index.ctp:43
+msgid "Enter a new submission"
+msgstr ""
+
+#: /views/pieces/search.ctp:24
+msgid "Save this search"
+msgstr ""
+
+#: /views/pieces/search.ctp:32
+msgid "Search Results"
+msgstr ""
+
+#: /views/pieces/view.ctp:7
+msgid "Add images"
+msgstr ""
+
+#: /views/pieces/view.ctp:14
+#: /views/screening_formats/view.ctp:32
+#: /views/shooting_formats/view.ctp:32
+#: /views/tags/view.ctp:32
+msgid "Original Title"
+msgstr ""
+
+#: /views/pieces/view.ctp:22
+#: /views/screening_formats/view.ctp:33
+#: /views/shooting_formats/view.ctp:33
+#: /views/tags/view.ctp:33
+msgid "English Title"
+msgstr ""
+
+#: /views/pieces/view.ctp:34
+msgid "Main Contact"
+msgstr ""
+
+#: /views/pieces/view.ctp:48
+#: /views/sections/view.ctp:2
+msgid "Section"
+msgstr ""
+
+#: /views/pieces/view.ctp:64
+#: /views/screening_formats/view.ctp:40
+#: /views/shooting_formats/view.ctp:40
+#: /views/tags/view.ctp:40
+msgid "Production Year"
+msgstr ""
+
+#: /views/pieces/view.ctp:72
+#: /views/screening_formats/view.ctp:41
+#: /views/shooting_formats/view.ctp:41
+#: /views/tags/view.ctp:41
+msgid "Duration"
+msgstr ""
+
+#: /views/pieces/view.ctp:80
+msgid "Shooting Format"
+msgstr ""
+
+#: /views/pieces/view.ctp:89
+msgid "Screening Format"
+msgstr ""
+
+#: /views/pieces/view.ctp:97
+msgid "Country"
+msgstr ""
+
+#: /views/pieces/view.ctp:105
+#: /views/screening_formats/view.ctp:44
+#: /views/shooting_formats/view.ctp:44
+#: /views/tags/view.ctp:44
+msgid "Genre"
+msgstr ""
+
+#: /views/pieces/view.ctp:113
+#: /views/screening_formats/view.ctp:45
+#: /views/shooting_formats/view.ctp:45
+#: /views/tags/view.ctp:45
+msgid "Shown Before"
+msgstr ""
+
+#: /views/pieces/view.ctp:127
+#: /views/tags/view.ctp:47
+msgid "Preview How"
+msgstr ""
+
+#: /views/pieces/view.ctp:135
+#: /views/tags/view.ctp:48
+msgid "Preview Url"
+msgstr ""
+
+#: /views/requirements/add.ctp:4
+msgid "Add Requirement"
+msgstr ""
+
+#: /views/requirements/add.ctp:20
+#: /views/requirements/edit.ctp:18
+#: /views/requirements/view.ctp:30
+msgid "List Requirements"
+msgstr ""
+
+#: /views/requirements/add.ctp:21
+#: /views/requirements/edit.ctp:19
+#: /views/requirements/index.ctp:39
+#: /views/requirements/view.ctp:32
+#: /views/types/add.ctp:14
+#: /views/types/edit.ctp:16
+#: /views/types/view.ctp:32
+msgid "List Types"
+msgstr ""
+
+#: /views/requirements/add.ctp:22
+#: /views/requirements/edit.ctp:20
+#: /views/requirements/index.ctp:40
+#: /views/requirements/view.ctp:33
+#: /views/types/index.ctp:51
+#: /views/types/view.ctp:33
+msgid "New Type"
+msgstr ""
+
+#: /views/requirements/edit.ctp:4
+#: /views/requirements/view.ctp:28
+msgid "Edit Requirement"
+msgstr ""
+
+#: /views/requirements/index.ctp:2
+#: /views/types/view.ctp:21
+msgid "Requirements"
+msgstr ""
+
+#: /views/requirements/index.ctp:38
+#: /views/requirements/show_by_type.ctp:52
+#: /views/requirements/view.ctp:31
+msgid "New Requirement"
+msgstr ""
+
+#: /views/requirements/show_by_type.ctp:2
+msgid "Requirements for"
+msgstr ""
+
+#: /views/requirements/view.ctp:2
+msgid "Requirement"
+msgstr ""
+
+#: /views/requirements/view.ctp:9
+#: /views/types/view.ctp:2
+msgid "Type"
+msgstr ""
+
+#: /views/requirements/view.ctp:14
+msgid "Info Title"
+msgstr ""
+
+#: /views/requirements/view.ctp:19
+msgid "Kind"
+msgstr ""
+
+#: /views/requirements/view.ctp:29
+msgid "Delete Requirement"
+msgstr ""
+
+#: /views/screening_formats/add.ctp:4
+msgid "Add ScreeningFormat"
+msgstr ""
+
+#: /views/screening_formats/add.ctp:14
+#: /views/screening_formats/edit.ctp:16
+#: /views/screening_formats/view.ctp:20
+msgid "List ScreeningFormats"
+msgstr ""
+
+#: /views/screening_formats/add.ctp:16
+#: /views/screening_formats/edit.ctp:18
+#: /views/screening_formats/index.ctp:48
+#: /views/screening_formats/view.ctp:23;86
+#: /views/shooting_formats/add.ctp:15
+#: /views/shooting_formats/edit.ctp:17
+#: /views/shooting_formats/index.ctp:48
+#: /views/shooting_formats/view.ctp:23;86
+#: /views/tags/add.ctp:16
+#: /views/tags/edit.ctp:18
+#: /views/tags/index.ctp:48
+#: /views/tags/view.ctp:23;90
+msgid "New Piece"
+msgstr ""
+
+#: /views/screening_formats/edit.ctp:4
+#: /views/screening_formats/view.ctp:18
+msgid "Edit ScreeningFormat"
+msgstr ""
+
+#: /views/screening_formats/index.ctp:2
+msgid "ScreeningFormats"
+msgstr ""
+
+#: /views/screening_formats/index.ctp:46
+#: /views/screening_formats/view.ctp:21
+msgid "New ScreeningFormat"
+msgstr ""
+
+#: /views/screening_formats/view.ctp:2
+msgid "ScreeningFormat"
+msgstr ""
+
+#: /views/screening_formats/view.ctp:19
+msgid "Delete ScreeningFormat"
+msgstr ""
+
+#: /views/screening_formats/view.ctp:27
+#: /views/shooting_formats/view.ctp:27
+#: /views/tags/view.ctp:27
+msgid "Related Pieces"
+msgstr ""
+
+#: /views/screening_formats/view.ctp:34
+#: /views/sections/view.ctp:29
+#: /views/shooting_formats/view.ctp:34
+#: /views/tags/view.ctp:34
+msgid "Type Id"
+msgstr ""
+
+#: /views/screening_formats/view.ctp:36
+#: /views/shooting_formats/view.ctp:36
+#: /views/tags/view.ctp:36
+msgid "Section Id"
+msgstr ""
+
+#: /views/screening_formats/view.ctp:37
+#: /views/shooting_formats/view.ctp:37
+#: /views/tags/view.ctp:37
+msgid "Selected"
+msgstr ""
+
+#: /views/screening_formats/view.ctp:38
+#: /views/shooting_formats/view.ctp:38
+#: /views/tags/view.ctp:38
+msgid "Notes Team"
+msgstr ""
+
+#: /views/screening_formats/view.ctp:39
+#: /views/shooting_formats/view.ctp:39
+#: /views/tags/view.ctp:39
+msgid "Notes Artist"
+msgstr ""
+
+#: /views/screening_formats/view.ctp:42
+#: /views/shooting_formats/view.ctp:42
+#: /views/tags/view.ctp:42
+msgid "Shooting Format Id"
+msgstr ""
+
+#: /views/screening_formats/view.ctp:43
+#: /views/shooting_formats/view.ctp:43
+#: /views/tags/view.ctp:43
+msgid "Country Id"
+msgstr ""
+
+#: /views/screening_formats/view.ctp:46
+#: /views/shooting_formats/view.ctp:46
+#: /views/tags/view.ctp:46
+msgid "Created"
+msgstr ""
+
+#: /views/searches/add.ctp:4
+msgid "Save Search"
+msgstr ""
+
+#: /views/searches/add.ctp:6
+msgid "Add a title"
+msgstr ""
+
+#: /views/searches/edit.ctp:4
+#: /views/searches/view.ctp:23
+msgid "Edit Search"
+msgstr ""
+
+#: /views/searches/edit.ctp:16
+#: /views/searches/view.ctp:25
+msgid "List Searches"
+msgstr ""
+
+#: /views/searches/index.ctp:2
+msgid "Searches"
+msgstr ""
+
+#: /views/searches/index.ctp:31
+msgid "Run"
+msgstr ""
+
+#: /views/searches/index.ctp:46
+#: /views/searches/view.ctp:26
+msgid "New Search"
+msgstr ""
+
+#: /views/searches/view.ctp:14
+msgid "Params"
+msgstr ""
+
+#: /views/searches/view.ctp:24
+msgid "Delete Search"
+msgstr ""
+
+#: /views/sections/add.ctp:4
+msgid "Add Section"
+msgstr ""
+
+#: /views/sections/add.ctp:17
+#: /views/sections/edit.ctp:19
+#: /views/sections/view.ctp:40
+msgid "List Sections"
+msgstr ""
+
+#: /views/sections/edit.ctp:4
+#: /views/sections/view.ctp:38
+msgid "Edit Section"
+msgstr ""
+
+#: /views/sections/index.ctp:2
+msgid "Sections"
+msgstr ""
+
+#: /views/sections/index.ctp:62
+#: /views/sections/view.ctp:41
+msgid "New Section"
+msgstr ""
+
+#: /views/sections/overview.ctp:2
+msgid "Sections Overview"
+msgstr ""
+
+#: /views/sections/overview.ctp:13
+msgid "Open for"
+msgstr ""
+
+#: /views/sections/overview.ctp:17
+msgid "Deadline"
+msgstr ""
+
+#: /views/sections/overview.ctp:21
+msgid "OPEN"
+msgstr ""
+
+#: /views/sections/overview.ctp:23
+msgid "CLOSED"
+msgstr ""
+
+#: /views/sections/overview.ctp:29
+msgid "Entries"
+msgstr ""
+
+#: /views/sections/overview.ctp:37
+msgid "Manage Sections"
+msgstr ""
+
+#: /views/sections/view.ctp:14
+msgid "Opening Date"
+msgstr ""
+
+#: /views/sections/view.ctp:19
+msgid "Closing Date"
+msgstr ""
+
+#: /views/sections/view.ctp:24
+msgid "Description"
+msgstr ""
+
+#: /views/sections/view.ctp:39
+msgid "Delete Section"
+msgstr ""
+
+#: /views/shooting_formats/add.ctp:4
+msgid "Add ShootingFormat"
+msgstr ""
+
+#: /views/shooting_formats/add.ctp:13
+#: /views/shooting_formats/edit.ctp:15
+#: /views/shooting_formats/view.ctp:20
+msgid "List ShootingFormats"
+msgstr ""
+
+#: /views/shooting_formats/edit.ctp:4
+#: /views/shooting_formats/view.ctp:18
+msgid "Edit ShootingFormat"
+msgstr ""
+
+#: /views/shooting_formats/index.ctp:2
+msgid "ShootingFormats"
+msgstr ""
+
+#: /views/shooting_formats/index.ctp:46
+#: /views/shooting_formats/view.ctp:21
+msgid "New ShootingFormat"
+msgstr ""
+
+#: /views/shooting_formats/view.ctp:2
+msgid "ShootingFormat"
+msgstr ""
+
+#: /views/shooting_formats/view.ctp:19
+msgid "Delete ShootingFormat"
+msgstr ""
+
+#: /views/tags/add.ctp:4
+msgid "Add Tag"
+msgstr ""
+
+#: /views/tags/add.ctp:14
+#: /views/tags/edit.ctp:16
+#: /views/tags/view.ctp:20
+msgid "List Tags"
+msgstr ""
+
+#: /views/tags/edit.ctp:4
+#: /views/tags/view.ctp:18
+msgid "Edit Tag"
+msgstr ""
+
+#: /views/tags/index.ctp:2
+msgid "Tags"
+msgstr ""
+
+#: /views/tags/index.ctp:46
+#: /views/tags/view.ctp:21
+msgid "New Tag"
+msgstr ""
+
+#: /views/tags/view.ctp:2
+msgid "Tag"
+msgstr ""
+
+#: /views/tags/view.ctp:19
+msgid "Delete Tag"
+msgstr ""
+
+#: /views/types/add.ctp:4
+msgid "Add Type"
+msgstr ""
+
+#: /views/types/edit.ctp:4
+#: /views/types/view.ctp:30
+msgid "Edit Type"
+msgstr ""
+
+#: /views/types/index.ctp:2
+msgid "Types"
+msgstr ""
+
+#: /views/types/index.ctp:35
+msgid "Edit Requirements"
+msgstr ""
+
+#: /views/types/select.ctp:6
+msgid "What kind of work would you like to submit?"
+msgstr ""
+
+#: /views/types/select.ctp:7
+msgid "Terms for submitting a %s"
+msgstr ""
+
+#: /views/types/select.ctp:14
+msgid "Please tick this box to indicate you have read and understood the conditions"
+msgstr ""
+
+#: /views/types/select.ctp:19
+msgid "Go back and submit something other"
+msgstr ""
+
+#: /views/types/select.ctp:29
+msgid "Submit a %s"
+msgstr ""
+
+#: /views/types/view.ctp:14
+msgid "Terms"
+msgstr ""
+
+#: /views/types/view.ctp:31
+msgid "Delete Type"
+msgstr ""
+
+#: /webroot/test.php:99
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
