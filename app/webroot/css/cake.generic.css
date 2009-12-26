@@ -28,7 +28,7 @@
 
 /* General Style Info */
 body {
-	background: #00636a;
+	background: #555;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	/* font-size:90%; */
@@ -37,13 +37,13 @@ body {
 }
 a {
 	background:#fff;
-	color: #00636a;
+	color: #555;
 	text-decoration: underline;
 	font-weight: bold;
 }
 a:hover {
 	background:#fff;
-	color: #00636a;
+	color: #555;
 	text-decoration:none;
 }
 a img {
@@ -55,13 +55,13 @@ h1, h2, h3, h4 {
 }
 h1 {
 	background:#fff;
-	color: #00636a;
+	color: #555;
 	font-size: 100%;
 	margin: 0.1em 0;
 }
 h2 {
 	background:#fff;
-	color: #7FB718;
+	color: #555;
 	font-family:'Gill Sans','lucida grande',helvetica, arial, sans-serif;
 	font-size: 190%;
 	margin: 0.3em 0;
@@ -93,7 +93,7 @@ ul, li {
 
 #header{
 	padding: 10px 20px;
-	background: #00636a;
+	background: #555;
 }
 #header h1 {
 	background: none;
@@ -102,13 +102,13 @@ ul, li {
 }
 #header h1 a {
 	color: #fff;
-	background: #00636a;
+	background: #555;
 	font-weight: normal;
 	text-decoration: none;
 }
 #header h1 a:hover {
 	color: #fff;
-	background: #00636a;
+	background: #555;
 	text-decoration: underline;
 }
 #header a{
@@ -351,7 +351,7 @@ div.error-message {
 	font-weight: bold;
 }
 p.error {
-	background-color: #7FB718;
+	background-color: #f00;
 	color: #fff;
 	font-family: Courier, monospace;
 	font-size: 120%;
@@ -396,7 +396,7 @@ div.actions li {
 }
 div.actions ul li a {
 	background:#fff;
-	color: #00636a;
+	color: #555;
 	text-decoration: none;
 }
 div.actions ul li a:hover {
