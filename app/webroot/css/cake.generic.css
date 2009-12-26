@@ -93,7 +93,7 @@ ul, li {
 
 #header{
 	padding: 10px 20px;
-	background: #00636a url('../img/eas-logo.png') no-repeat 99%;
+	background: #00636a;
 }
 #header h1 {
 	background: none;
