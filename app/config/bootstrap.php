@@ -41,7 +41,7 @@
  *
  */
  
- Configure::load('submittr');
+ Configure::load('sbmttr');
  
 //EOF
 ?>
