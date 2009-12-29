@@ -1,0 +1,15 @@
+        __                 __    __            
+       /\ \               /\ \__/\ \__         
+   ____\ \ \____   ___ ___\ \ ,_\ \ ,_\  _ __  
+  /',__\\ \ '__`\/' __` __`\ \ \/\ \ \/ /\`'__\
+ /\__, `\\ \ \L\ \\ \/\ \/\ \ \ \_\ \ \_\ \ \/ 
+ \/\____/ \ \____/ \_\ \_\ \_\ \__\\ \__\\ \_\ 
+  \/___/   \/___/ \/_/\/_/\/_/\/__/ \/__/ \/_/ 
+                                              
+
+sbmttr is a database application that manages participants' proposals for a festival or conference.
+
+It is
+  - work in progress
+  - made with CakePHP
+  - licensed under AGPL
