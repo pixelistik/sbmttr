@@ -1,11 +1,11 @@
 <div class="uploads form">
-<?php echo $form->create('Upload');?>
+<?php echo $form->create('Upload',array('type'=>'file'));?>
 	<fieldset>
  		<legend><?php __('Add Upload');?></legend>
 	<?php
+		echo $form->input('content',array('type'=>'file'));
 		echo $form->input('description');
-		echo $form->input('extension');
-		echo $form->input('piece_id');
+		echo $form->input('piece_id',array('type'=>'hidden','value'=>$this->passedArgs[0]));
 	?>
 	</fieldset>
 <?php echo $form->end('Submit');?>
