@@ -3,6 +3,7 @@ class UploadsController extends AppController {
 
 	var $name = 'Uploads';
 	var $helpers = array('Html', 'Form');
+	var $components=array('Auth');
 
 	function index() {
 		$this->Upload->recursive = 0;
@@ -47,11 +48,11 @@ class UploadsController extends AppController {
 					$uploadProblems=true;
 					$uploadErrorReport=$uploadErrorReport.' '.__('The file is too big.',true);
 				}
-				/* TODO: Type check according to allowed types for corresponding piece type.
-				if($this->data['Upload']['content']['type']!='image/jpeg'){
+				// TODO: Type check according to allowed types for corresponding piece type. Fixed for images for now
+				if(!in_array($this->data['Upload']['extension'],Config::read('accepted_file_extensions.image'))){
 					$uploadProblems=true;
 					$uploadErrorReport=$uploadErrorReport.' '.__('Only jpeg images are allowed.',true).$this->data['Upload']['content']['type'];
-				} */
+				} 
 				if($this->data['Upload']['content']['error'] != 0){
 					$uploadProblems=true;
 					$uploadErrorReport=$uploadErrorReport.' '.__('Upload Error.',true);
@@ -110,6 +111,17 @@ class UploadsController extends AppController {
 			$this->redirect(array('action'=>'index'));
 		}
 	}
+	
+	function isAuthorized(){
+		// Check for login is sufficient, add() does its own check on
+		// ownership of the Piece we are adding an upload to.
+		if($this->Auth->user('email')){
+			return true;
+		}
+		// Ask parent if no rule found so far:
+		return parent::isAuthorized();
+	}
+
 
 }
 ?>
