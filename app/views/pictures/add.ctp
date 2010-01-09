@@ -19,4 +19,5 @@
 	<li>
 	<?php echo $html->link(__('Back to your ',true).$piece['Type']['title'],array('controller'=>'pieces','action'=>'view',$piece['Piece']['id'])); ?>
 	</li>
+</ul>
 </div>
