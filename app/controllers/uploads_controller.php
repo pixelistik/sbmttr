@@ -68,12 +68,12 @@ class UploadsController extends AppController {
 					move_uploaded_file($this->data['Upload']['content']['tmp_name'],sprintf('%s%05d.%s',$uploadPath,$this->Upload->id,$this->data['Upload']['extension']));
 					$this->Upload->save($this->data); // Update extension
 					$this->Session->setFlash(__('The Upload has been saved.', true));
+					$this->redirect(array('controller'=>'uploads','action'=>'view',$this->Upload->id));
 				}else{
 					// Delete the record again, because there is no corresponding file now:
 					$this->Upload->del($this->Upload->id);
 					$this->Session->setFlash(__('Image Error. The Upload could not be created', true).$uploadErrorReport);
 				}
-				$this->redirect(array('controller'=>'uploads','action'=>'view',$this->Upload->id));
 			} else {
 				$this->Session->setFlash(__('The Upload could not be saved. Please, try again.', true));
 			}
