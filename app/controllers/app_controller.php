@@ -36,8 +36,7 @@
  * @subpackage    cake.cake.libs.controller
  */
 class AppController extends Controller {
-	// Custom:
-	//var $components = array('DebugKit.Toolbar');
+	var $components = array('DebugKit.Toolbar');
 	
 	function beforeFilter(){
 		// Set some generic Auth stuff, in case Auth is used in the model:

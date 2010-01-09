@@ -3,3 +3,7 @@ app/tmp/*
 app/config/database.php
 uploads/*
 *.marks
+.buildpath
+.project
+.cproject
+.settings
