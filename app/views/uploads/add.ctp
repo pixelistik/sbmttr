@@ -3,15 +3,16 @@
 	<fieldset>
  		<legend><?php __('Add Upload');?></legend>
 	<?php
-		echo $form->input('content',array('type'=>'file'));
-		echo $form->input('description');
+		echo $form->input('content',array(
+			'type'=>'file',
+			'label'=>sprintf(
+				__('Select file, %01.2f MB max',true),
+				Configure::read('max_file_upload_size')/1048576)
+			) 
+		);
+		echo $form->input('description',array('label'=>__('Shortly describe what is in this file, please',true)));
 		echo $form->input('piece_id',array('type'=>'hidden','value'=>$this->passedArgs[0]));
 	?>
 	</fieldset>
 <?php echo $form->end('Submit');?>
-</div>
-<div class="actions">
-	<ul>
-		<li><?php echo $html->link(__('List Uploads', true), array('action' => 'index'));?></li>
-	</ul>
 </div>
