@@ -48,6 +48,9 @@ class UploadsController extends AppController {
 					$uploadProblems=true;
 					$uploadErrorReport=$uploadErrorReport.' '.__('The file is too big.',true);
 				}
+				// Extract file extension:
+				preg_match("/\.([^\.]+)$/", $this->data['Upload']['content']['name'], $matches);
+				$this->data['Upload']['extension']=$matches[1];
 				// TODO: Type check according to allowed types for corresponding piece type. Fixed for images for now
 				if(!in_array($this->data['Upload']['extension'],Configure::read('accepted_file_extensions.image'))){
 					$uploadProblems=true;
@@ -59,9 +62,6 @@ class UploadsController extends AppController {
 				}
 				// Now move the uploaded file into the right folder:
 				if(!$uploadProblems){
-					// Extract file extension:
-					preg_match("/\.([^\.]+)$/", $this->data['Upload']['content']['name'], $matches);
-					$this->data['Upload']['extension']=$matches[1];
 					$uploadPath=APP.'..'.DS.'uploads'.DS.sprintf('%05d',$this->data['Upload']['piece_id']).DS;
 					// Try to create the Piece directory (might already exist)
 					mkdir($uploadPath);
