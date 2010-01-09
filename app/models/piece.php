@@ -105,8 +105,8 @@ class Piece extends AppModel {
 	);
 
 	var $hasMany = array(
-		'Picture' => array(
-			'className' => 'Picture',
+		'Upload' => array(
+			'className' => 'Upload',
 			'foreignKey' => 'piece_id',
 			'dependent' => false,
 			'conditions' => '',
