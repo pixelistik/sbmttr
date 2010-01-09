@@ -1,6 +1,6 @@
 <?php 
 /* SVN FILE: $Id$ */
-/* App schema generated on: 2009-12-26 02:12:05 : 1261789445*/
+/* App schema generated on: 2010-01-10 00:01:01 : 1263078661*/
 class AppSchema extends CakeSchema {
 	var $name = 'App';
 
@@ -38,16 +38,6 @@ class AppSchema extends CakeSchema {
 		'name' => array('type' => 'string', 'null' => false, 'length' => 80),
 		'iso3' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 3),
 		'numcode' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 6),
-		'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1))
-	);
-	var $pictures = array(
-		'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 5, 'key' => 'primary'),
-		'piece_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 6),
-		'content' => array('type' => 'binary', 'null' => false, 'default' => NULL),
-		'name' => array('type' => 'text', 'null' => false, 'default' => NULL),
-		'size' => array('type' => 'integer', 'null' => false, 'default' => '0'),
-		'type' => array('type' => 'string', 'null' => false),
-		'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
 		'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1))
 	);
 	var $pieces = array(
@@ -123,6 +113,13 @@ class AppSchema extends CakeSchema {
 		'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 5, 'key' => 'primary'),
 		'title' => array('type' => 'string', 'null' => false, 'length' => 50),
 		'terms' => array('type' => 'text', 'null' => true, 'default' => NULL),
+		'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1))
+	);
+	var $uploads = array(
+		'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 5, 'key' => 'primary'),
+		'description' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 512),
+		'extension' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 4),
+		'piece_id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 5),
 		'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1))
 	);
 }
