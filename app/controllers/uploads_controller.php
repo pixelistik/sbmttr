@@ -30,7 +30,7 @@ class UploadsController extends AppController {
 				$this->Session->setFlash(__('You are not logged in or not allowed to edit this piece.', true));
 				$this->redirect(array('controller'=>'pieces','action'=>'index'));
 			}
-			
+				
 			$this->Upload->create();
 			if ($this->Upload->save($this->data)) {
 				//debug(' record saved with id '.$this->Upload->id);
@@ -49,10 +49,10 @@ class UploadsController extends AppController {
 					$uploadErrorReport=$uploadErrorReport.' '.__('The file is too big.',true);
 				}
 				// TODO: Type check according to allowed types for corresponding piece type. Fixed for images for now
-				if(!in_array($this->data['Upload']['extension'],Config::read('accepted_file_extensions.image'))){
+				if(!in_array($this->data['Upload']['extension'],Configure::read('accepted_file_extensions.image'))){
 					$uploadProblems=true;
 					$uploadErrorReport=$uploadErrorReport.' '.__('Only jpeg images are allowed.',true).$this->data['Upload']['content']['type'];
-				} 
+				}
 				if($this->data['Upload']['content']['error'] != 0){
 					$uploadProblems=true;
 					$uploadErrorReport=$uploadErrorReport.' '.__('Upload Error.',true);
@@ -78,7 +78,7 @@ class UploadsController extends AppController {
 				$this->Session->setFlash(__('The Upload could not be saved. Please, try again.', true));
 			}
 		}
-		
+
 	}
 
 	function edit($id = null) {
@@ -111,7 +111,7 @@ class UploadsController extends AppController {
 			$this->redirect(array('action'=>'index'));
 		}
 	}
-	
+
 	function isAuthorized(){
 		// Check for login is sufficient, add() does its own check on
 		// ownership of the Piece we are adding an upload to.
