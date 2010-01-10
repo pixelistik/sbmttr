@@ -68,7 +68,7 @@ class UploadsController extends AppController {
 					move_uploaded_file($this->data['Upload']['content']['tmp_name'],sprintf('%s%05d.%s',$uploadPath,$this->Upload->id,$this->data['Upload']['extension']));
 					$this->Upload->save($this->data); // Update extension
 					$this->Session->setFlash(__('The Upload has been saved.', true));
-					$this->redirect(array('controller'=>'uploads','action'=>'view',$this->Upload->id));
+					$this->Session->redirect(array('action'=>'view',$this->Upload->id));
 				}else{
 					// Delete the record again, because there is no corresponding file now:
 					$this->Upload->del($this->Upload->id);
@@ -101,16 +101,17 @@ class UploadsController extends AppController {
 		$this->set(compact('pieces'));
 	}
 
-	function delete($id = null) {
+/*	function delete($id = null) {
 		if (!$id) {
 			$this->Session->setFlash(__('Invalid id for Upload', true));
 			$this->redirect(array('action'=>'index'));
 		}
-		if ($this->Upload->del($id)) {
+		if (unlink($this->Upload->getFilePath($id))) {
+			$this->Upload->del($id);
 			$this->Session->setFlash(__('Upload deleted', true));
 			$this->redirect(array('action'=>'index'));
 		}
-	}
+	}*/
 
 	function isAuthorized(){
 		// Check for login is sufficient, add() does its own check on
