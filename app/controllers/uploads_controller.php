@@ -18,10 +18,22 @@ class UploadsController extends AppController {
 		$this->set('upload', $this->Upload->read(null, $id));
 	}
 
-	function add() {
+	function add($piece_id=null) {
+		// Check if piece is specified an hand it back to view:
+		if (!$piece_id){
+			$this->Session->setFlash(__('No piece specified.', true));
+			$this->redirect(array('controller'=>'pieces','action'=>'index'));;
+		}else{
+			$this->set('piece_id',$piece_id);
+		}
+		// Retrieve the piece
+		$piece=$this->Upload->Piece->find('first',array('conditions'=>array('Piece.id'=>$piece_id) ) );
+		
+		
 		if (!empty($this->data)) {
+			// Write piece id into data:
+			$this->data['Upload']['piece_id']=$piece_id;
 			// Check if the logged in user is allowed to edit this piece:
-			$piece=$this->Upload->Piece->find('first',array('conditions'=>array('Piece.id'=>$this->data['Upload']['piece_id']) ) );
 			$allowed=false;
 			foreach($piece['Artist'] as $artist){
 				$allowed=$allowed || $artist['id'] == $this->Auth->user('id');

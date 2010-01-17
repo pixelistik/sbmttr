@@ -1,5 +1,9 @@
 <div class="uploads form">
-<?php echo $form->create('Upload',array('type'=>'file'));?>
+<?php 
+echo $form->create('Upload',array(
+	'type'=>'file',
+	'url'=>array('controller'=>'uploads','action'=>'add',$piece_id)
+));?>
 	<fieldset>
  		<legend><?php __('Add Upload');?></legend>
 	<?php
