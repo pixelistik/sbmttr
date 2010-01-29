@@ -10,9 +10,11 @@ echo $form->create('Upload',array(
 		echo $form->input('content',array(
 			'type'=>'file',
 			'label'=>sprintf(
-				__('Select file, %01.2f MB max',true),
-				Configure::read('max_file_upload_size')/1048576)
-			) 
+				__('Select file, %01.2f MB max. Allowed types: %s',true),
+				Configure::read('max_file_upload_size')/1048576,
+				implode(',',$allowed_filetypes)
+			)
+		) 
 		);
 		echo $form->input('description',array('label'=>__('Shortly describe what is in this file, please',true)));
 		echo $form->input('piece_id',array('type'=>'hidden','value'=>$this->passedArgs[0]));
