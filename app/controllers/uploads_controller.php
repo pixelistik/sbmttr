@@ -89,7 +89,7 @@ class UploadsController extends AppController {
 				if(!$uploadProblems){
 					$uploadPath=APP.'..'.DS.'uploads'.DS.sprintf('%05d',$this->data['Upload']['piece_id']).DS;
 					// Try to create the Piece directory (might already exist)
-					mkdir($uploadPath);
+					@mkdir($uploadPath);
 					move_uploaded_file($this->data['Upload']['content']['tmp_name'],sprintf('%s%05d.%s',$uploadPath,$this->Upload->id,$this->data['Upload']['extension']));
 					$this->Upload->save($this->data); // Update extension
 					$this->Session->setFlash(__('The Upload has been saved.', true));
