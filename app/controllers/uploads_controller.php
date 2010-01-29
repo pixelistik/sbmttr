@@ -28,7 +28,22 @@ class UploadsController extends AppController {
 		}
 		// Retrieve the piece
 		$piece=$this->Upload->Piece->find('first',array('conditions'=>array('Piece.id'=>$piece_id) ) );
-		
+		// Read allowed file types
+		$requirements=$this->Upload->Piece->Type->Requirement->find('all',array('conditions'=>array(
+			'Requirement.type_id'=>$piece['Type']['id'],
+			'Requirement.info_title'=>array('Uploads.image','Uploads.document','Uploads.video'),
+			'Requirement.kind'=>array(1,2)
+		)));
+		$allowed_filetypes=array();
+		foreach($requirements as $requirement){
+			$allowed_filetypes=array_merge(
+				$allowed_filetypes,
+				Configure::read(
+					'accepted_file_extensions.'.substr($requirement['Requirement']['info_title'],8)
+				)
+			);
+		}
+		$this->set('allowed_filetypes',$allowed_filetypes);
 		
 		if (!empty($this->data)) {
 			// Write piece id into data:
@@ -63,8 +78,8 @@ class UploadsController extends AppController {
 				// Extract file extension:
 				preg_match("/\.([^\.]+)$/", $this->data['Upload']['content']['name'], $matches);
 				$this->data['Upload']['extension']=$matches[1];
-				// TODO: Type check according to allowed types for corresponding piece type. Fixed for images for now
-				if(!in_array($this->data['Upload']['extension'],Configure::read('accepted_file_extensions.image'))){
+				// Type check according to allowed types for corresponding piece type. Fixed for images for now
+				if(!in_array($this->data['Upload']['extension'],$allowed_filetypes)){
 					$uploadProblems=true;
 					$uploadErrorReport=$uploadErrorReport.' '.__('Only jpeg images are allowed.',true).$this->data['Upload']['content']['type'];
 				}
@@ -80,7 +95,7 @@ class UploadsController extends AppController {
 					move_uploaded_file($this->data['Upload']['content']['tmp_name'],sprintf('%s%05d.%s',$uploadPath,$this->Upload->id,$this->data['Upload']['extension']));
 					$this->Upload->save($this->data); // Update extension
 					$this->Session->setFlash(__('The Upload has been saved.', true));
-					$this->Session->redirect(array('action'=>'view',$this->Upload->id));
+					$this->redirect(array('action'=>'view',$this->Upload->id));
 				}else{
 					// Delete the record again, because there is no corresponding file now:
 					$this->Upload->del($this->Upload->id);
