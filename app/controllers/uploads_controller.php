@@ -79,7 +79,7 @@ class UploadsController extends AppController {
 				// Type check according to allowed types for corresponding piece type. Fixed for images for now
 				if(!in_array($this->data['Upload']['extension'],$allowed_filetypes)){
 					$uploadProblems=true;
-					$uploadErrorReport=$uploadErrorReport.' '.__('Only jpeg images are allowed.',true).$this->data['Upload']['content']['type'];
+					$uploadErrorReport=$uploadErrorReport.' '.__('This file type is not allowed.',true);
 				}
 				if($this->data['Upload']['content']['error'] != 0){
 					$uploadProblems=true;
@@ -97,7 +97,7 @@ class UploadsController extends AppController {
 				}else{
 					// Delete the record again, because there is no corresponding file now:
 					$this->Upload->del($this->Upload->id);
-					$this->Session->setFlash(__('Image Error. The Upload could not be created', true).$uploadErrorReport);
+					$this->Session->setFlash(__('Error! The Upload could not be created.', true).$uploadErrorReport);
 				}
 			} else {
 				$this->Session->setFlash(__('The Upload could not be saved. Please, try again.', true));
