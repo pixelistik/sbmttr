@@ -2,9 +2,14 @@
 <h2><?php echo $piece['Type']['title'].' #'.$piece['Piece']['id'];?></h2>
 <div class="actions">
 <ul>
-		<?php if($requirements['Pictures']>0){ ?>
+		<?php
+		if(
+			$requirements['Uploads.image']>0 ||
+			$requirements['Uploads.document']>0 ||
+			$requirements['Uploads.video']>0
+		){ ?>
 			<li>
-			<?php echo $html->link(__('Add images',true),array('controller'=>'pictures','action'=>'add',$piece['Piece']['id']) ); ?>
+			<?php echo $html->link(__('Add files',true),array('controller'=>'uploads','action'=>'add',$piece['Piece']['id']) ); ?>
 			</li>
 		<?php } ?>
 </ul>
@@ -138,11 +143,11 @@
 			&nbsp;
 		</dd>
 		<?php endif; ?>
-		<?php foreach($piece['Picture'] as $picture): ?>
+		<?php /* foreach($piece['Picture'] as $picture): ?>
 		<dt><?php __('Picture'); ?></dt>
 		<dd>
 			<?php echo $html->link($picture['name'],'/pictures/download/'.$picture['id']); ?>
 		<?php endforeach; ?>
-		</dd>
+		</dd> <?php */ ?>
 	</dl>
 </div>
