@@ -60,8 +60,6 @@ class UploadsController extends AppController {
 				
 			$this->Upload->create();
 			if ($this->Upload->save($this->data)) {
-				//debug(' record saved with id '.$this->Upload->id);
-				//debug('Uploaded image file name was '.$this->data['Upload']['content']['name']);
 				// Handle the uploaded file:
 				// Check for some possible problems:
 				$uploadProblems=false;
