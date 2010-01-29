@@ -80,7 +80,13 @@ echo $javascript->link('jquery.tools.min',false); ?>
 		//echo $form->input('Artist.Artist');
 		if($requirements['synopsis']>0) echo $form->input('synopsis',array('label'=>__('Synopsis',true),'after'=> ($helpText['synopsis'] ? $html->div('help-text',$helpText['synopsis']) : '')  ));
 		
-		echo $form->input('section_id',array('empty'=>__('- Please select -',true),'after'=> ($helpText['section_id'] ? $html->div('help-text',$helpText['section_id']) : '') ));
+		// If only one section applies, preselect it:
+		if(count($sections)==1){
+			$sections_empty=null;
+		}else{
+			$sections_empty=__('- Please select -',true);
+		}
+		echo $form->input('section_id',array('empty'=>$sections_empty,'after'=> ($helpText['section_id'] ? $html->div('help-text',$helpText['section_id']) : '') ));
 		
 		if($requirements['notes_artist']>0) echo $form->input('notes_artist',array('label'=>__('Notes',true),'after'=> ($helpText['notes_artist'] ? $html->div('help-text',$helpText['notes_artist']) : '') ) );
 		
