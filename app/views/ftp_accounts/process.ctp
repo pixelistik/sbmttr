@@ -17,7 +17,7 @@ echo $javascript->link('jquery.min',false);
 	</fieldset>
 	<div id="dynamic-inputs"></div>
 	<div class="submit">
-		<input type="submit" value="Save files" />
+		<input type="submit" value="Save files" id="submit-button" disabled="disabled" />
 	</div>
 </form>
 </div>
@@ -32,10 +32,13 @@ echo $javascript->link('jquery.min',false);
 			/* Refresh list of unfinished files */
 			var loadingList='<ul>';
 			if(data.loading){
+				$('#submit-button').attr('disabled','disabled');
 				for(var i=0;i<data.loading.length;i++){
 					loadingList+='<li>'+data.loading[i].filename+'</li>';
 				}
 				loadingList+='</ul>';
+			}else{
+				$('#submit-button').attr('disabled','');
 			}
 			$('#loading-list').html(loadingList);
 			
