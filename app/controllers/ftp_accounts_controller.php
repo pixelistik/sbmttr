@@ -1,4 +1,11 @@
 <?php
+/*
+*
+* Copyright 2009 Till Claassen (http://pixelistik.de/)
+* Licensed under the AGPL v3 (GNU Affero General Public License)
+* http://www.fsf.org/licensing/licenses/agpl.html
+*
+*/
 class FtpAccountsController extends AppController {
 
 	var $name = 'FtpAccounts';
@@ -60,6 +67,23 @@ class FtpAccountsController extends AppController {
 			$this->Session->setFlash(__('FtpAccount deleted', true));
 			$this->redirect(array('action'=>'index'));
 		}
+	}
+	
+/**
+ * List all new files in the upload folder for further processing (AJAX)
+ *
+ * @param $id int ID of the FTP account
+ */
+	function listFiles($id=null){
+		$this->layout='ajax';
+		$files=array();
+		foreach (new DirectoryIterator($this->FtpAccount->_getFolderPath($id)) as $file) {
+			// if the file is a file and not hidden:
+			if ( !$file->isDot() && !$file->isDir() )  {
+				$files[]=$file->getFilename();
+			}
+		}
+		$this->set('files',$files);
 	}
 
 }
