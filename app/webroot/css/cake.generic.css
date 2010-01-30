@@ -577,3 +577,9 @@ div.code-coverage-results span.result-good {
 	border-width: 1px;
 	border-style: solid;
 }
+#loading-list ul li{
+	background: url(../img/file-loading-indicator.gif);
+	background-repeat: no-repeat;
+	list-style-type: none;
+	padding-left: 18px;
+}
