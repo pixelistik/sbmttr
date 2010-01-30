@@ -10,7 +10,6 @@ echo $javascript->link('jquery.min',false);
 ?>
 <div id="loading-list">
 </div>
-<div id="finished-form">
 <form id="UploadAddForm" method="post" action="/sbmttr/uploads/add">
 	<fieldset style="display:none;">
 		<input type="hidden" name="_method" value="POST" />
@@ -20,9 +19,9 @@ echo $javascript->link('jquery.min',false);
 		<input type="submit" value="Save files" id="submit-button" disabled="disabled" />
 	</div>
 </form>
-</div>
 <script type="text/javascript">                                         
-    $(document).ready(function() {
+    $(document).ready(function(){
+    	$('#UploadAddForm').hide();
     	refreshFilelist();
     	window.setInterval("refreshFilelist()", 2000);
     });
@@ -44,6 +43,7 @@ echo $javascript->link('jquery.min',false);
 			
 			/* Create fieldset for every new finished file. (check if hash already exists) */
 			if(data.finished){
+				$('#UploadAddForm').show();
 				for(var i=0;i<data.finished.length;i++){
 					if(!$('#'+data.finished[i].hash).length>0){
 						$('#dynamic-inputs').append(generateFieldset(
