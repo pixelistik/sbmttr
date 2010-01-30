@@ -137,7 +137,31 @@ class UploadsController extends AppController {
 			$this->redirect(array('action'=>'index'));
 		}
 	}*/
-
+	
+/**
+ * Deliver the file for download
+ *
+ * @param int $id ID of the Upload
+ * @todo Let only authorized owner download a file.
+ */
+	function download($id=null){
+		if (!$id) {
+			$this->Session->setFlash(__('Invalid Upload.', true));
+			$this->redirect(array('action'=>'index'));
+		}
+		$upload=$this->Upload->read(null, $id);
+		$filepath=$this->Upload->getFilePath($id);
+		$this->view = 'Media';
+        $params = array(
+              'id' => basename($filepath),
+              'name' => Inflector::slug($upload['Upload']['description']),
+              'download' => true,
+              'extension' => $upload['Upload']['extension'],
+              'path' => dirname($filepath).DS
+       );
+       $this->set($params);
+		
+	}
 	function isAuthorized(){
 		// Check for login is sufficient, add() does its own check on
 		// ownership of the Piece we are adding an upload to.
