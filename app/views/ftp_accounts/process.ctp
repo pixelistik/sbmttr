@@ -31,7 +31,7 @@ Password: <?php echo $ftp_account['FtpAccount']['password']; ?>
     $(document).ready(function(){
     	$('#UploadAddForm').hide();
     	refreshFilelist();
-    	window.setInterval("refreshFilelist()", 2000);
+    	window.setInterval("refreshFilelist()", 6000);
     });
 
     function refreshFilelist(){

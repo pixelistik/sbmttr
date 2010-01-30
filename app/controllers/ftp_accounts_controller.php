@@ -103,7 +103,7 @@ class FtpAccountsController extends AppController {
  * @access private
  */	
 	function __getFileStatus($file){
-		if(time()-$file->getMTime() > 30){
+		if(time()-$file->getMTime() > 20){
 			return 'finished';
 		}else{
 			return 'loading';
