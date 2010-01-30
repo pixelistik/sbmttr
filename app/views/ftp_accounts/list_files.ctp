@@ -8,20 +8,6 @@
 */
 ?>
 <?php 
-if(!empty($files)){
-	echo $form->create('Upload');
-	$i=0;
-	foreach($files as $file){ ?>
-		<fieldset>
-		<legend><?php echo $file['filename'] ?></legend>
-		<?php
-		echo $form->input('Upload.'.$i.'.piece_id');
-		echo $form->hidden('Upload.'.$i.'.filename',array('value'=>$file['filename']));
-		echo $form->input('Upload.'.$i.'.description');
-		?> </fieldset> <?php
-		$i++;
-	}
-	echo $form->end(__('Save files',true));
-}else{
-	__('No uploaded files found');
-}
+Configure::write('debug', 0);
+echo $javascript->object($files);
+?>

@@ -10,6 +10,7 @@ class FtpAccountsController extends AppController {
 
 	var $name = 'FtpAccounts';
 	var $helpers = array('Html', 'Form', 'Javascript');
+	var $components=array('RequestHandler');
 
 	function index() {
 		$this->FtpAccount->recursive = 0;
@@ -77,13 +78,15 @@ class FtpAccountsController extends AppController {
  */
 	function listFiles($id=null){
 		$this->layout='ajax';
+		$this->RequestHandler->setContent('json');
 		$files=array();
 		foreach (new DirectoryIterator($this->FtpAccount->_getFolderPath($id)) as $file) {
 			// if the file is a file and not hidden:
 			if ( !$file->isDot() && !$file->isDir() )  {
-				$files[]=array(
+				$status=$this->__getFileStatus($file);
+				$files[$this->__getFileStatus($file)][]=array(
 					'filename'=>$file->getFilename(),
-					'status'=>$this->__getFileStatus($file)
+					'hash'=>md5($file->getFilename())
 				);
 			}
 		}
