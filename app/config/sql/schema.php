@@ -1,6 +1,6 @@
 <?php 
 /* SVN FILE: $Id$ */
-/* App schema generated on: 2010-01-30 15:01:27 : 1264861107*/
+/* App schema generated on: 2010-01-30 23:01:28 : 1264891108*/
 class AppSchema extends CakeSchema {
 	var $name = 'App';
 
@@ -42,7 +42,7 @@ class AppSchema extends CakeSchema {
 	);
 	var $ftp_accounts = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 5, 'key' => 'primary'),
-		'artist_id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 5),
+		'artist_id' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 5),
 		'username' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 32),
 		'password' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 32),
 		'folder' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 32),
