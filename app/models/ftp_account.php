@@ -13,6 +13,17 @@ class FtpAccount extends AppModel {
 			'order' => ''
 		)
 	);
+/**
+ * Return local path of the folder that is the root upload folder for this FTP account
+ * @param int $id ID of the FtpAccount
+ */	
+	function _getFolderPath($id){
+		$ftp_account=$this->read(null,$id);
+		return(
+			Configure::read('ftp-upload-root').
+			$ftp_account['FtpAccount']['folder'].DS
+		);
+	}
 
 }
 ?>
