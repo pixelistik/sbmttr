@@ -75,6 +75,7 @@ class FtpAccountsController extends AppController {
  *
  * @param $id int ID of the FTP account
  * @todo Access control
+ * @todo parameter check
  */
 	function listFiles($id=null){
 		$this->layout='ajax';
@@ -114,8 +115,9 @@ class FtpAccountsController extends AppController {
  * 
  * @param int $id ID of the FTP account
  */
-	function process($id=null){
+	function process($id=null,$piece_id=null){
 		$this->set('account_id',$id);
+		$this->set('piece_id',$piece_id);
 	}
 
 }

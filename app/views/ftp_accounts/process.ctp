@@ -11,7 +11,15 @@ echo $javascript->link('jquery.min',false);
 <div id="loading-list">
 </div>
 <div id="finished-form">
-
+<form id="UploadAddForm" method="post" action="/sbmttr/uploads/add">
+	<fieldset style="display:none;">
+		<input type="hidden" name="_method" value="POST" />
+	</fieldset>
+	<div id="dynamic-inputs"></div>
+	<div class="submit">
+		<input type="submit" value="Save files" />
+	</div>
+</form>
 </div>
 <script type="text/javascript">                                         
     $(document).ready(function() {
@@ -31,14 +39,24 @@ echo $javascript->link('jquery.min',false);
 			}
 			$('#loading-list').html(loadingList);
 			
-			/* Create fieldset for every new finished file. */
+			/* Create fieldset for every new finished file. (check if hash already exists) */
 			if(data.finished){
 				for(var i=0;i<data.finished.length;i++){
 					if(!$('#'+data.finished[i].hash).length>0){
-						$('#finished-form').append('<p id="'+data.finished[i].hash+'">'+data.finished[i].filename+'</p>');						
+						$('#dynamic-inputs').append(generateFieldset(
+								$('fieldset.finished').length,
+								data.finished[i].filename,
+								data.finished[i].hash,
+								<?php echo $piece_id; ?>
+								));						
 					}
 				}
 			}
     	});
+    }
+    
+	function generateFieldset(i,filename,hash,piece_id){
+		var html='<fieldset id="'+hash+'" class="finished"><legend>'+filename+'</legend><input type="hidden" name="data[Upload]['+i+'][piece_id]" type="text" maxlength="5" value="'+piece_id+'" id="Upload'+i+'PieceId" /><input type="hidden" name="data[Upload]['+i+'][filename]" value="'+filename+'" id="Upload'+i+'Filename" /><div class="input text"><label for="Upload'+i+'Description">Beschreibung</label><input name="data[Upload]['+i+'][description]" type="text" maxlength="512" value="" id="Upload'+i+'Description" /></div></fieldset>';
+	return html;
     }
 </script>
