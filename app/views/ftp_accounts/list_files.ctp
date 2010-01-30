@@ -8,20 +8,20 @@
 */
 ?>
 <?php 
-if(!empty($files)):
-?>
-	<h3><?php echo count($files); ?> files found</h3>
-	<ul>
-	<?php 
-	foreach($files as $file):
-	?>
-	<li><?php echo $file['filename'].' ('.$file['status'].')'; ?></li>
-	<?php
-	endforeach;
-	?>
-	</ul>
-<?php 
-else:
-?>
-<h3>No uploaded files found</h3>
-<?php endif; ?>
+if(!empty($files)){
+	echo $form->create('Upload');
+	$i=0;
+	foreach($files as $file){ ?>
+		<fieldset>
+		<legend><?php echo $file['filename'] ?></legend>
+		<?php
+		echo $form->input('Upload.'.$i.'.piece_id');
+		echo $form->hidden('Upload.'.$i.'.filename',array('value'=>$file['filename']));
+		echo $form->input('Upload.'.$i.'.description');
+		?> </fieldset> <?php
+		$i++;
+	}
+	echo $form->end(__('Save files',true));
+}else{
+	__('No uploaded files found');
+}
