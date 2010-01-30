@@ -6,6 +6,7 @@ $config['organisation_email_domain']='sample.organisation.tld';
 $config['header-title']='Sample Submissions';
 $config['ftp-hostname']='server.test';
 $config['ftp-upload-root']=APP.'..'.DS.'ftp-uploads-tmp'.DS;
+$config['upload-storage-root']=APP.'..'.DS.'uploads'.DS;
 // Accepted file extensions for different upload types:
 $config['accepted_file_extensions']=array(
 	'image'=>array(
