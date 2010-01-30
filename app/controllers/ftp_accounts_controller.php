@@ -73,6 +73,7 @@ class FtpAccountsController extends AppController {
  * List all new files in the upload folder for further processing (AJAX)
  *
  * @param $id int ID of the FTP account
+ * @todo Access control
  */
 	function listFiles($id=null){
 		$this->layout='ajax';
@@ -84,6 +85,15 @@ class FtpAccountsController extends AppController {
 			}
 		}
 		$this->set('files',$files);
+	}
+
+/**
+ * Select and move uploaded files from the ftp folder
+ * 
+ * @param int $id ID of the FTP account
+ */
+	function process($id=null){
+		$this->set('account_id',$id);
 	}
 
 }

@@ -7,12 +7,20 @@
 *
 */
 ?>
-<ul>
 <?php 
-foreach($files as $file):
+if(!empty($files)):
 ?>
-<li><?php echo $file; ?></li>
-<?php
-endforeach;
+	<ul>
+	<?php 
+	foreach($files as $file):
+	?>
+	<li><?php echo $file; ?></li>
+	<?php
+	endforeach;
+	?>
+	</ul>
+<?php 
+else:
 ?>
-</ul>
+<p>No uploaded files found</p>
+<?php endif; ?>
