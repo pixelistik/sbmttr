@@ -6,8 +6,16 @@
 * http://www.fsf.org/licensing/licenses/agpl.html
 *
 */
-echo $javascript->link('jquery.min',false);
+$javascript->link('jquery.min',false);
 ?>
+<div id="ftp-account-info">
+<h2><?php __('Your ftp information'); ?><a href="#" onClick="javascript:$('#ftp-account-info').hide();false;">(hide)</a></h2>
+<p>
+Server: <?php echo Configure::read('ftp-hostname'); ?><br/>
+Username: <?php echo $ftp_account['FtpAccount']['username']; ?><br/>
+Password: <?php echo $ftp_account['FtpAccount']['password']; ?>
+</p>
+</div>
 <div id="loading-list">
 </div>
 <form id="UploadAddForm" method="post" action="/sbmttr/uploads/add">

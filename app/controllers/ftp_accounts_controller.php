@@ -114,10 +114,12 @@ class FtpAccountsController extends AppController {
  * Select and move uploaded files from the ftp folder
  * 
  * @param int $id ID of the FTP account
+ * @param int $piece_id ID of the piece which the file is related to
  */
 	function process($id=null,$piece_id=null){
 		$this->set('account_id',$id);
 		$this->set('piece_id',$piece_id);
+		$this->set('ftp_account',$this->FtpAccount->read(null,$id));
 	}
 
 }
