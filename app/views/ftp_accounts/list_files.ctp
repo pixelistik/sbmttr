@@ -10,11 +10,12 @@
 <?php 
 if(!empty($files)):
 ?>
+	<h3><?php echo count($files); ?> files found</h3>
 	<ul>
 	<?php 
 	foreach($files as $file):
 	?>
-	<li><?php echo $file; ?></li>
+	<li><?php echo $file['filename'].' ('.$file['status'].')'; ?></li>
 	<?php
 	endforeach;
 	?>
@@ -22,5 +23,5 @@ if(!empty($files)):
 <?php 
 else:
 ?>
-<p>No uploaded files found</p>
+<h3>No uploaded files found</h3>
 <?php endif; ?>

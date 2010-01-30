@@ -81,10 +81,29 @@ class FtpAccountsController extends AppController {
 		foreach (new DirectoryIterator($this->FtpAccount->_getFolderPath($id)) as $file) {
 			// if the file is a file and not hidden:
 			if ( !$file->isDot() && !$file->isDir() )  {
-				$files[]=$file->getFilename();
+				$files[]=array(
+					'filename'=>$file->getFilename(),
+					'status'=>$this->__getFileStatus($file)
+				);
 			}
 		}
 		$this->set('files',$files);
+	}
+/**
+ * Return the status of the file. Has it finished uploading?
+ * 
+ * Simple calculation based on the current time and the modification date on 
+ * the file. If it has not been touched for a while, assumed that upload has finished.
+ * 
+ * @param DirectoryIterator $file File object of the file to check.
+ * @access private
+ */	
+	function __getFileStatus($file){
+		if(time()-$file->getMTime() > 30){
+			return 'finished';
+		}else{
+			return 'loading';
+		}
 	}
 
 /**
