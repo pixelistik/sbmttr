@@ -35,21 +35,7 @@ class UploadsController extends AppController {
 		}
 		// Retrieve the piece
 		$piece=$this->Upload->Piece->find('first',array('conditions'=>array('Piece.id'=>$piece_id) ) );
-		// Read allowed file types
-		$requirements=$this->Upload->Piece->Type->Requirement->find('all',array('conditions'=>array(
-			'Requirement.type_id'=>$piece['Type']['id'],
-			'Requirement.info_title'=>array('Uploads.image','Uploads.document','Uploads.video'),
-			'Requirement.kind'=>array(1,2)
-		)));
-		$allowed_filetypes=array();
-		foreach($requirements as $requirement){
-			$allowed_filetypes=array_merge(
-				$allowed_filetypes,
-				Configure::read(
-					'accepted_file_extensions.'.substr($requirement['Requirement']['info_title'],8)
-				)
-			);
-		}
+		$allowed_filetypes=$this->__getAllowedFiletypes($piece_id);
 		$this->set('allowed_filetypes',$allowed_filetypes);
 		
 		if (!empty($this->data)) {
@@ -111,6 +97,33 @@ class UploadsController extends AppController {
 			}
 		}
 
+	}
+	
+/**
+ * Returns an array of all file extensions that can be uploaded to the give Piece.
+ * 
+ * Information is retrieved from the Requirements of the Type of the Piece
+ *  
+ * @param int $piece_id ID of an existing Piece.
+ */	
+	function __getAllowedFiletypes($piece_id){
+		// Retrieve the upload requirements for the type of the give piece:
+		$type_id=$this->Upload->Piece->field('type_id',array('Piece.id'=>$piece_id) );
+		$requirements=$this->Upload->Piece->Type->Requirement->find('all',array('conditions'=>array(
+			'Requirement.type_id'=>$type_id,
+			'Requirement.info_title'=>array('Uploads.image','Uploads.document','Uploads.video'),
+			'Requirement.kind'=>array(1,2)
+		)));
+		$allowed_filetypes=array();
+		foreach($requirements as $requirement){
+			$allowed_filetypes=array_merge(
+				$allowed_filetypes,
+				Configure::read(
+					'accepted_file_extensions.'.substr($requirement['Requirement']['info_title'],8)
+				)
+			);
+		}
+		return $allowed_filetypes;
 	}
 
 	function edit($id = null) {
