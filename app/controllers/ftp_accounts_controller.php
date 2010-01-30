@@ -9,7 +9,7 @@
 class FtpAccountsController extends AppController {
 
 	var $name = 'FtpAccounts';
-	var $helpers = array('Html', 'Form');
+	var $helpers = array('Html', 'Form', 'Javascript');
 
 	function index() {
 		$this->FtpAccount->recursive = 0;
