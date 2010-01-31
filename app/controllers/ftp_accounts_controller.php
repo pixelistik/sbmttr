@@ -76,6 +76,7 @@ class FtpAccountsController extends AppController {
  * @param $id int ID of the FTP account
  * @todo Access control
  * @todo parameter check
+ * @todo If non-existing account folder is given, why list the root upload folder?
  */
 	function listFiles($id=null){
 		$this->layout='ajax';
