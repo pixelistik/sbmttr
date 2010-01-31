@@ -23,7 +23,9 @@ class Upload extends AppModel {
 	
 	var $validate=array(
 		'extension'=>array(
-			'rule'=>array('matchingExtension')
+			'allowedType'=>array(
+				'rule'=>array('matchingExtension')
+			)
 		)
 	);
 /**
