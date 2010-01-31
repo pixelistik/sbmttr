@@ -30,12 +30,20 @@ class Upload extends AppModel {
 	);
 /**
  * Custom validation: Check if the extension matches one of the allowed file types for the given Piece.
- * @param $check
+ * 
+ * @param array $check The field to validate. 
  */	
 	function matchingExtension($check){
 		return in_array(strtolower($check['extension']),$this->_getAllowedFiletypes($this->data['Upload']['piece_id']));
 	}
-	
+/**
+ * Returns the local path to the uploaded file.
+ * 
+ * The path is constructed from a base path from config, a subfolder for every 
+ * Piece (its ID) and the actual filename of the Upload (ID plus extension)
+ * 
+ * @param $id
+ */	
 	function getFilePath($id){
 		$upload=$this->findById($id);
 		$uploadFolder=APP.'..'.DS.'uploads'.DS.sprintf('%05d',$upload['Upload']['piece_id']).DS;
