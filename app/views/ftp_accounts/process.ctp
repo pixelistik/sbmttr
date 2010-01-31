@@ -18,7 +18,7 @@ Password: <?php echo $ftp_account['FtpAccount']['password']; ?>
 </div>
 <div id="loading-list">
 </div>
-<form id="UploadAddForm" method="post" action="/sbmttr/uploads/add">
+<form id="UploadAddForm" method="post" action="/sbmttr/uploads/addFromFtp/<?php echo $ftp_account['FtpAccount']['id']; ?>">
 	<fieldset style="display:none;">
 		<input type="hidden" name="_method" value="POST" />
 	</fieldset>

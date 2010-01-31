@@ -35,7 +35,7 @@ class UploadsController extends AppController {
 		}
 		// Retrieve the piece
 		$piece=$this->Upload->Piece->find('first',array('conditions'=>array('Piece.id'=>$piece_id) ) );
-		$allowed_filetypes=$this->__getAllowedFiletypes($piece_id);
+		$allowed_filetypes=$this->Upload->_getAllowedFiletypes($piece_id);
 		$this->set('allowed_filetypes',$allowed_filetypes);
 		
 		if (!empty($this->data)) {
@@ -50,7 +50,9 @@ class UploadsController extends AppController {
 				$this->Session->setFlash(__('You are not logged in or not allowed to edit this piece.', true));
 				$this->redirect(array('controller'=>'pieces','action'=>'index'));
 			}
-				
+			// Extract file extension:
+			preg_match("/\.([^\.]+)$/", $this->data['Upload']['content']['name'], $matches);
+			$this->data['Upload']['extension']=$matches[1];
 			$this->Upload->create();
 			if ($this->Upload->save($this->data)) {
 				// Handle the uploaded file:
@@ -65,14 +67,6 @@ class UploadsController extends AppController {
 					// Error Code 1 means file size exceeds the upload_max_filesize directive in php.ini.
 					$uploadProblems=true;
 					$uploadErrorReport=$uploadErrorReport.' '.__('The file is too big.',true);
-				}
-				// Extract file extension:
-				preg_match("/\.([^\.]+)$/", $this->data['Upload']['content']['name'], $matches);
-				$this->data['Upload']['extension']=$matches[1];
-				// Type check according to allowed types for corresponding piece type. Fixed for images for now
-				if(!in_array($this->data['Upload']['extension'],$allowed_filetypes)){
-					$uploadProblems=true;
-					$uploadErrorReport=$uploadErrorReport.' '.__('This file type is not allowed.',true);
 				}
 				if($this->data['Upload']['content']['error'] != 0){
 					$uploadProblems=true;
@@ -100,32 +94,29 @@ class UploadsController extends AppController {
 	}
 	
 /**
- * Returns an array of all file extensions that can be uploaded to the give Piece.
+ * Creates db records for files uploaded via FTP and moves them into the right folder.
  * 
- * Information is retrieved from the Requirements of the Type of the Piece
- *  
- * @param int $piece_id ID of an existing Piece.
+ * @param int $ftp_account_id ID of the FTP account from which the files were uploaded
+ * @todo Authority checks: does the ftp account belong to the current user? For every upload: does the user have acess to the piece?
  */	
-	function __getAllowedFiletypes($piece_id){
-		// Retrieve the upload requirements for the type of the give piece:
-		$type_id=$this->Upload->Piece->field('type_id',array('Piece.id'=>$piece_id) );
-		$requirements=$this->Upload->Piece->Type->Requirement->find('all',array('conditions'=>array(
-			'Requirement.type_id'=>$type_id,
-			'Requirement.info_title'=>array('Uploads.image','Uploads.document','Uploads.video'),
-			'Requirement.kind'=>array(1,2)
-		)));
-		$allowed_filetypes=array();
-		foreach($requirements as $requirement){
-			$allowed_filetypes=array_merge(
-				$allowed_filetypes,
-				Configure::read(
-					'accepted_file_extensions.'.substr($requirement['Requirement']['info_title'],8)
-				)
-			);
-		}
-		return $allowed_filetypes;
+	function addFromFtp($ftp_account_id){
+		debug($this->data);
+		debug($this->Upload->Piece->Artist->FtpAccount->_getFolderPath($ftp_account_id));
+		foreach($this->data['Upload'] as $upload){
+			// Extract file extension:
+			preg_match("/\.([^\.]+)$/", $this->data['Upload']['content']['name'], $matches);
+			$upload['extension']=$matches[1];
+			// Check if filetype is allowed
+			if(!in_array($this->data['Upload']['extension'],$this->Upload->_getAllowedFiletypes())){
+				
+			}
+			// Create record
+			// Save record
+			// move file
+			// delete record if moving failed
+		}		
 	}
-
+	
 	function edit($id = null) {
 		if (!$id && empty($this->data)) {
 			$this->Session->setFlash(__('Invalid Upload', true));
