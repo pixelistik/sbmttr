@@ -7,7 +7,7 @@ echo $form->create('Upload',array(
 	<fieldset>
  		<legend><?php __('Add Upload');?></legend>
 	<?php
-		echo $form->input('content',array(
+		echo $form->input('file',array(
 			'type'=>'file',
 			'label'=>sprintf(
 				__('Select file, %01.2f MB max. Allowed types: %s',true),

@@ -51,7 +51,7 @@ class UploadsController extends AppController {
 				$this->redirect(array('controller'=>'pieces','action'=>'index'));
 			}
 			// Extract file extension:
-			preg_match("/\.([^\.]+)$/", $this->data['Upload']['content']['name'], $matches);
+			preg_match("/\.([^\.]+)$/", $this->data['Upload']['file']['name'], $matches);
 			$this->data['Upload']['extension']=$matches[1];
 			$this->Upload->create();
 			if ($this->Upload->save($this->data)) {
@@ -59,16 +59,16 @@ class UploadsController extends AppController {
 				// Check for some possible problems:
 				$uploadProblems=false;
 				$uploadErrorReport='';
-				if(empty($this->data['Upload']['content']['name'])){
+				if(empty($this->data['Upload']['file']['name'])){
 					$uploadProblems=true;
 					$uploadErrorReport=$uploadErrorReport.' '.__('You did not choose a file.',true);
 				}
-				if($this->data['Upload']['content']['size'] > Configure::read('max_file_upload_size') || $this->data['Upload']['content']['error']==1){
+				if($this->data['Upload']['file']['size'] > Configure::read('max_file_upload_size') || $this->data['Upload']['file']['error']==1){
 					// Error Code 1 means file size exceeds the upload_max_filesize directive in php.ini.
 					$uploadProblems=true;
 					$uploadErrorReport=$uploadErrorReport.' '.__('The file is too big.',true);
 				}
-				if($this->data['Upload']['content']['error'] != 0){
+				if($this->data['Upload']['file']['error'] != 0){
 					$uploadProblems=true;
 					$uploadErrorReport=$uploadErrorReport.' '.__('Upload Error.',true);
 				}
@@ -77,7 +77,7 @@ class UploadsController extends AppController {
 					$uploadPath=Configure::read('upload-storage-root').sprintf('%05d',$this->data['Upload']['piece_id']).DS;
 					// Try to create the Piece directory (might already exist)
 					@mkdir($uploadPath);
-					move_uploaded_file($this->data['Upload']['content']['tmp_name'],sprintf('%s%05d.%s',$uploadPath,$this->Upload->id,$this->data['Upload']['extension']));
+					move_uploaded_file($this->data['Upload']['file']['tmp_name'],sprintf('%s%05d.%s',$uploadPath,$this->Upload->id,$this->data['Upload']['extension']));
 					$this->Upload->save($this->data); // Update extension
 					$this->Session->setFlash(__('The Upload has been saved.', true));
 					$this->redirect(array('action'=>'view',$this->Upload->id));
@@ -104,12 +104,8 @@ class UploadsController extends AppController {
 		debug($this->Upload->Piece->Artist->FtpAccount->_getFolderPath($ftp_account_id));
 		foreach($this->data['Upload'] as $upload){
 			// Extract file extension:
-			preg_match("/\.([^\.]+)$/", $this->data['Upload']['content']['name'], $matches);
+			preg_match("/\.([^\.]+)$/", $this->data['Upload']['file']['name'], $matches);
 			$upload['extension']=$matches[1];
-			// Check if filetype is allowed
-			if(!in_array($this->data['Upload']['extension'],$this->Upload->_getAllowedFiletypes())){
-				
-			}
 			// Create record
 			// Save record
 			// move file
