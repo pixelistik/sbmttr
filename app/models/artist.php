@@ -129,6 +129,7 @@ class Artist extends AppModel {
 			'unique' => false,
 		)
 	);
+	var $hasOne=array('FtpAccount');
 
 }
 ?>
