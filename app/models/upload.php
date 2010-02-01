@@ -42,11 +42,11 @@ class Upload extends AppModel {
  * The path is constructed from a base path from config, a subfolder for every 
  * Piece (its ID) and the actual filename of the Upload (ID plus extension)
  * 
- * @param $id
+ * @param int $id The Upload ID of the file.
  */	
 	function getFilePath($id){
 		$upload=$this->findById($id);
-		$uploadFolder=APP.'..'.DS.'uploads'.DS.sprintf('%05d',$upload['Upload']['piece_id']).DS;
+		$uploadFolder=Configure::read('upload-storage-root').sprintf('%05d',$upload['Upload']['piece_id']).DS;
 		$path=sprintf('%s%05d.%s',$uploadFolder,$upload['Upload']['id'],$upload['Upload']['extension']);
 		return($path);
 	}
