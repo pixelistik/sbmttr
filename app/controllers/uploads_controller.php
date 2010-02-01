@@ -42,11 +42,12 @@ class UploadsController extends AppController {
 			// Write piece id into data:
 			$this->data['Upload']['piece_id']=$piece_id;
 			// Check if the logged in user is allowed to edit this piece:
-			$allowed=false;
-			foreach($piece['Artist'] as $artist){
-				$allowed=$allowed || $artist['id'] == $this->Auth->user('id');
-			}
-			if(!$allowed){
+			if(!
+				$this->Upload->Piece->artistHasAccess(
+					$this->data['Upload']['piece_id'],
+					$this->Auth->user('id')
+				)
+			){
 				$this->Session->setFlash(__('You are not logged in or not allowed to edit this piece.', true));
 				$this->redirect(array('controller'=>'pieces','action'=>'index'));
 			}
@@ -105,6 +106,16 @@ class UploadsController extends AppController {
 		debug($this->Upload->Piece->Artist->FtpAccount->_getFolderPath($ftp_account_id));
 		foreach($this->data['Upload'] as $upload){
 			debug('Saving '.$upload['filename']);
+			// Check access:
+			if(!
+					$this->Upload->Piece->artistHasAccess(
+						$this->$upload['piece_id'],
+						$this->Auth->user('id')
+					)
+				){
+					$this->Session->setFlash(__('You are not logged in or not allowed to edit this piece.', true));
+					$this->redirect(array('controller'=>'pieces','action'=>'index'));
+				}
 			// Extract file extension:
 			preg_match("/\.([^\.]+)$/", $upload['filename'], $matches);
 			$upload['extension']=$matches[1];
@@ -114,6 +125,7 @@ class UploadsController extends AppController {
 			if($this->Upload->save($upload)){
 				$uploadProblems=false;
 				$uploadErrorReport='';
+				// @todo Error reports should be collected for all files, not overwriting each other.
 				// Check if too big
 				if(
 					filesize(
