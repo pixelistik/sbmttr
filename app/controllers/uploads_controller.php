@@ -77,6 +77,7 @@ class UploadsController extends AppController {
 					$uploadPath=Configure::read('upload-storage-root').sprintf('%05d',$this->data['Upload']['piece_id']).DS;
 					// Try to create the Piece directory (might already exist)
 					@mkdir($uploadPath);
+					// @todo Handle error if moving fails
 					move_uploaded_file($this->data['Upload']['file']['tmp_name'],sprintf('%s%05d.%s',$uploadPath,$this->Upload->id,$this->data['Upload']['extension']));
 					$this->Upload->save($this->data); // Update extension
 					$this->Session->setFlash(__('The Upload has been saved.', true));
@@ -127,11 +128,14 @@ class UploadsController extends AppController {
 					// Create folder, might already exist
 					@mkdir(dirname($this->Upload->getFilePath($this->Upload->id)));
 					// Now move the uploaded file
-					rename(
+					if(!rename(
 						$this->Upload->Piece->Artist->FtpAccount->_getFolderPath($ftp_account_id).
 						$upload['filename'],
 						$this->Upload->getFilePath($this->Upload->id)
-					);					
+					)){
+						$this->Upload->del($this->Upload->id);
+						$this->Session->setFlash(__('Error! Your FTP upload could not be processed. There is a problem with file permissions. Please talk to staff, meanwhile, your uploaded file is safe.', true));
+					}					
 				}else{
 					$this->Upload->del($this->Upload->id);
 					$this->Session->setFlash(__('Error! Your FTP upload could not be processed. ', true).$uploadErrorReport);
