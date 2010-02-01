@@ -118,6 +118,10 @@ class FtpAccountsController extends AppController {
  * @param int $piece_id ID of the piece which the file is related to
  */
 	function process($id=null,$piece_id=null){
+		if(empty($id) || empty($piece_id)){
+			$this->Session->setFlash(__('Invalid IDs',true));
+			$this->redirect('/');
+		}
 		$this->set('account_id',$id);
 		$this->set('piece_id',$piece_id);
 		$this->set('ftp_account',$this->FtpAccount->read(null,$id));
