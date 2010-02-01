@@ -10,7 +10,7 @@ class FtpAccountsController extends AppController {
 
 	var $name = 'FtpAccounts';
 	var $helpers = array('Html', 'Form', 'Javascript');
-	var $components=array('RequestHandler');
+	var $components=array('RequestHandler','Auth');
 
 	function index() {
 		$this->FtpAccount->recursive = 0;
@@ -122,6 +122,32 @@ class FtpAccountsController extends AppController {
 		$this->set('piece_id',$piece_id);
 		$this->set('ftp_account',$this->FtpAccount->read(null,$id));
 	}
+	
+/**
+ * Assigns a FTP account to the current user if necessary. Then redirect to upload processing.
+ * 
+ * @param int $piece_id ID of the Piece to which a file should be added.
+ */	
+	function activate($piece_id=null){
+		if(empty($user_id) && empty($this->data)){
+			$this->Session->setFlash(__('Invalid ID',true));
+			$this->redirect('/');
+		}
+		// If the current user already has an ftp account, redirect to /process
+		$ftp_account_id=$this->FtpAccount->field('id',array('artist_id'=>$this->Auth->user('id')));
+		if($ftp_account_id){
+			$this->redirect(array('action'=>'process',$ftp_account_id,$piece_id));
+		}
+		// If start button was clicked, assign an account to user, then reload to proceed
+		if(!empty($this->data)){
+			$free_ftp_account=$this->FtpAccount->find('first',array('conditions'=>array('artist_id'=>null)));
+			$free_ftp_account['FtpAccount']['artist_id']=$this->Auth->user('id');
+			$this->FtpAccount->save($free_ftp_account);
+			$this->redirect('activate');
+		}else{
+			$this->data['FtpAccount']['piece_id']=$piece_id;
+		}
+	}	
 
 }
 ?>
