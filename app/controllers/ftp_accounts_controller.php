@@ -129,7 +129,7 @@ class FtpAccountsController extends AppController {
  * @param int $piece_id ID of the Piece to which a file should be added.
  */	
 	function activate($piece_id=null){
-		if(empty($user_id) && empty($this->data)){
+		if(empty($piece_id) && empty($this->data)){
 			$this->Session->setFlash(__('Invalid ID',true));
 			$this->redirect('/');
 		}
