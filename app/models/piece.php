@@ -195,5 +195,26 @@ class Piece extends AppModel {
 		debug($data);
 		return(true);
 	}
+	
+/**
+ * Check if a given Artist may access a given Piece.
+ * 
+ * An Artist can access a Piece if he/she is one of the related artists
+ * 
+ * @param int $id ID of the Piece to check against
+ * @param int $artist_id ID of the Artist whose access should be checked
+ */	
+	function artistHasAccess($id,$artist_id){
+		$piece=$this->read(null,$id);
+		if(empty($piece)){
+			return false;
+		}
+		$allowed=false;
+		// Check if the given $id is among the artists
+		foreach($piece['Artist'] as $artist){
+			$allowed=$allowed || $artist['id'] == $artist_id;
+		}
+		return $allowed;
+	}
 }
 ?>
