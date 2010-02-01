@@ -23,3 +23,4 @@ echo $form->create('Upload',array(
 	</fieldset>
 <?php echo $form->end('Submit');?>
 </div>
+<?php echo $html->link(__('FTP upload',true),array('controller'=>'ftp_accounts','action'=>'activate',$piece_id))?>
