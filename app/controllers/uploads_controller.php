@@ -103,13 +103,44 @@ class UploadsController extends AppController {
 		debug($this->data);
 		debug($this->Upload->Piece->Artist->FtpAccount->_getFolderPath($ftp_account_id));
 		foreach($this->data['Upload'] as $upload){
+			debug('Saving '.$upload['filename']);
 			// Extract file extension:
-			preg_match("/\.([^\.]+)$/", $this->data['Upload']['file']['name'], $matches);
+			preg_match("/\.([^\.]+)$/", $upload['filename'], $matches);
 			$upload['extension']=$matches[1];
 			// Create record
+			$this->Upload->create();
 			// Save record
-			// move file
-			// delete record if moving failed
+			if($this->Upload->save($upload)){
+				$uploadProblems=false;
+				$uploadErrorReport='';
+				// Check if too big
+				if(
+					filesize(
+						$this->Upload->Piece->Artist->FtpAccount->_getFolderPath($ftp_account_id).
+						$upload['filename']
+					) > Configure::read('max_ftp_upload_size')
+				){
+					$uploadProblems=true;
+					$uploadErrorReport.='The file is too big. ';
+				}
+				if(!$uploadProblems){
+					// Create folder, might already exist
+					@mkdir(dirname($this->Upload->getFilePath($this->Upload->id)));
+					// Now move the uploaded file
+					rename(
+						$this->Upload->Piece->Artist->FtpAccount->_getFolderPath($ftp_account_id).
+						$upload['filename'],
+						$this->Upload->getFilePath($this->Upload->id)
+					);					
+				}else{
+					$this->Upload->del($this->Upload->id);
+					$this->Session->setFlash(__('Error! Your FTP upload could not be processed. ', true).$uploadErrorReport);
+				}				
+			}else{
+				// @todo Read reason: Validation failed?
+				$this->Session->setFlash(__('The Upload could not be saved. Please, try again.', true));
+			}
+			
 		}		
 	}
 	
