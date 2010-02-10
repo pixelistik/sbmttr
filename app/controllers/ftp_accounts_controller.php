@@ -131,6 +131,7 @@ class FtpAccountsController extends AppController {
  * Assigns a FTP account to the current user if necessary. Then redirect to upload processing.
  * 
  * @param int $piece_id ID of the Piece to which a file should be added.
+ * @todo Authorize actions
  */	
 	function activate($piece_id=null){
 		if(empty($piece_id) && empty($this->data)){
