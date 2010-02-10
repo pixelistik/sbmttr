@@ -146,12 +146,15 @@ class PiecesController extends AppController {
 				}
 				// Session preset type can now be erased:
 				$this->Session->del('type_id_preset');
-				// If pictures are possible for this type, redirect to picture upload now:
-				//$picturesRequired=$this->Piece->Type->Requirement->find('first',array('recursive'=>0,'conditions'=>array('Requirement.type_id'=>$this->data['Piece']['type_id'],'Requirement.info_title'=>'Pictures')));
-				$picturesRequired=$this->Piece->Type->Requirement->field('kind',array('Requirement.type_id'=>$this->data['Piece']['type_id'],'Requirement.info_title'=>'Pictures'));
-				if($picturesRequired>0){
-					$this->Session->setFlash(__('Your submission has been saved. Thank you. You can add images now.', true));
-					$this->redirect(array('controller'=>'Pictures','action'=>'add',$this->Piece->id));
+				// Redirect to uploads, if any upload is possible for this type
+				$uploadsPossible=$this->Piece->Type->Requirement->find('count',array('recursive'=>0,'conditions'=>array(
+					'Requirement.type_id'=>$this->data['Piece']['type_id'],
+					'Requirement.info_title LIKE'=>'Uploads.%',
+					'Requirement.kind >'=>0
+				)));
+				if($uploadsPossible>0){
+					$this->Session->setFlash(__('Your submission has been saved. Thank you. You can add files now.', true));
+					$this->redirect(array('controller'=>'uploads','action'=>'add',$this->Piece->id));
 				}else{
 					// Just display the piece:
 					$this->Session->setFlash(__('Your submission has been saved. Thank you. Here is an overview for printing/saving', true));
