@@ -81,6 +81,10 @@ class FtpAccountsController extends AppController {
 	function listFiles($id=null){
 		$this->layout='ajax';
 		$this->RequestHandler->setContent('json');
+		// Check access
+		if(!$this->Auth->user('id')==$this->FtpAccount->field('artist_id',array('id'=>$id))){
+			exit();			
+		}
 		$files=array();
 		foreach (new DirectoryIterator($this->FtpAccount->_getFolderPath($id)) as $file) {
 			// if the file is a file and not hidden:
@@ -131,7 +135,7 @@ class FtpAccountsController extends AppController {
  * Assigns a FTP account to the current user if necessary. Then redirect to upload processing.
  * 
  * @param int $piece_id ID of the Piece to which a file should be added.
- * @todo Authorize actions
+ * @todo Error if no free account is left.
  */	
 	function activate($piece_id=null){
 		if(empty($piece_id) && empty($this->data)){
@@ -148,11 +152,20 @@ class FtpAccountsController extends AppController {
 			$free_ftp_account=$this->FtpAccount->find('first',array('conditions'=>array('artist_id'=>null)));
 			$free_ftp_account['FtpAccount']['artist_id']=$this->Auth->user('id');
 			$this->FtpAccount->save($free_ftp_account);
-			$this->redirect('activate');
+			$this->redirect('activate',$piece_id);
 		}else{
 			$this->data['FtpAccount']['piece_id']=$piece_id;
 		}
-	}	
+	}
+		
+function isAuthorized(){
+		// A user must be logged in
+		if($this->Auth->user('email')){
+			return true;
+		}
+		// Ask parent if no rule found so far:
+		return parent::isAuthorized();
+	}
 
 }
 ?>
