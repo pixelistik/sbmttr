@@ -41,7 +41,7 @@ echo $javascript->link('jquery.tools.min',false); ?>
 	    // custom opacity setting 
 	    opacity: 0.7 
 	});
-	// PREVIEW URL:
+	// Additional Elements:
 	// Hide if not used:
 	// Show URL input only, if radio 2 is checked:
 			if($(".preview-copy-radio:checked").val()==2){
@@ -49,14 +49,27 @@ echo $javascript->link('jquery.tools.min',false); ?>
 			}else{
 				$("#preview-url-field").hide();
 			}
+	// Same for mailing information (=1)
+			if($(".preview-copy-radio:checked").val()==0){
+				$("#mail-helptext").show();
+			}else{
+				$("#mail-helptext").hide();
+			}
 	// Do the same check if buttons are changed by user:
 	$(".preview-copy-radio").click(
 		function(){
+			//alert($(".preview-copy-radio:checked").val());
 			// Show URL input, if radio 2 is checked:
 			if($(".preview-copy-radio:checked").val()==2){
 				$("#preview-url-field").show();
 			}else{
 				$("#preview-url-field").hide();
+			}
+			// Same for mailing information (=1)
+			if($(".preview-copy-radio:checked").val()==0){
+				$("#mail-helptext").show();
+			}else{
+				$("#mail-helptext").hide();
 			}
 		}
 		)
@@ -113,12 +126,17 @@ echo $javascript->link('jquery.tools.min',false); ?>
 			<fieldset id="preview-copy-selection">
 			<legend><?php __('How will we get a preview copy?')?></legend>
 			<?php
-			if($requirements['preview_how']>0) echo $form->input('preview_how',array('class'=>'preview-copy-radio','type'=>'radio','legend'=>false,'options'=>array(__('Via normal Mail (send us a DVD or miniDV tape)',true),__('I want to upload it (we\'ll tell you how)',true),__('It is online anyway (tell us the URL)',true)) ) );
+			if($requirements['preview_how']>0) echo $form->input('preview_how',array('class'=>'preview-copy-radio','type'=>'radio','legend'=>false,'options'=>array(__('Via normal Mail (send us a DVD or miniDV tape)',true),__('I want to upload it (in the next step)',true),__('It is online anyway (tell us the URL)',true)) ) );
 			if($helpText['preview_how']) echo $html->div('help-text',$helpText['preview_how']);
 			
 			if($requirements['preview_url']>0) echo $form->input('preview_url',array('type'=>'text','div'=>array('id'=>'preview-url-field'),'label'=>'please enter the URL where your work can be accessed' ) );
 			if($helpText['preview_url']) echo $html->div('help-text',$helpText['preview_url']);
 			?>
+			<div id="mail-helptext">
+			Please 
+			<?php echo $html->link(__('click here',true),array('controller'=>'pages','action'=>'display','postal'),array('target'=>'_blank'));?>
+			to get our postal address and other mailing information (opens in new window).
+			</div>
 			</fieldset>
 		<?php }; ?>
 		<fieldset id="additional-artists">
