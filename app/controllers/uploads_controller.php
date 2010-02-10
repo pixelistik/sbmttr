@@ -82,7 +82,7 @@ class UploadsController extends AppController {
 					move_uploaded_file($this->data['Upload']['file']['tmp_name'],sprintf('%s%05d.%s',$uploadPath,$this->Upload->id,$this->data['Upload']['extension']));
 					$this->Upload->save($this->data); // Update extension
 					$this->Session->setFlash(__('The Upload has been saved.', true));
-					$this->redirect(array('action'=>'view',$this->Upload->id));
+					$this->redirect(array('controller'=>'pieces','action'=>'view',$this->data['Upload']['piece_id']));
 				}else{
 					// Delete the record again, because there is no corresponding file now:
 					$this->Upload->del($this->Upload->id);
@@ -196,7 +196,6 @@ class UploadsController extends AppController {
  * Deliver the file for download
  *
  * @param int $id ID of the Upload
- * @todo Let only authorized owner download a file.
  */
 	function download($id=null){
 		if (!$id) {
@@ -204,16 +203,27 @@ class UploadsController extends AppController {
 			$this->redirect(array('action'=>'index'));
 		}
 		$upload=$this->Upload->read(null, $id);
-		$filepath=$this->Upload->getFilePath($id);
-		$this->view = 'Media';
-        $params = array(
-              'id' => basename($filepath),
-              'name' => Inflector::slug($upload['Upload']['description']),
-              'download' => true,
-              'extension' => $upload['Upload']['extension'],
-              'path' => dirname($filepath).DS
-       );
-       $this->set($params);
+		// Check access
+		if(!$this->Upload->Piece->artistHasAccess(
+			$upload['Piece']['id'],
+			$this->Auth->user('id')
+			) &&
+			!$this->Auth->user('is_admin')
+		){
+			$this->Session->setFlash(__('You may not download this file.', true));
+			$this->redirect(array('action'=>'index'));
+		}else{
+			$filepath=$this->Upload->getFilePath($id);
+			$this->view = 'Media';
+	        $params = array(
+	              'id' => basename($filepath),
+	              'name' => Inflector::slug($upload['Upload']['description']),
+	              'download' => true,
+	              'extension' => $upload['Upload']['extension'],
+	              'path' => dirname($filepath).DS
+	       );
+	       $this->set($params);
+		}
 		
 	}
 	function isAuthorized(){
