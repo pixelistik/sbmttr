@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2009-07-13 00:06+0200\n"
+"POT-Creation-Date: 2010-02-11 16:15+0100\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -18,344 +18,625 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: /controllers/app_controller.php:49
+#: /controllers/app_controller.php:48
 msgid "Login failed. Please try again."
 msgstr ""
 
-#: /controllers/artists_controller.php:15;56
+#: /controllers/artists_controller.php:22;63
 msgid "Invalid Artist."
 msgstr ""
 
-#: /controllers/artists_controller.php:40
+#: /controllers/artists_controller.php:47
 msgid "Your artist account was created."
 msgstr ""
 
-#: /controllers/artists_controller.php:48
+#: /controllers/artists_controller.php:55
 msgid "Your artist information could not be saved. Please check the data you entered."
 msgstr ""
 
-#: /controllers/artists_controller.php:61
+#: /controllers/artists_controller.php:68
 msgid "The Artist has been saved"
 msgstr ""
 
-#: /controllers/artists_controller.php:64
+#: /controllers/artists_controller.php:71
 msgid "The Artist could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/artists_controller.php:74
+#: /controllers/artists_controller.php:81
 msgid "Invalid id for Artist"
 msgstr ""
 
-#: /controllers/artists_controller.php:78
+#: /controllers/artists_controller.php:85
 msgid "Artist deleted"
 msgstr ""
 
-#: /controllers/artists_controller.php:104
-msgid "You might want to choose a password, so you can come back later. Or just click \"Log out\" again. You can always use the \"Forgot password\" function later."
+#: /controllers/artists_controller.php:111
+msgid "You might want to choose a password, so you can come back later. Click \"Log out\" again to leave without a password. You can request it later."
 msgstr ""
 
-#: /controllers/artists_controller.php:127
+#: /controllers/artists_controller.php:136
 msgid "Your new password has been saved"
 msgstr ""
 
-#: /controllers/artists_controller.php:131
+#: /controllers/artists_controller.php:140
 msgid "Your new password could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/artists_controller.php:133
+#: /controllers/artists_controller.php:142
 msgid "Your password is not secure."
 msgstr ""
 
-#: /controllers/artists_controller.php:137
+#: /controllers/artists_controller.php:146
 msgid "The two fields do not match."
 msgstr ""
 
-#: /controllers/artists_controller.php:171
+#: /controllers/artists_controller.php:180
 msgid "Please check your email (Spam folder, too) and click the recovery link."
 msgstr ""
 
-#: /controllers/artists_controller.php:173
+#: /controllers/artists_controller.php:182
 msgid "There was an error sending the email. Please try again or contact us."
 msgstr ""
 
-#: /controllers/artists_controller.php:177
+#: /controllers/artists_controller.php:186
 msgid "Password recovery failed. Please try again or contact us via email."
 msgstr ""
 
-#: /controllers/artists_controller.php:182
+#: /controllers/artists_controller.php:191
 msgid "Sorry, your email address is unknown to us. Are you sure you used this one?"
 msgstr ""
 
-#: /controllers/artists_controller.php:191
+#: /controllers/artists_controller.php:200
 msgid "Please choose a new password now"
 msgstr ""
 
-#: /controllers/artists_controller.php:195
+#: /controllers/artists_controller.php:204
 msgid "Your recovery link is not valid or too old. Please request a new one."
 msgstr ""
 
-#: /controllers/pictures_controller.php:14
-msgid "Invalid Picture."
+#: /controllers/ftp_accounts_controller.php:22
+msgid "Invalid FtpAccount."
 msgstr ""
 
-#: /controllers/pictures_controller.php:35
-msgid "You are not logged in or not allowed to edit this piece."
+#: /controllers/ftp_accounts_controller.php:32;49
+msgid "The FtpAccount has been saved"
 msgstr ""
 
-#: /controllers/pictures_controller.php:47
-msgid "You did not choose a file."
+#: /controllers/ftp_accounts_controller.php:35;52
+msgid "The FtpAccount could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/pictures_controller.php:52
-msgid "The image file is too big."
+#: /controllers/ftp_accounts_controller.php:44
+msgid "Invalid FtpAccount"
 msgstr ""
 
-#: /controllers/pictures_controller.php:56
-msgid "Only JPEG images are allowed."
+#: /controllers/ftp_accounts_controller.php:64
+msgid "Invalid id for FtpAccount"
 msgstr ""
 
-#: /controllers/pictures_controller.php:60
-msgid "Upload Error."
+#: /controllers/ftp_accounts_controller.php:68
+msgid "FtpAccount deleted"
 msgstr ""
 
-#: /controllers/pictures_controller.php:73
-msgid "The Picture has been saved. Add another one, if you like."
+#: /controllers/ftp_accounts_controller.php:126
+msgid "Invalid IDs"
 msgstr ""
 
-#: /controllers/pictures_controller.php:77
-msgid "The Picture could not be saved. Please, try again."
+#: /controllers/ftp_accounts_controller.php:142
+msgid "Invalid ID"
 msgstr ""
 
-#: /controllers/pictures_controller.php:80
-msgid "Image Error:"
-msgstr ""
-
-#: /controllers/pictures_controller.php:94
-msgid "Invalid id for Picture"
-msgstr ""
-
-#: /controllers/pictures_controller.php:98
-msgid "Picture deleted"
-msgstr ""
-
-#: /controllers/pieces_controller.php:23
+#: /controllers/pieces_controller.php:30
 msgid "Invalid Piece."
 msgstr ""
 
-#: /controllers/pieces_controller.php:146
-msgid "Your submission has been saved. Thank you. You can add images now."
+#: /controllers/pieces_controller.php:156
+msgid "Your submission has been saved. Thank you. You can add files now."
 msgstr ""
 
-#: /controllers/pieces_controller.php:150
+#: /controllers/pieces_controller.php:160
 msgid "Your submission has been saved. Thank you. Here is an overview for printing/saving"
 msgstr ""
 
-#: /controllers/pieces_controller.php:154
+#: /controllers/pieces_controller.php:164
 msgid "Something is wrong or missing. Please check the error messages below the input fields."
 msgstr ""
 
-#: /controllers/pieces_controller.php:191
+#: /controllers/pieces_controller.php:201
 msgid "Invalid Piece"
 msgstr ""
 
-#: /controllers/pieces_controller.php:196
+#: /controllers/pieces_controller.php:206
 msgid "The Piece has been saved"
 msgstr ""
 
-#: /controllers/pieces_controller.php:199
+#: /controllers/pieces_controller.php:209
 msgid "The Piece could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/pieces_controller.php:217
+#: /controllers/pieces_controller.php:227
 msgid "Invalid id for Piece"
 msgstr ""
 
-#: /controllers/pieces_controller.php:221
+#: /controllers/pieces_controller.php:231
 msgid "Piece deleted"
 msgstr ""
 
-#: /controllers/requirements_controller.php:18
+#: /controllers/requirements_controller.php:25
 msgid "Your changes have been saved"
 msgstr ""
 
-#: /controllers/requirements_controller.php:21
+#: /controllers/requirements_controller.php:28
 msgid "There was an error saving your changes"
 msgstr ""
 
-#: /controllers/requirements_controller.php:35
+#: /controllers/requirements_controller.php:42
 msgid "Invalid Requirement."
 msgstr ""
 
-#: /controllers/requirements_controller.php:45;62
+#: /controllers/requirements_controller.php:52;69
 msgid "The Requirement has been saved"
 msgstr ""
 
-#: /controllers/requirements_controller.php:48;65
+#: /controllers/requirements_controller.php:55;72
 msgid "The Requirement could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/requirements_controller.php:57
+#: /controllers/requirements_controller.php:64
 msgid "Invalid Requirement"
 msgstr ""
 
-#: /controllers/requirements_controller.php:77
+#: /controllers/requirements_controller.php:84
 msgid "Invalid id for Requirement"
 msgstr ""
 
-#: /controllers/requirements_controller.php:81
+#: /controllers/requirements_controller.php:88
 msgid "Requirement deleted"
 msgstr ""
 
-#: /controllers/screening_formats_controller.php:15
+#: /controllers/screening_formats_controller.php:22
 msgid "Invalid ScreeningFormat."
 msgstr ""
 
-#: /controllers/screening_formats_controller.php:25;42
+#: /controllers/screening_formats_controller.php:32;49
 msgid "The ScreeningFormat has been saved"
 msgstr ""
 
-#: /controllers/screening_formats_controller.php:28;45
+#: /controllers/screening_formats_controller.php:35;52
 msgid "The ScreeningFormat could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/screening_formats_controller.php:37
+#: /controllers/screening_formats_controller.php:44
 msgid "Invalid ScreeningFormat"
 msgstr ""
 
-#: /controllers/screening_formats_controller.php:57
+#: /controllers/screening_formats_controller.php:64
 msgid "Invalid id for ScreeningFormat"
 msgstr ""
 
-#: /controllers/screening_formats_controller.php:61
+#: /controllers/screening_formats_controller.php:68
 msgid "ScreeningFormat deleted"
 msgstr ""
 
-#: /controllers/searches_controller.php:14
+#: /controllers/searches_controller.php:21
 msgid "Invalid Search."
 msgstr ""
 
-#: /controllers/searches_controller.php:23
+#: /controllers/searches_controller.php:30
 msgid "Please run a search. You can then save it."
 msgstr ""
 
-#: /controllers/searches_controller.php:32;56
+#: /controllers/searches_controller.php:39;63
 msgid "The Search has been saved"
 msgstr ""
 
-#: /controllers/searches_controller.php:35;59
+#: /controllers/searches_controller.php:42;66
 msgid "The Search could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/searches_controller.php:42
+#: /controllers/searches_controller.php:49
 msgid "No search was specified."
 msgstr ""
 
-#: /controllers/searches_controller.php:51
+#: /controllers/searches_controller.php:58
 msgid "Invalid Search"
 msgstr ""
 
-#: /controllers/searches_controller.php:69
+#: /controllers/searches_controller.php:76
 msgid "Invalid id for Search"
 msgstr ""
 
-#: /controllers/searches_controller.php:73
+#: /controllers/searches_controller.php:80
 msgid "Search deleted"
 msgstr ""
 
-#: /controllers/sections_controller.php:14
+#: /controllers/sections_controller.php:21
 msgid "Invalid Section."
 msgstr ""
 
-#: /controllers/sections_controller.php:37;54
+#: /controllers/sections_controller.php:44;61
 msgid "The Section has been saved"
 msgstr ""
 
-#: /controllers/sections_controller.php:40;57
+#: /controllers/sections_controller.php:47;64
 msgid "The Section could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/sections_controller.php:49
+#: /controllers/sections_controller.php:56
 msgid "Invalid Section"
 msgstr ""
 
-#: /controllers/sections_controller.php:69
+#: /controllers/sections_controller.php:76
 msgid "Invalid id for Section"
 msgstr ""
 
-#: /controllers/sections_controller.php:73
+#: /controllers/sections_controller.php:80
 msgid "Section deleted"
 msgstr ""
 
-#: /controllers/shooting_formats_controller.php:15
+#: /controllers/shooting_formats_controller.php:22
 msgid "Invalid ShootingFormat."
 msgstr ""
 
-#: /controllers/shooting_formats_controller.php:25;40
+#: /controllers/shooting_formats_controller.php:32;47
 msgid "The ShootingFormat has been saved"
 msgstr ""
 
-#: /controllers/shooting_formats_controller.php:28;43
+#: /controllers/shooting_formats_controller.php:35;50
 msgid "The ShootingFormat could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/shooting_formats_controller.php:35
+#: /controllers/shooting_formats_controller.php:42
 msgid "Invalid ShootingFormat"
 msgstr ""
 
-#: /controllers/shooting_formats_controller.php:53
+#: /controllers/shooting_formats_controller.php:60
 msgid "Invalid id for ShootingFormat"
 msgstr ""
 
-#: /controllers/shooting_formats_controller.php:57
+#: /controllers/shooting_formats_controller.php:64
 msgid "ShootingFormat deleted"
 msgstr ""
 
-#: /controllers/tags_controller.php:15
+#: /controllers/tags_controller.php:22
 msgid "Invalid Tag."
 msgstr ""
 
-#: /controllers/tags_controller.php:25;42
+#: /controllers/tags_controller.php:32;49
 msgid "The Tag has been saved"
 msgstr ""
 
-#: /controllers/tags_controller.php:28;45
+#: /controllers/tags_controller.php:35;52
 msgid "The Tag could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/tags_controller.php:37
+#: /controllers/tags_controller.php:44
 msgid "Invalid Tag"
 msgstr ""
 
-#: /controllers/tags_controller.php:57
+#: /controllers/tags_controller.php:64
 msgid "Invalid id for Tag"
 msgstr ""
 
-#: /controllers/tags_controller.php:61
+#: /controllers/tags_controller.php:68
 msgid "Tag deleted"
 msgstr ""
 
-#: /controllers/types_controller.php:37
+#: /controllers/types_controller.php:44
 msgid "Invalid Type."
 msgstr ""
 
-#: /controllers/types_controller.php:47;62
+#: /controllers/types_controller.php:54;69
 msgid "The Type has been saved"
 msgstr ""
 
-#: /controllers/types_controller.php:50;65
+#: /controllers/types_controller.php:57;72
 msgid "The Type could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/types_controller.php:57
+#: /controllers/types_controller.php:64
 msgid "Invalid Type"
 msgstr ""
 
-#: /controllers/types_controller.php:75
+#: /controllers/types_controller.php:82
 msgid "Invalid id for Type"
 msgstr ""
 
-#: /controllers/types_controller.php:79
+#: /controllers/types_controller.php:86
 msgid "Type deleted"
+msgstr ""
+
+#: /controllers/uploads_controller.php:22;202
+msgid "Invalid Upload."
+msgstr ""
+
+#: /controllers/uploads_controller.php:31
+msgid "No piece specified."
+msgstr ""
+
+#: /controllers/uploads_controller.php:51;116
+msgid "You are not logged in or not allowed to edit this piece."
+msgstr ""
+
+#: /controllers/uploads_controller.php:65
+msgid "You did not choose a file."
+msgstr ""
+
+#: /controllers/uploads_controller.php:70
+msgid "The file is too big."
+msgstr ""
+
+#: /controllers/uploads_controller.php:74
+msgid "Upload Error."
+msgstr ""
+
+#: /controllers/uploads_controller.php:84
+msgid "The Upload has been saved."
+msgstr ""
+
+#: /controllers/uploads_controller.php:89
+msgid "Error! The Upload could not be created."
+msgstr ""
+
+#: /controllers/uploads_controller.php:92;157;173
+msgid "The Upload could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/uploads_controller.php:149
+msgid "Error! Your FTP upload could not be processed. There is a problem with file permissions. Please talk to staff, meanwhile, your uploaded file is safe."
+msgstr ""
+
+#: /controllers/uploads_controller.php:153
+msgid "Error! Your FTP upload could not be processed. "
+msgstr ""
+
+#: /controllers/uploads_controller.php:165
+msgid "Invalid Upload"
+msgstr ""
+
+#: /controllers/uploads_controller.php:170
+msgid "The Upload has been saved"
+msgstr ""
+
+#: /controllers/uploads_controller.php:213
+msgid "You may not download this file."
+msgstr ""
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:99
+msgid "Component intitailization"
+msgstr ""
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:100
+msgid "Component initialization and startup"
+msgstr ""
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:170
+msgid "Controller action"
+msgstr ""
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:171
+msgid "Controller action start"
+msgstr ""
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:199
+msgid "Render Controller Action"
+msgstr ""
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:200
+msgid "Controller render start"
+msgstr ""
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:265
+msgid "Could not load DebugToolbar panel %s"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/debug_kit_debugger.php:186
+msgid "Core Processing (Derived)"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/fire_cake.php:297
+msgid "Headers already sent in %s on line %s. Cannot send log data to FirePHP."
+msgstr ""
+
+#: /plugins/debug_kit/vendors/fire_cake.php:318
+msgid "Incorrect parameter count for FireCake::fb()"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/fire_cake.php:397
+msgid "Maximum number (99,999) of messages reached!"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:50
+msgid "-> Testing :url"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:76
+msgid "Total Requests made: :requests"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:77
+msgid "Total Time elapsed: :duration (seconds)"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:81
+msgid "Requests/Second: :rps req/sec"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:85
+msgid "Average request time: :average-time seconds"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:89
+msgid "Standard deviation of average request time: :std-dev"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:93
+msgid "Longest/shortest request: :longest sec/:shortest sec"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:145
+msgid "DebugKit Benchmark Shell"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:147
+msgid "\tAllows you to obtain some rough benchmarking statistics \n\tabout a fully qualified URL."
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:149
+msgid "\tUse:"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:150
+msgid "\t\tcake benchmark [-n iterations] [-t timeout] url"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:152
+msgid "\tParams:"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:153
+msgid "\t\t-n Number of iterations to perform. Defaults to 10. \n\t\t   Must be an integer."
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:154
+msgid "\t\t-t Maximum total time for all iterations, in seconds. \n\t\t   Defaults to 100. Must be an integer."
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:156
+msgid "\tIf a single iteration takes more than the \n\ttimeout specified, only one request will be made."
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:158
+msgid "\tExample Use:"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:159
+msgid "\t\tcake benchmark -n 10 -t 100 http://localhost/testsite"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:161
+msgid "\tNote that this benchmark does not include browser render time"
+msgstr ""
+
+#: /plugins/debug_kit/views/debug.php:51
+msgid "Rendering %s"
+msgstr ""
+
+#: /plugins/debug_kit/views/debug.php:72
+msgid "Rendering View"
+msgstr ""
+
+#: /plugins/debug_kit/views/debug.php:77
+msgid "View render complete"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/debug_toolbar.ctp:25
+msgid "There are no active panels. You must enable a panel to see its output."
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/history_panel.ctp:21
+msgid "Request History"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/history_panel.ctp:23
+msgid "No previous requests logged."
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/history_panel.ctp:25
+msgid "previous requests available"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/history_panel.ctp:27
+msgid "Restore to current request"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/log_panel.ctp:21
+msgid "Logs"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/log_panel.ctp:28
+msgid "Time"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/log_panel.ctp:28
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:40;64
+msgid "Message"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/log_panel.ctp:37
+msgid "There were no log entries made this request"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/request_panel.ctp:21
+msgid "Request"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/request_panel.ctp:35
+msgid "Current Route"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/session_panel.ctp:21
+msgid "Session"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/sql_log_panel.ctp:21
+msgid "Sql Logs"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/sql_log_panel.ctp:31
+msgid "toggle (%s) query explains for %s"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/sql_log_panel.ctp:36
+msgid "Query:"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/sql_log_panel.ctp:42
+msgid "No slow queries!, or your database does not support EXPLAIN"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/sql_log_panel.ctp:47
+msgid "No active database connections"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:33
+msgid "Memory"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:36
+msgid "Peak Memory Use"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:40
+msgid "Memory use"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:53
+msgid "Timers"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:55
+msgid "%s (ms)"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:56
+msgid "Total Request Time:"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:65
+msgid "Time in ms"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:66
+msgid "Graph"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/variables_panel.ctp:21
+msgid "View Variables"
+msgstr ""
+
+#: /plugins/debug_kit/views/helpers/simple_graph.php:77
+msgid "Starting %sms into the request, taking %sms"
 msgstr ""
 
 #: /views/artists/add.ctp:4;7
@@ -386,20 +667,25 @@ msgstr ""
 msgid "log in"
 msgstr ""
 
-#: /views/artists/add.ctp:28
-msgid "We will never give your address to other people!"
-msgstr ""
-
-#: /views/artists/add.ctp:29
-msgid "URL of your website, portfolio or profile"
+#: /views/artists/add.ctp:25
+#: /views/pieces/add.ctp:84
+msgid "<b>Bold</b> fields are required."
 msgstr ""
 
 #: /views/artists/add.ctp:30
+msgid "We will never give your address to other people!"
+msgstr ""
+
+#: /views/artists/add.ctp:31
+msgid "URL of your website, portfolio or profile"
+msgstr ""
+
+#: /views/artists/add.ctp:32
 msgid "If you like: Portrait (JPEG Image, %d KB max)"
 msgstr ""
 
-#: /views/artists/add.ctp:33
-#: /views/pieces/add.ctp:149
+#: /views/artists/add.ctp:35
+#: /views/pieces/add.ctp:174
 #: /views/types/select.ctp:15
 msgid "Continue"
 msgstr ""
@@ -424,6 +710,8 @@ msgstr ""
 
 #: /views/artists/edit.ctp:18
 #: /views/artists/index.ctp:49
+#: /views/ftp_accounts/edit.ctp:17
+#: /views/ftp_accounts/index.ctp:45
 #: /views/pieces/edit.ctp:29
 #: /views/requirements/edit.ctp:17
 #: /views/requirements/index.ctp:30
@@ -443,12 +731,17 @@ msgstr ""
 #: /views/tags/view.ctp:81
 #: /views/types/edit.ctp:15
 #: /views/types/index.ctp:38
+#: /views/uploads/edit.ctp:16
+#: /views/uploads/index.ctp:41
 msgid "Delete"
 msgstr ""
 
 #: /views/artists/edit.ctp:18
 #: /views/artists/index.ctp:49
 #: /views/artists/view.ctp:39
+#: /views/ftp_accounts/edit.ctp:17
+#: /views/ftp_accounts/index.ctp:45
+#: /views/ftp_accounts/view.ctp:34
 #: /views/pieces/edit.ctp:29
 #: /views/requirements/edit.ctp:17
 #: /views/requirements/index.ctp:30
@@ -472,6 +765,9 @@ msgstr ""
 #: /views/types/edit.ctp:15
 #: /views/types/index.ctp:38
 #: /views/types/view.ctp:31
+#: /views/uploads/edit.ctp:16
+#: /views/uploads/index.ctp:41
+#: /views/uploads/view.ctp:29
 msgid "Are you sure you want to delete # %s?"
 msgstr ""
 
@@ -501,6 +797,7 @@ msgid "Artists"
 msgstr ""
 
 #: /views/artists/index.ctp:6
+#: /views/ftp_accounts/index.ctp:6
 #: /views/pieces/search.ctp:36
 #: /views/screening_formats/index.ctp:6
 #: /views/searches/index.ctp:6
@@ -508,10 +805,12 @@ msgstr ""
 #: /views/shooting_formats/index.ctp:6
 #: /views/tags/index.ctp:6
 #: /views/types/index.ctp:6
+#: /views/uploads/index.ctp:6
 msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
 msgstr ""
 
 #: /views/artists/index.ctp:17
+#: /views/ftp_accounts/index.ctp:16
 #: /views/screening_formats/index.ctp:13
 #: /views/screening_formats/view.ctp:47
 #: /views/searches/index.ctp:13
@@ -521,10 +820,12 @@ msgstr ""
 #: /views/tags/index.ctp:13
 #: /views/tags/view.ctp:49
 #: /views/types/index.ctp:14
+#: /views/uploads/index.ctp:15
 msgid "Actions"
 msgstr ""
 
 #: /views/artists/index.ctp:47
+#: /views/ftp_accounts/index.ctp:43
 #: /views/requirements/index.ctp:28
 #: /views/requirements/show_by_type.ctp:37
 #: /views/screening_formats/index.ctp:31
@@ -535,10 +836,12 @@ msgstr ""
 #: /views/tags/index.ctp:31
 #: /views/tags/view.ctp:79
 #: /views/types/index.ctp:36
+#: /views/uploads/index.ctp:39
 msgid "View"
 msgstr ""
 
 #: /views/artists/index.ctp:48
+#: /views/ftp_accounts/index.ctp:44
 #: /views/requirements/index.ctp:29
 #: /views/requirements/show_by_type.ctp:38
 #: /views/screening_formats/index.ctp:32
@@ -550,10 +853,12 @@ msgstr ""
 #: /views/tags/index.ctp:32
 #: /views/tags/view.ctp:80
 #: /views/types/index.ctp:37
+#: /views/uploads/index.ctp:40
 msgid "Edit"
 msgstr ""
 
 #: /views/artists/index.ctp:56
+#: /views/ftp_accounts/index.ctp:52
 #: /views/pieces/search.ctp:77
 #: /views/screening_formats/index.ctp:40
 #: /views/searches/index.ctp:40
@@ -561,10 +866,12 @@ msgstr ""
 #: /views/shooting_formats/index.ctp:40
 #: /views/tags/index.ctp:40
 #: /views/types/index.ctp:45
+#: /views/uploads/index.ctp:48
 msgid "previous"
 msgstr ""
 
 #: /views/artists/index.ctp:58
+#: /views/ftp_accounts/index.ctp:54
 #: /views/pieces/search.ctp:79
 #: /views/screening_formats/index.ctp:42
 #: /views/searches/index.ctp:42
@@ -572,6 +879,7 @@ msgstr ""
 #: /views/shooting_formats/index.ctp:42
 #: /views/tags/index.ctp:42
 #: /views/types/index.ctp:47
+#: /views/uploads/index.ctp:50
 msgid "next"
 msgstr ""
 
@@ -581,6 +889,7 @@ msgid "New Artist"
 msgstr ""
 
 #: /views/artists/login.ctp:6
+#: /views/ftp_accounts/view.ctp:19
 msgid "Password"
 msgstr ""
 
@@ -589,11 +898,12 @@ msgid "I forgot my password"
 msgstr ""
 
 #: /views/artists/view.ctp:2
-#: /views/pieces/view.ctp:30
+#: /views/pieces/view.ctp:35
 msgid "Artist"
 msgstr ""
 
 #: /views/artists/view.ctp:4
+#: /views/ftp_accounts/view.ctp:4
 #: /views/requirements/view.ctp:4
 #: /views/screening_formats/view.ctp:4;31
 #: /views/searches/view.ctp:4
@@ -601,6 +911,7 @@ msgstr ""
 #: /views/shooting_formats/view.ctp:4;31
 #: /views/tags/view.ctp:4;31
 #: /views/types/view.ctp:4
+#: /views/uploads/view.ctp:4
 msgid "Id"
 msgstr ""
 
@@ -623,7 +934,6 @@ msgid "Url"
 msgstr ""
 
 #: /views/artists/view.ctp:29
-#: /views/pieces/view.ctp:142
 msgid "Picture"
 msgstr ""
 
@@ -645,6 +955,86 @@ msgstr ""
 
 #: /views/elements/saved_searches.ctp:13
 msgid "(show all)"
+msgstr ""
+
+#: /views/ftp_accounts/activate.ctp:10
+msgid "FTP File Upload"
+msgstr ""
+
+#: /views/ftp_accounts/activate.ctp:12
+msgid "With FTP, you can upload big files more easily. You will need an FTP program for this."
+msgstr ""
+
+#: /views/ftp_accounts/activate.ctp:17
+msgid "Give me an FTP account"
+msgstr ""
+
+#: /views/ftp_accounts/add.ctp:4
+msgid "Add FtpAccount"
+msgstr ""
+
+#: /views/ftp_accounts/add.ctp:16
+#: /views/ftp_accounts/edit.ctp:18
+#: /views/ftp_accounts/view.ctp:35
+msgid "List FtpAccounts"
+msgstr ""
+
+#: /views/ftp_accounts/edit.ctp:4
+#: /views/ftp_accounts/view.ctp:33
+msgid "Edit FtpAccount"
+msgstr ""
+
+#: /views/ftp_accounts/index.ctp:2
+msgid "FtpAccounts"
+msgstr ""
+
+#: /views/ftp_accounts/index.ctp:58
+#: /views/ftp_accounts/view.ctp:36
+msgid "New FtpAccount"
+msgstr ""
+
+#: /views/ftp_accounts/process.ctp:12
+msgid "Your ftp information"
+msgstr ""
+
+#: /views/ftp_accounts/process.ctp:19
+msgid "Your files"
+msgstr ""
+
+#: /views/ftp_accounts/process.ctp:21
+msgid "Please connect via FTP and start uploading files"
+msgstr ""
+
+#: /views/ftp_accounts/process.ctp:24
+msgid "Uploading"
+msgstr ""
+
+#: /views/ftp_accounts/process.ctp:29
+msgid "Finished"
+msgstr ""
+
+#: /views/ftp_accounts/process.ctp:30
+msgid "Please enter a description"
+msgstr ""
+
+#: /views/ftp_accounts/view.ctp:2
+msgid "FtpAccount"
+msgstr ""
+
+#: /views/ftp_accounts/view.ctp:9
+msgid "Artist Id"
+msgstr ""
+
+#: /views/ftp_accounts/view.ctp:14
+msgid "Username"
+msgstr ""
+
+#: /views/ftp_accounts/view.ctp:24
+msgid "Folder"
+msgstr ""
+
+#: /views/ftp_accounts/view.ctp:34
+msgid "Delete FtpAccount"
 msgstr ""
 
 #: /views/layouts/default.ctp:47
@@ -678,96 +1068,88 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: /views/pages/home.ctp:16
+#: /views/pages/home.ctp:13
 msgid "english"
 msgstr ""
 
-#: /views/pages/home.ctp:19
+#: /views/pages/home.ctp:16
 msgid "deutsch"
 msgstr ""
 
-#: /views/pictures/add.ctp:4
-msgid "Add Pictures to "
-msgstr ""
-
-#: /views/pictures/add.ctp:10
-msgid "JPEG Image File, %d KB max"
-msgstr ""
-
-#: /views/pictures/add.ctp:13
-msgid "Upload"
-msgstr ""
-
-#: /views/pictures/add.ctp:19
-msgid "Back to your "
+#: /views/pages/postal.ctp:1
+msgid "Mailings"
 msgstr ""
 
 #: /views/pieces/add.ctp:8
 msgid "Add additional Artist"
 msgstr ""
 
-#: /views/pieces/add.ctp:70
+#: /views/pieces/add.ctp:83
 msgid "Your Work"
 msgstr ""
 
-#: /views/pieces/add.ctp:80
-#: /views/pieces/view.ctp:40
+#: /views/pieces/add.ctp:94
+#: /views/pieces/view.ctp:45
 #: /views/screening_formats/view.ctp:35
 #: /views/shooting_formats/view.ctp:35
 #: /views/tags/view.ctp:35
 msgid "Synopsis"
 msgstr ""
 
-#: /views/pieces/add.ctp:82;92;97
+#: /views/pieces/add.ctp:100;112;117
 msgid "- Please select -"
 msgstr ""
 
-#: /views/pieces/add.ctp:84
-#: /views/pieces/view.ctp:56
+#: /views/pieces/add.ctp:104
+#: /views/pieces/view.ctp:61
 msgid "Notes"
 msgstr ""
 
-#: /views/pieces/add.ctp:90
+#: /views/pieces/add.ctp:110
 msgid "Duration (mm:ss)"
 msgstr ""
 
-#: /views/pieces/add.ctp:94
+#: /views/pieces/add.ctp:114
 msgid "Available Screening Formats"
 msgstr ""
 
-#: /views/pieces/add.ctp:107
+#: /views/pieces/add.ctp:127
 msgid "How will we get a preview copy?"
 msgstr ""
 
-#: /views/pieces/add.ctp:109
+#: /views/pieces/add.ctp:129
 msgid "Via normal Mail (send us a DVD or miniDV tape)"
 msgstr ""
 
-#: /views/pieces/add.ctp:109
-msgid "I want to upload it (we'll tell you how)"
+#: /views/pieces/add.ctp:129
+msgid "I want to upload it (in the next step)"
 msgstr ""
 
-#: /views/pieces/add.ctp:109
+#: /views/pieces/add.ctp:129
 msgid "It is online anyway (tell us the URL)"
 msgstr ""
 
-#: /views/pieces/add.ctp:118
+#: /views/pieces/add.ctp:137
+msgid "click here"
+msgstr ""
+
+#: /views/pieces/add.ctp:143
 msgid "Who has created this?"
 msgstr ""
 
-#: /views/pieces/add.ctp:119
+#: /views/pieces/add.ctp:144
 msgid "What was your contribution/function to this work?"
 msgstr ""
 
-#: /views/pieces/add.ctp:119
+#: /views/pieces/add.ctp:144
 msgid "Should other people be credited as well?"
 msgstr ""
 
-#: /views/pieces/add.ctp:124;133;142
+#: /views/pieces/add.ctp:149;158;167
 msgid "Additional Artist:"
 msgstr ""
 
-#: /views/pieces/add.ctp:126;135;144
+#: /views/pieces/add.ctp:151;160;169
 msgid "Function"
 msgstr ""
 
@@ -813,7 +1195,7 @@ msgid "Submitted to"
 msgstr ""
 
 #: /views/pieces/index.ctp:9
-#: /views/pieces/view.ctp:120
+#: /views/pieces/view.ctp:125
 msgid "Submitted"
 msgstr ""
 
@@ -829,79 +1211,79 @@ msgstr ""
 msgid "Search Results"
 msgstr ""
 
-#: /views/pieces/view.ctp:7
-msgid "Add images"
+#: /views/pieces/view.ctp:12
+msgid "Add files"
 msgstr ""
 
-#: /views/pieces/view.ctp:14
+#: /views/pieces/view.ctp:19
 #: /views/screening_formats/view.ctp:32
 #: /views/shooting_formats/view.ctp:32
 #: /views/tags/view.ctp:32
 msgid "Original Title"
 msgstr ""
 
-#: /views/pieces/view.ctp:22
+#: /views/pieces/view.ctp:27
 #: /views/screening_formats/view.ctp:33
 #: /views/shooting_formats/view.ctp:33
 #: /views/tags/view.ctp:33
 msgid "English Title"
 msgstr ""
 
-#: /views/pieces/view.ctp:34
+#: /views/pieces/view.ctp:39
 msgid "Main Contact"
 msgstr ""
 
-#: /views/pieces/view.ctp:48
+#: /views/pieces/view.ctp:53
 #: /views/sections/view.ctp:2
 msgid "Section"
 msgstr ""
 
-#: /views/pieces/view.ctp:64
+#: /views/pieces/view.ctp:69
 #: /views/screening_formats/view.ctp:40
 #: /views/shooting_formats/view.ctp:40
 #: /views/tags/view.ctp:40
 msgid "Production Year"
 msgstr ""
 
-#: /views/pieces/view.ctp:72
+#: /views/pieces/view.ctp:77
 #: /views/screening_formats/view.ctp:41
 #: /views/shooting_formats/view.ctp:41
 #: /views/tags/view.ctp:41
 msgid "Duration"
 msgstr ""
 
-#: /views/pieces/view.ctp:80
+#: /views/pieces/view.ctp:85
 msgid "Shooting Format"
 msgstr ""
 
-#: /views/pieces/view.ctp:89
+#: /views/pieces/view.ctp:94
 msgid "Screening Format"
 msgstr ""
 
-#: /views/pieces/view.ctp:97
+#: /views/pieces/view.ctp:102
 msgid "Country"
 msgstr ""
 
-#: /views/pieces/view.ctp:105
+#: /views/pieces/view.ctp:110
 #: /views/screening_formats/view.ctp:44
 #: /views/shooting_formats/view.ctp:44
 #: /views/tags/view.ctp:44
 msgid "Genre"
 msgstr ""
 
-#: /views/pieces/view.ctp:113
+#: /views/pieces/view.ctp:118
 #: /views/screening_formats/view.ctp:45
 #: /views/shooting_formats/view.ctp:45
 #: /views/tags/view.ctp:45
 msgid "Shown Before"
 msgstr ""
 
-#: /views/pieces/view.ctp:127
+#: /views/pieces/view.ctp:132
 #: /views/tags/view.ctp:47
 msgid "Preview How"
 msgstr ""
 
-#: /views/pieces/view.ctp:135
+#: /views/pieces/view.ctp:140
 #: /views/tags/view.ctp:48
 msgid "Preview Url"
 msgstr ""
@@ -1178,6 +1560,7 @@ msgid "Closing Date"
 msgstr ""
 
 #: /views/sections/view.ctp:24
+#: /views/uploads/view.ctp:9
 msgid "Description"
 msgstr ""
 
@@ -1292,6 +1675,61 @@ msgstr ""
 
 #: /views/types/view.ctp:31
 msgid "Delete Type"
+msgstr ""
+
+#: /views/uploads/add.ctp:8
+msgid "Add Upload"
+msgstr ""
+
+#: /views/uploads/add.ctp:13
+msgid "Select file, %01.2f MB max. Allowed types: %s"
+msgstr ""
+
+#: /views/uploads/add.ctp:17
+msgid "Please observe the allowed file types."
+msgstr ""
+
+#: /views/uploads/add.ctp:20
+msgid "Shortly describe what is in this file, please"
+msgstr ""
+
+#: /views/uploads/add.ctp:26
+msgid "FTP upload"
+msgstr ""
+
+#: /views/uploads/edit.ctp:4
+#: /views/uploads/view.ctp:28
+msgid "Edit Upload"
+msgstr ""
+
+#: /views/uploads/edit.ctp:17
+#: /views/uploads/view.ctp:30
+msgid "List Uploads"
+msgstr ""
+
+#: /views/uploads/index.ctp:2
+msgid "Uploads"
+msgstr ""
+
+#: /views/uploads/index.ctp:54
+#: /views/uploads/view.ctp:31
+msgid "New Upload"
+msgstr ""
+
+#: /views/uploads/view.ctp:2
+msgid "Upload"
+msgstr ""
+
+#: /views/uploads/view.ctp:14
+msgid "Extension"
+msgstr ""
+
+#: /views/uploads/view.ctp:19
+msgid "Piece Id"
+msgstr ""
+
+#: /views/uploads/view.ctp:29
+msgid "Delete Upload"
 msgstr ""
 
 #: /webroot/test.php:99
