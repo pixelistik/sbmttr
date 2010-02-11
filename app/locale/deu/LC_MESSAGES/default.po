@@ -1,401 +1,655 @@
 # LANGUAGE translation of CakePHP Application
 # TC <till@emergeandsee.org>, 2009.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.5\n"
-"POT-Creation-Date: 2009-07-13 00:06+0200\n"
-"PO-Revision-Date: 2009-07-13 00:07+0200\n"
-"Last-Translator: TC <till@emergeandsee.org>\n"
+"POT-Creation-Date: 2010-02-11 16:15+0100\n"
+"PO-Revision-Date: 2010-02-11 16:33+0100\n"
+"Last-Translator: Pixelistik <code@pixelistik.de>\n"
 "Language-Team: deu <till@emergeandsee.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: /controllers/app_controller.php:49
+#: /controllers/app_controller.php:48
 msgid "Login failed. Please try again."
 msgstr "Login fehlgeschlagen. Bitte versuche es noch einmal."
 
-#: /controllers/artists_controller.php:15;56
+#: /controllers/artists_controller.php:22;63
 msgid "Invalid Artist."
 msgstr "Ungültiger Artist"
 
-#: /controllers/artists_controller.php:40
+#: /controllers/artists_controller.php:47
 msgid "Your artist account was created."
 msgstr "Dein Künstler-Account wurde eingerichtet"
 
-#: /controllers/artists_controller.php:48
-msgid ""
-"Your artist information could not be saved. Please check the data you "
-"entered."
-msgstr ""
-"Deine Daten konnten nicht gespeichert werden. Bitte überprüfe sie auf Fehler"
+#: /controllers/artists_controller.php:55
+msgid "Your artist information could not be saved. Please check the data you entered."
+msgstr "Deine Daten konnten nicht gespeichert werden. Bitte überprüfe sie auf Fehler"
 
-#: /controllers/artists_controller.php:61
+#: /controllers/artists_controller.php:68
 msgid "The Artist has been saved"
 msgstr "Der Künstler wurde gespeichert"
 
-#: /controllers/artists_controller.php:64
+#: /controllers/artists_controller.php:71
 msgid "The Artist could not be saved. Please, try again."
-msgstr ""
-"Der Künstler konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+msgstr "Der Künstler konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/artists_controller.php:74
+#: /controllers/artists_controller.php:81
 msgid "Invalid id for Artist"
 msgstr "Ungültige ID für Künstler"
 
-#: /controllers/artists_controller.php:78
+#: /controllers/artists_controller.php:85
 msgid "Artist deleted"
 msgstr "Künstler gelöscht"
 
-#: /controllers/artists_controller.php:104
-msgid ""
-"You might want to choose a password, so you can come back later. Or just "
-"click \"Log out\" again. You can always use the \"Forgot password\" function "
-"later."
-msgstr ""
-"Vielleicht möchtest du dir ein neues Passwort überlegen, damit du dich "
-"später wieder einloggen kannst. Du kannst auch einfach nochmal auf \"Log out"
-"\" klicken. Später kannst du immer noch ein neues Passwort per Mail bekommen."
+#: /controllers/artists_controller.php:111
+msgid "You might want to choose a password, so you can come back later. Click \"Log out\" again to leave without a password. You can request it later."
+msgstr "Vielleicht möchtest du dir ein neues Passwort überlegen, damit du dich später wieder einloggen kannst. Du kannst auch einfach nochmal auf \"Log out\" klicken. Später kannst du immer noch ein neues Passwort per Mail bekommen."
 
-#: /controllers/artists_controller.php:127
+#: /controllers/artists_controller.php:136
 msgid "Your new password has been saved"
 msgstr "Dein neues Passwort wurde gespeichert."
 
-#: /controllers/artists_controller.php:131
+#: /controllers/artists_controller.php:140
 msgid "Your new password could not be saved. Please, try again."
-msgstr ""
-"Dein neues Passwort konnte nicht gespeichert werden. Bitte probiere es noch "
-"einmal."
+msgstr "Dein neues Passwort konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/artists_controller.php:133
+#: /controllers/artists_controller.php:142
 msgid "Your password is not secure."
 msgstr "Dein Passwort ist nicht sicher genug."
 
-#: /controllers/artists_controller.php:137
+#: /controllers/artists_controller.php:146
 msgid "The two fields do not match."
 msgstr "Die beiden Felder stimmen nicht überein."
 
-#: /controllers/artists_controller.php:171
+#: /controllers/artists_controller.php:180
 msgid "Please check your email (Spam folder, too) and click the recovery link."
-msgstr ""
-"Du hast eine E-Mail von uns bekommen (vergiss nicht, evt. auch in den Spam-"
-"Ordner zu schauen). Bitte klicke auf den Aktivierunglink."
+msgstr "Du hast eine E-Mail von uns bekommen (vergiss nicht, evt. auch in den Spam-Ordner zu schauen). Bitte klicke auf den Aktivierunglink."
 
-#: /controllers/artists_controller.php:173
+#: /controllers/artists_controller.php:182
 msgid "There was an error sending the email. Please try again or contact us."
-msgstr ""
-"Es gab einen Fehler beim Versenden der E-Mail. Bitte probiere es nochmal "
-"oder wende dich direkt an uns."
+msgstr "Es gab einen Fehler beim Versenden der E-Mail. Bitte probiere es nochmal oder wende dich direkt an uns."
 
-#: /controllers/artists_controller.php:177
+#: /controllers/artists_controller.php:186
 msgid "Password recovery failed. Please try again or contact us via email."
 msgstr "Passwort zurücksetzen gescheitert. Bitte melde dich bei uns."
 
-#: /controllers/artists_controller.php:182
-msgid ""
-"Sorry, your email address is unknown to us. Are you sure you used this one?"
-msgstr ""
-"Leider ist uns diese E-Mail-Adresse nicht bekannt. Bist du sicher, dass du "
-"dich damit angemeldet hast?"
-
 #: /controllers/artists_controller.php:191
+msgid "Sorry, your email address is unknown to us. Are you sure you used this one?"
+msgstr "Leider ist uns diese E-Mail-Adresse nicht bekannt. Bist du sicher, dass du dich damit angemeldet hast?"
+
+#: /controllers/artists_controller.php:200
 msgid "Please choose a new password now"
 msgstr "Bitte denke dir ein neues Passwort aus."
 
-#: /controllers/artists_controller.php:195
+#: /controllers/artists_controller.php:204
 msgid "Your recovery link is not valid or too old. Please request a new one."
-msgstr ""
-"Dein Aktivierunglink ist ungültig oder zu alt. Bitte fordere einen neuen an."
+msgstr "Dein Aktivierunglink ist ungültig oder zu alt. Bitte fordere einen neuen an."
 
-#: /controllers/pictures_controller.php:14
-msgid "Invalid Picture."
-msgstr "Ungültiges Bild"
+#: /controllers/ftp_accounts_controller.php:22
+msgid "Invalid FtpAccount."
+msgstr "Ungültiger FTP-Account"
 
-#: /controllers/pictures_controller.php:35
-msgid "You are not logged in or not allowed to edit this piece."
-msgstr "Du bist nicht eingeloggt oder darfst dieses Werk nicht bearbeiten."
+#: /controllers/ftp_accounts_controller.php:32;49
+msgid "The FtpAccount has been saved"
+msgstr "Der FtpAccount wurde gespeichert."
 
-#: /controllers/pictures_controller.php:47
-msgid "You did not choose a file."
-msgstr "Du hast keine Datei gewählt."
+#: /controllers/ftp_accounts_controller.php:35;52
+msgid "The FtpAccount could not be saved. Please, try again."
+msgstr "FtpAccount konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/pictures_controller.php:52
-msgid "The image file is too big."
-msgstr "Die Bilddatei ist zu groß."
+#: /controllers/ftp_accounts_controller.php:44
+msgid "Invalid FtpAccount"
+msgstr "Ungültiger FtpAccount."
 
-#: /controllers/pictures_controller.php:56
-msgid "Only JPEG images are allowed."
-msgstr "Es sind nur JPEG-Bilder erlaubt."
+#: /controllers/ftp_accounts_controller.php:64
+msgid "Invalid id for FtpAccount"
+msgstr "Ungültige ID für FtpAccount."
 
-#: /controllers/pictures_controller.php:60
-msgid "Upload Error."
-msgstr "Uploadfehler."
+#: /controllers/ftp_accounts_controller.php:68
+msgid "FtpAccount deleted"
+msgstr "FtpAccount wurde gelöscht."
 
-#: /controllers/pictures_controller.php:73
-msgid "The Picture has been saved. Add another one, if you like."
-msgstr ""
-"Das Bild wurde gespeichert. Du kannst jetzt weitere hochladen, wenn du "
-"möchtest."
+#: /controllers/ftp_accounts_controller.php:126
+msgid "Invalid IDs"
+msgstr "Ungültige ID."
 
-#: /controllers/pictures_controller.php:77
-msgid "The Picture could not be saved. Please, try again."
-msgstr ""
-"Das Bild konnte nicht gespeichert werden. Bitte versuche es noch einmal."
+#: /controllers/ftp_accounts_controller.php:142
+msgid "Invalid ID"
+msgstr "Ungültige ID."
 
-#: /controllers/pictures_controller.php:80
-msgid "Image Error:"
-msgstr "Fehler beim Bild:"
-
-#: /controllers/pictures_controller.php:94
-msgid "Invalid id for Picture"
-msgstr "Ungültige Bild-ID"
-
-#: /controllers/pictures_controller.php:98
-msgid "Picture deleted"
-msgstr "Bild wurde gelöscht."
-
-#: /controllers/pieces_controller.php:23
+#: /controllers/pieces_controller.php:30
 msgid "Invalid Piece."
 msgstr "Ungültiges Werk."
 
-#: /controllers/pieces_controller.php:146
-msgid "Your submission has been saved. Thank you. You can add images now."
-msgstr ""
-"Deine Einreichung wurde gespeichert. Vielen Dank. Du kannst nun Bilder "
-"hinzufügen"
+#: /controllers/pieces_controller.php:156
+msgid "Your submission has been saved. Thank you. You can add files now."
+msgstr "Deine Einreichung wurde gespeichert. Vielen Dank. Du kannst nun Dateien hinzufügen"
 
-#: /controllers/pieces_controller.php:150
-msgid ""
-"Your submission has been saved. Thank you. Here is an overview for printing/"
-"saving"
-msgstr ""
-"Deine Einreichung wurde gespeichert. Hier ist ein Überblick zum Ausdrucken "
-"oder Speichern."
+#: /controllers/pieces_controller.php:160
+msgid "Your submission has been saved. Thank you. Here is an overview for printing/saving"
+msgstr "Deine Einreichung wurde gespeichert. Hier ist ein Überblick zum Ausdrucken oder Speichern."
 
-#: /controllers/pieces_controller.php:154
-msgid ""
-"Something is wrong or missing. Please check the error messages below the "
-"input fields."
-msgstr ""
-"Irgendwas stimmt nicht oder fehlt. Bitte überprüfe die Formularfelder auf "
-"Fehlermeldungen."
+#: /controllers/pieces_controller.php:164
+msgid "Something is wrong or missing. Please check the error messages below the input fields."
+msgstr "Irgendwas stimmt nicht oder fehlt. Bitte überprüfe die Formularfelder auf Fehlermeldungen."
 
-#: /controllers/pieces_controller.php:191
+#: /controllers/pieces_controller.php:201
 msgid "Invalid Piece"
 msgstr "Ungültiges Werk."
 
-#: /controllers/pieces_controller.php:196
+#: /controllers/pieces_controller.php:206
 msgid "The Piece has been saved"
 msgstr "Das Werk wurde gespeichert."
 
-#: /controllers/pieces_controller.php:199
+#: /controllers/pieces_controller.php:209
 msgid "The Piece could not be saved. Please, try again."
-msgstr ""
-"Das Werk konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+msgstr "Das Werk konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/pieces_controller.php:217
+#: /controllers/pieces_controller.php:227
 msgid "Invalid id for Piece"
 msgstr "Ungültige Werk-ID."
 
-#: /controllers/pieces_controller.php:221
+#: /controllers/pieces_controller.php:231
 msgid "Piece deleted"
 msgstr "Werk wurde gelöscht."
 
-#: /controllers/requirements_controller.php:18
+#: /controllers/requirements_controller.php:25
 msgid "Your changes have been saved"
 msgstr "Deine Änderungen wurden gespeichert."
 
-#: /controllers/requirements_controller.php:21
+#: /controllers/requirements_controller.php:28
 msgid "There was an error saving your changes"
 msgstr "Es gab einen Fehler beim Speichern deiner Änderungen."
 
-#: /controllers/requirements_controller.php:35
+#: /controllers/requirements_controller.php:42
 msgid "Invalid Requirement."
 msgstr "Ungültiges Requirement."
 
-#: /controllers/requirements_controller.php:45;62
+#: /controllers/requirements_controller.php:52;69
 msgid "The Requirement has been saved"
 msgstr "Das Requirement wurde gespeichert."
 
-#: /controllers/requirements_controller.php:48;65
+#: /controllers/requirements_controller.php:55;72
 msgid "The Requirement could not be saved. Please, try again."
-msgstr ""
-"Das Requirement konnte nicht gespeichert werden. Bitte probiere es noch "
-"einmal."
+msgstr "Das Requirement konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/requirements_controller.php:57
+#: /controllers/requirements_controller.php:64
 msgid "Invalid Requirement"
 msgstr "Ungültiges Requirement"
 
-#: /controllers/requirements_controller.php:77
+#: /controllers/requirements_controller.php:84
 msgid "Invalid id for Requirement"
 msgstr "Ungültige Requirement-ID"
 
-#: /controllers/requirements_controller.php:81
+#: /controllers/requirements_controller.php:88
 msgid "Requirement deleted"
 msgstr "Requirement wurde gelöscht."
 
-#: /controllers/screening_formats_controller.php:15
+#: /controllers/screening_formats_controller.php:22
 msgid "Invalid ScreeningFormat."
 msgstr "Ungültiges Vorführformat."
 
-#: /controllers/screening_formats_controller.php:25;42
+#: /controllers/screening_formats_controller.php:32;49
 msgid "The ScreeningFormat has been saved"
 msgstr "Das Vorführformat wurde gespeichert."
 
-#: /controllers/screening_formats_controller.php:28;45
+#: /controllers/screening_formats_controller.php:35;52
 msgid "The ScreeningFormat could not be saved. Please, try again."
-msgstr ""
-"Das Vorführformat konnte nicht gespeichert werden. Bitte versuche es noch "
-"einmal."
+msgstr "Das Vorführformat konnte nicht gespeichert werden. Bitte versuche es noch einmal."
 
-#: /controllers/screening_formats_controller.php:37
+#: /controllers/screening_formats_controller.php:44
 msgid "Invalid ScreeningFormat"
 msgstr "Ungültiges Vorführformat."
 
-#: /controllers/screening_formats_controller.php:57
+#: /controllers/screening_formats_controller.php:64
 msgid "Invalid id for ScreeningFormat"
 msgstr "Ungültige ID für Vorführformat."
 
-#: /controllers/screening_formats_controller.php:61
+#: /controllers/screening_formats_controller.php:68
 msgid "ScreeningFormat deleted"
 msgstr "Vorführformat gespeichert."
 
-#: /controllers/searches_controller.php:14
+#: /controllers/searches_controller.php:21
 msgid "Invalid Search."
 msgstr "Ungültige Suche."
 
-#: /controllers/searches_controller.php:23
+#: /controllers/searches_controller.php:30
 msgid "Please run a search. You can then save it."
 msgstr "Bitte führe eine Suche durch. Danach kannst du diese speichern."
 
-#: /controllers/searches_controller.php:32;56
+#: /controllers/searches_controller.php:39;63
 msgid "The Search has been saved"
 msgstr "Die Suche wurde gespeichert."
 
-#: /controllers/searches_controller.php:35;59
+#: /controllers/searches_controller.php:42;66
 msgid "The Search could not be saved. Please, try again."
-msgstr ""
-"Die Suche konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+msgstr "Die Suche konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/searches_controller.php:42
+#: /controllers/searches_controller.php:49
 msgid "No search was specified."
 msgstr "Es wurde keine Suche angegeben."
 
-#: /controllers/searches_controller.php:51
+#: /controllers/searches_controller.php:58
 msgid "Invalid Search"
 msgstr "Ungültige Suche."
 
-#: /controllers/searches_controller.php:69
+#: /controllers/searches_controller.php:76
 msgid "Invalid id for Search"
 msgstr "Ungültige ID für Suche."
 
-#: /controllers/searches_controller.php:73
+#: /controllers/searches_controller.php:80
 msgid "Search deleted"
 msgstr "Suche wurde gelöscht."
 
-#: /controllers/sections_controller.php:14
+#: /controllers/sections_controller.php:21
 msgid "Invalid Section."
 msgstr "Ungültige Sektion."
 
-#: /controllers/sections_controller.php:37;54
+#: /controllers/sections_controller.php:44;61
 msgid "The Section has been saved"
 msgstr "Die Sektion wurde gespeichert."
 
-#: /controllers/sections_controller.php:40;57
+#: /controllers/sections_controller.php:47;64
 msgid "The Section could not be saved. Please, try again."
-msgstr ""
-"Die Sektion konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+msgstr "Die Sektion konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/sections_controller.php:49
+#: /controllers/sections_controller.php:56
 msgid "Invalid Section"
 msgstr "Ungültige Sektion."
 
-#: /controllers/sections_controller.php:69
+#: /controllers/sections_controller.php:76
 msgid "Invalid id for Section"
 msgstr "Ungültige ID für Sektion."
 
-#: /controllers/sections_controller.php:73
+#: /controllers/sections_controller.php:80
 msgid "Section deleted"
 msgstr "Sektion wurde gelöscht."
 
-#: /controllers/shooting_formats_controller.php:15
+#: /controllers/shooting_formats_controller.php:22
 msgid "Invalid ShootingFormat."
 msgstr "Ungültiges Drehformat."
 
-#: /controllers/shooting_formats_controller.php:25;40
+#: /controllers/shooting_formats_controller.php:32;47
 msgid "The ShootingFormat has been saved"
 msgstr "Das Drehformat wurde gespeichert."
 
-#: /controllers/shooting_formats_controller.php:28;43
+#: /controllers/shooting_formats_controller.php:35;50
 msgid "The ShootingFormat could not be saved. Please, try again."
-msgstr ""
-"Das Drehformat konnte nicht gespeichert werden. Bitte probiere es noch "
-"einmal."
+msgstr "Das Drehformat konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/shooting_formats_controller.php:35
+#: /controllers/shooting_formats_controller.php:42
 msgid "Invalid ShootingFormat"
 msgstr "Ungültiges Drehformat."
 
-#: /controllers/shooting_formats_controller.php:53
+#: /controllers/shooting_formats_controller.php:60
 msgid "Invalid id for ShootingFormat"
 msgstr "Ungültige ID für Drehformat."
 
-#: /controllers/shooting_formats_controller.php:57
+#: /controllers/shooting_formats_controller.php:64
 msgid "ShootingFormat deleted"
 msgstr "Drehformat wurde gelöscht."
 
-#: /controllers/tags_controller.php:15
+#: /controllers/tags_controller.php:22
 msgid "Invalid Tag."
 msgstr "Ungültiges Tag."
 
-#: /controllers/tags_controller.php:25;42
+#: /controllers/tags_controller.php:32;49
 msgid "The Tag has been saved"
 msgstr "Das Tag wurde gespeichert."
 
-#: /controllers/tags_controller.php:28;45
+#: /controllers/tags_controller.php:35;52
 msgid "The Tag could not be saved. Please, try again."
-msgstr ""
-"Das Tag konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+msgstr "Das Tag konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/tags_controller.php:37
+#: /controllers/tags_controller.php:44
 msgid "Invalid Tag"
 msgstr "Ungültiges Tag."
 
-#: /controllers/tags_controller.php:57
+#: /controllers/tags_controller.php:64
 msgid "Invalid id for Tag"
 msgstr "Ungültige ID für Tag."
 
-#: /controllers/tags_controller.php:61
+#: /controllers/tags_controller.php:68
 msgid "Tag deleted"
 msgstr "Tag wurde gelöscht."
 
-#: /controllers/types_controller.php:37
+#: /controllers/types_controller.php:44
 msgid "Invalid Type."
 msgstr "Ungültiger Typ."
 
-#: /controllers/types_controller.php:47;62
+#: /controllers/types_controller.php:54;69
 msgid "The Type has been saved"
 msgstr "Der Typ wurde gespeichert."
 
-#: /controllers/types_controller.php:50;65
+#: /controllers/types_controller.php:57;72
 msgid "The Type could not be saved. Please, try again."
-msgstr ""
-"Der Typ konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+msgstr "Der Typ konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/types_controller.php:57
+#: /controllers/types_controller.php:64
 msgid "Invalid Type"
 msgstr "Ungültiger Typ."
 
-#: /controllers/types_controller.php:75
+#: /controllers/types_controller.php:82
 msgid "Invalid id for Type"
 msgstr "Ungültige ID für Typ."
 
-#: /controllers/types_controller.php:79
+#: /controllers/types_controller.php:86
 msgid "Type deleted"
 msgstr "Typ wurde gelöscht."
+
+#: /controllers/uploads_controller.php:22;202
+msgid "Invalid Upload."
+msgstr "Ungültiger Upload."
+
+#: /controllers/uploads_controller.php:31
+msgid "No piece specified."
+msgstr "Es wurde kein Piece angegeben."
+
+#: /controllers/uploads_controller.php:51;116
+msgid "You are not logged in or not allowed to edit this piece."
+msgstr "Du bist nicht eingeloggt oder darfst dieses Werk nicht bearbeiten."
+
+#: /controllers/uploads_controller.php:65
+msgid "You did not choose a file."
+msgstr "Du hast keine Datei gewählt."
+
+#: /controllers/uploads_controller.php:70
+msgid "The file is too big."
+msgstr "Die Datei ist zu groß."
+
+#: /controllers/uploads_controller.php:74
+msgid "Upload Error."
+msgstr "Uploadfehler."
+
+#: /controllers/uploads_controller.php:84
+msgid "The Upload has been saved."
+msgstr "Der Upload wurde gespeichert."
+
+#: /controllers/uploads_controller.php:89
+msgid "Error! The Upload could not be created."
+msgstr "Fehler! Der Upload konnte nicht erstellt werden."
+
+#: /controllers/uploads_controller.php:92;157;173
+msgid "The Upload could not be saved. Please, try again."
+msgstr "Der Upload konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+
+#: /controllers/uploads_controller.php:149
+msgid "Error! Your FTP upload could not be processed. There is a problem with file permissions. Please talk to staff, meanwhile, your uploaded file is safe."
+msgstr "Fehler! Der FTP-Upload konnte nicht bearbeitet werden. Es gibt ein Problem mit den Dateiberechtigungen. Bitte melde dich bei uns. Der Download ist solange sicher gespeichert."
+
+#: /controllers/uploads_controller.php:153
+msgid "Error! Your FTP upload could not be processed. "
+msgstr "Fehler! Der FTP-Upload konnte nicht bearbeitet werden."
+
+#: /controllers/uploads_controller.php:165
+msgid "Invalid Upload"
+msgstr "Ungültiger Upload."
+
+#: /controllers/uploads_controller.php:170
+msgid "The Upload has been saved"
+msgstr "Der Upload wurde gespeichert."
+
+#: /controllers/uploads_controller.php:213
+msgid "You may not download this file."
+msgstr ""
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:99
+#, fuzzy
+msgid "Component intitailization"
+msgstr "Initialisiere und starte Komponenten."
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:100
+msgid "Component initialization and startup"
+msgstr "Initialisiere und starte Komponenten."
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:170
+#, fuzzy
+msgid "Controller action"
+msgstr "Controller Action"
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:171
+#, fuzzy
+msgid "Controller action start"
+msgstr "Controller Action"
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:199
+msgid "Render Controller Action"
+msgstr "Render Controller Action"
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:200
+#, fuzzy
+msgid "Controller render start"
+msgstr "Controller Action"
+
+#: /plugins/debug_kit/controllers/components/toolbar.php:265
+msgid "Could not load DebugToolbar panel %s"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/debug_kit_debugger.php:186
+msgid "Core Processing (Derived)"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/fire_cake.php:297
+msgid "Headers already sent in %s on line %s. Cannot send log data to FirePHP."
+msgstr ""
+
+#: /plugins/debug_kit/vendors/fire_cake.php:318
+msgid "Incorrect parameter count for FireCake::fb()"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/fire_cake.php:397
+msgid "Maximum number (99,999) of messages reached!"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:50
+msgid "-> Testing :url"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:76
+msgid "Total Requests made: :requests"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:77
+msgid "Total Time elapsed: :duration (seconds)"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:81
+msgid "Requests/Second: :rps req/sec"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:85
+msgid "Average request time: :average-time seconds"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:89
+msgid "Standard deviation of average request time: :std-dev"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:93
+msgid "Longest/shortest request: :longest sec/:shortest sec"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:145
+msgid "DebugKit Benchmark Shell"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:147
+msgid ""
+"\tAllows you to obtain some rough benchmarking statistics \n"
+"\tabout a fully qualified URL."
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:149
+msgid "\tUse:"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:150
+msgid "\t\tcake benchmark [-n iterations] [-t timeout] url"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:152
+#, fuzzy
+msgid "\tParams:"
+msgstr "Parameter"
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:153
+msgid ""
+"\t\t-n Number of iterations to perform. Defaults to 10. \n"
+"\t\t   Must be an integer."
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:154
+msgid ""
+"\t\t-t Maximum total time for all iterations, in seconds. \n"
+"\t\t   Defaults to 100. Must be an integer."
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:156
+msgid ""
+"\tIf a single iteration takes more than the \n"
+"\ttimeout specified, only one request will be made."
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:158
+msgid "\tExample Use:"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:159
+msgid "\t\tcake benchmark -n 10 -t 100 http://localhost/testsite"
+msgstr ""
+
+#: /plugins/debug_kit/vendors/shells/benchmark.php:161
+msgid "\tNote that this benchmark does not include browser render time"
+msgstr ""
+
+#: /plugins/debug_kit/views/debug.php:51
+msgid "Rendering %s"
+msgstr ""
+
+#: /plugins/debug_kit/views/debug.php:72
+msgid "Rendering View"
+msgstr ""
+
+#: /plugins/debug_kit/views/debug.php:77
+msgid "View render complete"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/debug_toolbar.ctp:25
+msgid "There are no active panels. You must enable a panel to see its output."
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/history_panel.ctp:21
+msgid "Request History"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/history_panel.ctp:23
+msgid "No previous requests logged."
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/history_panel.ctp:25
+msgid "previous requests available"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/history_panel.ctp:27
+msgid "Restore to current request"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/log_panel.ctp:21
+#, fuzzy
+msgid "Logs"
+msgstr "Login"
+
+#: /plugins/debug_kit/views/elements/log_panel.ctp:28
+#, fuzzy
+msgid "Time"
+msgstr "Titel"
+
+#: /plugins/debug_kit/views/elements/log_panel.ctp:28
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:40;64
+msgid "Message"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/log_panel.ctp:37
+msgid "There were no log entries made this request"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/request_panel.ctp:21
+#, fuzzy
+msgid "Request"
+msgstr "Requirement"
+
+#: /plugins/debug_kit/views/elements/request_panel.ctp:35
+msgid "Current Route"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/session_panel.ctp:21
+#, fuzzy
+msgid "Session"
+msgstr "Sektion"
+
+#: /plugins/debug_kit/views/elements/sql_log_panel.ctp:21
+msgid "Sql Logs"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/sql_log_panel.ctp:31
+msgid "toggle (%s) query explains for %s"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/sql_log_panel.ctp:36
+msgid "Query:"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/sql_log_panel.ctp:42
+msgid "No slow queries!, or your database does not support EXPLAIN"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/sql_log_panel.ctp:47
+msgid "No active database connections"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:33
+msgid "Memory"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:36
+msgid "Peak Memory Use"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:40
+msgid "Memory use"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:53
+#, fuzzy
+msgid "Timers"
+msgstr "Bedingungen"
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:55
+msgid "%s (ms)"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:56
+msgid "Total Request Time:"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:65
+msgid "Time in ms"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/timer_panel.ctp:66
+msgid "Graph"
+msgstr ""
+
+#: /plugins/debug_kit/views/elements/variables_panel.ctp:21
+msgid "View Variables"
+msgstr ""
+
+#: /plugins/debug_kit/views/helpers/simple_graph.php:77
+msgid "Starting %sms into the request, taking %sms"
+msgstr ""
 
 #: /views/artists/add.ctp:4;7
 msgid "Please enter a name"
@@ -406,13 +660,8 @@ msgid "Please enter a valid email address"
 msgstr "Bitte gib eine gültige E-Mail-Adresse ein"
 
 #: /views/artists/add.ctp:11
-msgid ""
-"Your Email Adress is already registered. If you forgot your password, please "
-"click on 'login' and use the 'Forgot Password' function."
-msgstr ""
-"Deine E-Mail-Adresse ist bereits registriert. Wenn Du Dein Passwort "
-"vergessen hat, klicke auf \"einloggen\" und dann \"Ich habe mein Passwort "
-"vergessen\""
+msgid "Your Email Adress is already registered. If you forgot your password, please click on 'login' and use the 'Forgot Password' function."
+msgstr "Deine E-Mail-Adresse ist bereits registriert. Wenn Du Dein Passwort vergessen hat, klicke auf \"einloggen\" und dann \"Ich habe mein Passwort vergessen\""
 
 #: /views/artists/add.ctp:14
 msgid "This does not look like a valid URL"
@@ -423,34 +672,38 @@ msgid "You"
 msgstr "Du"
 
 #: /views/artists/add.ctp:23
-msgid ""
-"Please tell us some things about yourself. Or %s if you've submitted before."
-msgstr ""
-"Bitte sage uns ein paar Dinge über Dich. Oder %s wenn du vorher schonmal "
-"hier warst."
+msgid "Please tell us some things about yourself. Or %s if you've submitted before."
+msgstr "Bitte sage uns ein paar Dinge über Dich. Oder %s wenn du vorher schonmal hier warst."
 
 #: /views/artists/add.ctp:23
 msgid "log in"
 msgstr "logge dich ein"
 
-#: /views/artists/add.ctp:28
+#: /views/artists/add.ctp:25
+#: /views/pieces/add.ctp:84
+msgid "<b>Bold</b> fields are required."
+msgstr "<b>Fettgedruckte</b> Felder sind Pflichtangaben."
+
+#: /views/artists/add.ctp:30
 msgid "We will never give your address to other people!"
 msgstr "Wir geben Deine Mailadresse nicht weiter!"
 
-#: /views/artists/add.ctp:29
+#: /views/artists/add.ctp:31
 msgid "URL of your website, portfolio or profile"
 msgstr "URL Deiner Website"
 
-#: /views/artists/add.ctp:30
+#: /views/artists/add.ctp:32
 msgid "If you like: Portrait (JPEG Image, %d KB max)"
 msgstr "Wenn möglich: Portrait (JPEG-Bild, %d KB max)"
 
-#: /views/artists/add.ctp:33 /views/pieces/add.ctp:149
+#: /views/artists/add.ctp:35
+#: /views/pieces/add.ctp:174
 #: /views/types/select.ctp:15
 msgid "Continue"
 msgstr "Weiter"
 
-#: /views/artists/change_password.ctp:4 /views/layouts/default.ctp:58
+#: /views/artists/change_password.ctp:4
+#: /views/layouts/default.ctp:58
 msgid "Change Password"
 msgstr "Passwort ändern"
 
@@ -462,39 +715,76 @@ msgstr "Neues Passwort"
 msgid "Repeat new password"
 msgstr "Neues Passwort wiederholen"
 
-#: /views/artists/edit.ctp:4 /views/artists/view.ctp:38
+#: /views/artists/edit.ctp:4
+#: /views/artists/view.ctp:38
 msgid "Edit Artist"
 msgstr "Künstler bearbeiten"
 
-#: /views/artists/edit.ctp:18 /views/artists/index.ctp:49
-#: /views/pieces/edit.ctp:29 /views/requirements/edit.ctp:17
-#: /views/requirements/index.ctp:30 /views/requirements/show_by_type.ctp:39
-#: /views/screening_formats/edit.ctp:15 /views/screening_formats/index.ctp:33
-#: /views/screening_formats/view.ctp:77 /views/searches/edit.ctp:15
-#: /views/searches/index.ctp:33 /views/sections/edit.ctp:18
-#: /views/sections/index.ctp:49 /views/shooting_formats/edit.ctp:14
-#: /views/shooting_formats/index.ctp:33 /views/shooting_formats/view.ctp:77
-#: /views/tags/edit.ctp:15 /views/tags/index.ctp:33 /views/tags/view.ctp:81
-#: /views/types/edit.ctp:15 /views/types/index.ctp:38
+#: /views/artists/edit.ctp:18
+#: /views/artists/index.ctp:49
+#: /views/ftp_accounts/edit.ctp:17
+#: /views/ftp_accounts/index.ctp:45
+#: /views/pieces/edit.ctp:29
+#: /views/requirements/edit.ctp:17
+#: /views/requirements/index.ctp:30
+#: /views/requirements/show_by_type.ctp:39
+#: /views/screening_formats/edit.ctp:15
+#: /views/screening_formats/index.ctp:33
+#: /views/screening_formats/view.ctp:77
+#: /views/searches/edit.ctp:15
+#: /views/searches/index.ctp:33
+#: /views/sections/edit.ctp:18
+#: /views/sections/index.ctp:49
+#: /views/shooting_formats/edit.ctp:14
+#: /views/shooting_formats/index.ctp:33
+#: /views/shooting_formats/view.ctp:77
+#: /views/tags/edit.ctp:15
+#: /views/tags/index.ctp:33
+#: /views/tags/view.ctp:81
+#: /views/types/edit.ctp:15
+#: /views/types/index.ctp:38
+#: /views/uploads/edit.ctp:16
+#: /views/uploads/index.ctp:41
 msgid "Delete"
 msgstr "Löschen"
 
-#: /views/artists/edit.ctp:18 /views/artists/index.ctp:49
-#: /views/artists/view.ctp:39 /views/pieces/edit.ctp:29
-#: /views/requirements/edit.ctp:17 /views/requirements/index.ctp:30
-#: /views/requirements/show_by_type.ctp:39 /views/requirements/view.ctp:29
-#: /views/screening_formats/edit.ctp:15 /views/screening_formats/index.ctp:33
-#: /views/screening_formats/view.ctp:19;77 /views/searches/edit.ctp:15
-#: /views/searches/index.ctp:33 /views/searches/view.ctp:24
-#: /views/sections/edit.ctp:18 /views/sections/index.ctp:49
-#: /views/sections/view.ctp:39 /views/shooting_formats/edit.ctp:14
-#: /views/shooting_formats/index.ctp:33 /views/shooting_formats/view.ctp:19;77
-#: /views/tags/edit.ctp:15 /views/tags/index.ctp:33 /views/tags/view.ctp:19;81
-#: /views/types/edit.ctp:15 /views/types/index.ctp:38 /views/types/view.ctp:31
+#: /views/artists/edit.ctp:18
+#: /views/artists/index.ctp:49
+#: /views/artists/view.ctp:39
+#: /views/ftp_accounts/edit.ctp:17
+#: /views/ftp_accounts/index.ctp:45
+#: /views/ftp_accounts/view.ctp:34
+#: /views/pieces/edit.ctp:29
+#: /views/requirements/edit.ctp:17
+#: /views/requirements/index.ctp:30
+#: /views/requirements/show_by_type.ctp:39
+#: /views/requirements/view.ctp:29
+#: /views/screening_formats/edit.ctp:15
+#: /views/screening_formats/index.ctp:33
+#: /views/screening_formats/view.ctp:19;77
+#: /views/searches/edit.ctp:15
+#: /views/searches/index.ctp:33
+#: /views/searches/view.ctp:24
+#: /views/sections/edit.ctp:18
+#: /views/sections/index.ctp:49
+#: /views/sections/view.ctp:39
+#: /views/shooting_formats/edit.ctp:14
+#: /views/shooting_formats/index.ctp:33
+#: /views/shooting_formats/view.ctp:19;77
+#: /views/tags/edit.ctp:15
+#: /views/tags/index.ctp:33
+#: /views/tags/view.ctp:19;81
+#: /views/types/edit.ctp:15
+#: /views/types/index.ctp:38
+#: /views/types/view.ctp:31
+#: /views/uploads/edit.ctp:16
+#: /views/uploads/index.ctp:41
+#: /views/uploads/view.ctp:29
 msgid "Are you sure you want to delete # %s?"
 msgstr "Bist Du sicher, dass du # %s löschen möchtest?"
 
-#: /views/artists/edit.ctp:19 /views/artists/view.ctp:40
+#: /views/artists/edit.ctp:19
+#: /views/artists/view.ctp:40
 msgid "List Artists"
 msgstr "Künstler-Liste"
 
@@ -503,11 +793,8 @@ msgid "Forgot Password"
 msgstr "Passwort vergessen"
 
 #: /views/artists/forgot_password.ctp:6
-msgid ""
-"Please enter your email address. You will get an email with a reset link."
-msgstr ""
-"Bitte gib deine E-Mailadresse ein. Wir schicken dir einen Link um dein "
-"Passwort zurückzusetzen."
+msgid "Please enter your email address. You will get an email with a reset link."
+msgstr "Bitte gib deine E-Mailadresse ein. Wir schicken dir einen Link um dein Passwort zurückzusetzen."
 
 #: /views/artists/forgot_password.ctp:9
 msgid "Email Address"
@@ -521,62 +808,100 @@ msgstr "Absenden"
 msgid "Artists"
 msgstr "Künstler"
 
-#: /views/artists/index.ctp:6 /views/pieces/search.ctp:36
-#: /views/screening_formats/index.ctp:6 /views/searches/index.ctp:6
-#: /views/sections/index.ctp:6 /views/shooting_formats/index.ctp:6
-#: /views/tags/index.ctp:6 /views/types/index.ctp:6
-msgid ""
-"Page %page% of %pages%, showing %current% records out of %count% total, "
-"starting on record %start%, ending on %end%"
-msgstr ""
-"Seite %page% von %pages%, zeige %current% Einträge von insgesamt %count%, "
-"aktuell von %start% bis %end%"
+#: /views/artists/index.ctp:6
+#: /views/ftp_accounts/index.ctp:6
+#: /views/pieces/search.ctp:36
+#: /views/screening_formats/index.ctp:6
+#: /views/searches/index.ctp:6
+#: /views/sections/index.ctp:6
+#: /views/shooting_formats/index.ctp:6
+#: /views/tags/index.ctp:6
+#: /views/types/index.ctp:6
+#: /views/uploads/index.ctp:6
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr "Seite %page% von %pages%, zeige %current% Einträge von insgesamt %count%, aktuell von %start% bis %end%"
 
-#: /views/artists/index.ctp:17 /views/screening_formats/index.ctp:13
-#: /views/screening_formats/view.ctp:47 /views/searches/index.ctp:13
-#: /views/sections/index.ctp:17 /views/shooting_formats/index.ctp:13
-#: /views/shooting_formats/view.ctp:47 /views/tags/index.ctp:13
-#: /views/tags/view.ctp:49 /views/types/index.ctp:14
+#: /views/artists/index.ctp:17
+#: /views/ftp_accounts/index.ctp:16
+#: /views/screening_formats/index.ctp:13
+#: /views/screening_formats/view.ctp:47
+#: /views/searches/index.ctp:13
+#: /views/sections/index.ctp:17
+#: /views/shooting_formats/index.ctp:13
+#: /views/shooting_formats/view.ctp:47
+#: /views/tags/index.ctp:13
+#: /views/tags/view.ctp:49
+#: /views/types/index.ctp:14
+#: /views/uploads/index.ctp:15
 msgid "Actions"
 msgstr "Aktionen"
 
-#: /views/artists/index.ctp:47 /views/requirements/index.ctp:28
+#: /views/artists/index.ctp:47
+#: /views/ftp_accounts/index.ctp:43
+#: /views/requirements/index.ctp:28
 #: /views/requirements/show_by_type.ctp:37
-#: /views/screening_formats/index.ctp:31 /views/screening_formats/view.ctp:75
-#: /views/sections/index.ctp:47 /views/shooting_formats/index.ctp:31
-#: /views/shooting_formats/view.ctp:75 /views/tags/index.ctp:31
-#: /views/tags/view.ctp:79 /views/types/index.ctp:36
+#: /views/screening_formats/index.ctp:31
+#: /views/screening_formats/view.ctp:75
+#: /views/sections/index.ctp:47
+#: /views/shooting_formats/index.ctp:31
+#: /views/shooting_formats/view.ctp:75
+#: /views/tags/index.ctp:31
+#: /views/tags/view.ctp:79
+#: /views/types/index.ctp:36
+#: /views/uploads/index.ctp:39
 msgid "View"
 msgstr "Anzeigen"
 
-#: /views/artists/index.ctp:48 /views/requirements/index.ctp:29
+#: /views/artists/index.ctp:48
+#: /views/ftp_accounts/index.ctp:44
+#: /views/requirements/index.ctp:29
 #: /views/requirements/show_by_type.ctp:38
-#: /views/screening_formats/index.ctp:32 /views/screening_formats/view.ctp:76
-#: /views/searches/index.ctp:32 /views/sections/index.ctp:48
-#: /views/shooting_formats/index.ctp:32 /views/shooting_formats/view.ctp:76
-#: /views/tags/index.ctp:32 /views/tags/view.ctp:80 /views/types/index.ctp:37
+#: /views/screening_formats/index.ctp:32
+#: /views/screening_formats/view.ctp:76
+#: /views/searches/index.ctp:32
+#: /views/sections/index.ctp:48
+#: /views/shooting_formats/index.ctp:32
+#: /views/shooting_formats/view.ctp:76
+#: /views/tags/index.ctp:32
+#: /views/tags/view.ctp:80
+#: /views/types/index.ctp:37
+#: /views/uploads/index.ctp:40
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: /views/artists/index.ctp:56 /views/pieces/search.ctp:77
-#: /views/screening_formats/index.ctp:40 /views/searches/index.ctp:40
-#: /views/sections/index.ctp:56 /views/shooting_formats/index.ctp:40
-#: /views/tags/index.ctp:40 /views/types/index.ctp:45
+#: /views/artists/index.ctp:56
+#: /views/ftp_accounts/index.ctp:52
+#: /views/pieces/search.ctp:77
+#: /views/screening_formats/index.ctp:40
+#: /views/searches/index.ctp:40
+#: /views/sections/index.ctp:56
+#: /views/shooting_formats/index.ctp:40
+#: /views/tags/index.ctp:40
+#: /views/types/index.ctp:45
+#: /views/uploads/index.ctp:48
 msgid "previous"
 msgstr "vorherige"
 
-#: /views/artists/index.ctp:58 /views/pieces/search.ctp:79
-#: /views/screening_formats/index.ctp:42 /views/searches/index.ctp:42
-#: /views/sections/index.ctp:58 /views/shooting_formats/index.ctp:42
-#: /views/tags/index.ctp:42 /views/types/index.ctp:47
+#: /views/artists/index.ctp:58
+#: /views/ftp_accounts/index.ctp:54
+#: /views/pieces/search.ctp:79
+#: /views/screening_formats/index.ctp:42
+#: /views/searches/index.ctp:42
+#: /views/sections/index.ctp:58
+#: /views/shooting_formats/index.ctp:42
+#: /views/tags/index.ctp:42
+#: /views/types/index.ctp:47
+#: /views/uploads/index.ctp:50
 msgid "next"
 msgstr "folgende"
 
-#: /views/artists/index.ctp:62 /views/artists/view.ctp:41
+#: /views/artists/index.ctp:62
+#: /views/artists/view.ctp:41
 msgid "New Artist"
 msgstr "Neuer Künstler"
 
 #: /views/artists/login.ctp:6
+#: /views/ftp_accounts/view.ctp:19
 msgid "Password"
 msgstr "Passwort"
 
@@ -584,18 +909,26 @@ msgstr "Passwort"
 msgid "I forgot my password"
 msgstr "Ich habe mein Passwort vergessen"
 
-#: /views/artists/view.ctp:2 /views/pieces/view.ctp:30
+#: /views/artists/view.ctp:2
+#: /views/pieces/view.ctp:35
 msgid "Artist"
 msgstr "Künstler"
 
-#: /views/artists/view.ctp:4 /views/requirements/view.ctp:4
-#: /views/screening_formats/view.ctp:4;31 /views/searches/view.ctp:4
-#: /views/sections/view.ctp:4 /views/shooting_formats/view.ctp:4;31
-#: /views/tags/view.ctp:4;31 /views/types/view.ctp:4
+#: /views/artists/view.ctp:4
+#: /views/ftp_accounts/view.ctp:4
+#: /views/requirements/view.ctp:4
+#: /views/screening_formats/view.ctp:4;31
+#: /views/searches/view.ctp:4
+#: /views/sections/view.ctp:4
+#: /views/shooting_formats/view.ctp:4;31
+#: /views/tags/view.ctp:4;31
+#: /views/types/view.ctp:4
+#: /views/uploads/view.ctp:4
 msgid "Id"
 msgstr "ID"
 
-#: /views/artists/view.ctp:9 /views/screening_formats/view.ctp:9
+#: /views/artists/view.ctp:9
+#: /views/screening_formats/view.ctp:9
 #: /views/shooting_formats/view.ctp:9
 msgid "Name"
 msgstr "Vorname"
@@ -612,7 +945,7 @@ msgstr "E-Mail"
 msgid "Url"
 msgstr "URL"
 
-#: /views/artists/view.ctp:29 /views/pieces/view.ctp:142
+#: /views/artists/view.ctp:29
 msgid "Picture"
 msgstr "Bild"
 
@@ -636,6 +969,89 @@ msgstr "Gespeicherte Suchen"
 msgid "(show all)"
 msgstr "(alle anzeigen)"
 
+#: /views/ftp_accounts/activate.ctp:10
+msgid "FTP File Upload"
+msgstr "FTP-Upload"
+
+#: /views/ftp_accounts/activate.ctp:12
+msgid "With FTP, you can upload big files more easily. You will need an FTP program for this."
+msgstr "Per FTP kannst du auch große Dateien hochladen. Dafür brauchst du ein FTP-Programm."
+
+#: /views/ftp_accounts/activate.ctp:17
+msgid "Give me an FTP account"
+msgstr "Ich will einen FTP-Zugang"
+
+#: /views/ftp_accounts/add.ctp:4
+msgid "Add FtpAccount"
+msgstr ""
+
+#: /views/ftp_accounts/add.ctp:16
+#: /views/ftp_accounts/edit.ctp:18
+#: /views/ftp_accounts/view.ctp:35
+#, fuzzy
+msgid "List FtpAccounts"
+msgstr "Sektionen-Liste"
+
+#: /views/ftp_accounts/edit.ctp:4
+#: /views/ftp_accounts/view.ctp:33
+msgid "Edit FtpAccount"
+msgstr ""
+
+#: /views/ftp_accounts/index.ctp:2
+msgid "FtpAccounts"
+msgstr ""
+
+#: /views/ftp_accounts/index.ctp:58
+#: /views/ftp_accounts/view.ctp:36
+msgid "New FtpAccount"
+msgstr ""
+
+#: /views/ftp_accounts/process.ctp:12
+msgid "Your ftp information"
+msgstr "Dein FTP-Account"
+
+#: /views/ftp_accounts/process.ctp:19
+msgid "Your files"
+msgstr "Deine Dateien"
+
+#: /views/ftp_accounts/process.ctp:21
+msgid "Please connect via FTP and start uploading files"
+msgstr "Bitte lade jetzt deine Dateien mit deinem FTP-Programm hoch"
+
+#: /views/ftp_accounts/process.ctp:24
+msgid "Uploading"
+msgstr "Ladende Dateien"
+
+#: /views/ftp_accounts/process.ctp:29
+msgid "Finished"
+msgstr "Fertig"
+
+#: /views/ftp_accounts/process.ctp:30
+msgid "Please enter a description"
+msgstr "Bitte gib eine Beschreibung ein"
+
+#: /views/ftp_accounts/view.ctp:2
+msgid "FtpAccount"
+msgstr ""
+
+#: /views/ftp_accounts/view.ctp:9
+#, fuzzy
+msgid "Artist Id"
+msgstr "Künstler"
+
+#: /views/ftp_accounts/view.ctp:14
+msgid "Username"
+msgstr "Username"
+
+#: /views/ftp_accounts/view.ctp:24
+msgid "Folder"
+msgstr "Ordner"
+
+#: /views/ftp_accounts/view.ctp:34
+#, fuzzy
+msgid "Delete FtpAccount"
+msgstr "Sektion löschen"
+
 #: /views/layouts/default.ctp:47
 msgid "Logged in as "
 msgstr "Eingeloggt als "
@@ -644,7 +1060,8 @@ msgstr "Eingeloggt als "
 msgid "Overview"
 msgstr "Übersicht"
 
-#: /views/layouts/default.ctp:52 /views/pieces/search.ctp:4
+#: /views/layouts/default.ctp:52
+#: /views/pieces/search.ctp:4
 #: /views/searches/view.ctp:2
 msgid "Search"
 msgstr "Suchen"
@@ -661,97 +1078,93 @@ msgstr "Logout"
 msgid "Login"
 msgstr "Login"
 
-#: /views/layouts/default.ctp:79 /views/pages/about.ctp:1
+#: /views/layouts/default.ctp:79
+#: /views/pages/about.ctp:1
 msgid "About"
 msgstr "Impressum"
 
-#: /views/pages/home.ctp:16
+#: /views/pages/home.ctp:13
 msgid "english"
 msgstr "english"
 
-#: /views/pages/home.ctp:19
+#: /views/pages/home.ctp:16
 msgid "deutsch"
 msgstr "deutsch"
 
-#: /views/pictures/add.ctp:4
-msgid "Add Pictures to "
-msgstr "Bilder hinzufügen"
-
-#: /views/pictures/add.ctp:10
-msgid "JPEG Image File, %d KB max"
-msgstr "JPEG-Bilddatei, %d KB max"
-
-#: /views/pictures/add.ctp:13
-msgid "Upload"
-msgstr "Hochladen"
-
-#: /views/pictures/add.ctp:19
-msgid "Back to your "
-msgstr "Zurück zu"
+#: /views/pages/postal.ctp:1
+msgid "Mailings"
+msgstr "Post"
 
 #: /views/pieces/add.ctp:8
 msgid "Add additional Artist"
 msgstr "Künstler hinzufügen"
 
-#: /views/pieces/add.ctp:70
+#: /views/pieces/add.ctp:83
 msgid "Your Work"
 msgstr "Deine Arbeit"
 
-#: /views/pieces/add.ctp:80 /views/pieces/view.ctp:40
-#: /views/screening_formats/view.ctp:35 /views/shooting_formats/view.ctp:35
+#: /views/pieces/add.ctp:94
+#: /views/pieces/view.ctp:45
+#: /views/screening_formats/view.ctp:35
+#: /views/shooting_formats/view.ctp:35
 #: /views/tags/view.ctp:35
 msgid "Synopsis"
 msgstr "Synopsis"
 
-#: /views/pieces/add.ctp:82;92;97
+#: /views/pieces/add.ctp:100;112;117
 msgid "- Please select -"
 msgstr "- Bitte auswählen -"
 
-#: /views/pieces/add.ctp:84 /views/pieces/view.ctp:56
+#: /views/pieces/add.ctp:104
+#: /views/pieces/view.ctp:61
 msgid "Notes"
 msgstr "Anmerkungen"
 
-#: /views/pieces/add.ctp:90
+#: /views/pieces/add.ctp:110
 msgid "Duration (mm:ss)"
 msgstr "Dauer (mm:ss)"
 
-#: /views/pieces/add.ctp:94
+#: /views/pieces/add.ctp:114
 msgid "Available Screening Formats"
 msgstr "Verfügbare Vorführformate"
 
-#: /views/pieces/add.ctp:107
+#: /views/pieces/add.ctp:127
 msgid "How will we get a preview copy?"
 msgstr "Wie bekommen wir eine Vorschaukopie?"
 
-#: /views/pieces/add.ctp:109
+#: /views/pieces/add.ctp:129
 msgid "Via normal Mail (send us a DVD or miniDV tape)"
 msgstr "Mit normaler Post (schicke uns eine DVD oder ein miniDV-Tape)"
 
-#: /views/pieces/add.ctp:109
-msgid "I want to upload it (we'll tell you how)"
-msgstr "Lade das Video hoch (wir sagen Dir gleich, wie das geht)"
+#: /views/pieces/add.ctp:129
+msgid "I want to upload it (in the next step)"
+msgstr "Lade das Video hoch (im nächsten Schritt)"
 
-#: /views/pieces/add.ctp:109
+#: /views/pieces/add.ctp:129
 msgid "It is online anyway (tell us the URL)"
 msgstr "Ist sowieso schon online (wir brauchen die URL)"
 
-#: /views/pieces/add.ctp:118
+#: /views/pieces/add.ctp:137
+msgid "click here"
+msgstr ""
+
+#: /views/pieces/add.ctp:143
 msgid "Who has created this?"
 msgstr "Von wem ist diese Arbeit?"
 
-#: /views/pieces/add.ctp:119
+#: /views/pieces/add.ctp:144
 msgid "What was your contribution/function to this work?"
 msgstr "Was war Deine Funktion bei diesem Werk?"
 
-#: /views/pieces/add.ctp:119
+#: /views/pieces/add.ctp:144
 msgid "Should other people be credited as well?"
 msgstr "Sollten auch noch andere Menschen genannt werden?"
 
-#: /views/pieces/add.ctp:124;133;142
+#: /views/pieces/add.ctp:149;158;167
 msgid "Additional Artist:"
 msgstr "Weitere/r Beteiligte/r:"
 
-#: /views/pieces/add.ctp:126;135;144
+#: /views/pieces/add.ctp:151;160;169
 msgid "Function"
 msgstr "Funktion"
 
@@ -759,12 +1172,19 @@ msgstr "Funktion"
 msgid "Edit Piece"
 msgstr "Werk bearbeiten"
 
-#: /views/pieces/edit.ctp:30 /views/screening_formats/add.ctp:15
-#: /views/screening_formats/edit.ctp:17 /views/screening_formats/index.ctp:47
-#: /views/screening_formats/view.ctp:22 /views/shooting_formats/add.ctp:14
-#: /views/shooting_formats/edit.ctp:16 /views/shooting_formats/index.ctp:47
-#: /views/shooting_formats/view.ctp:22 /views/tags/add.ctp:15
-#: /views/tags/edit.ctp:17 /views/tags/index.ctp:47 /views/tags/view.ctp:22
+#: /views/pieces/edit.ctp:30
+#: /views/screening_formats/add.ctp:15
+#: /views/screening_formats/edit.ctp:17
+#: /views/screening_formats/index.ctp:47
+#: /views/screening_formats/view.ctp:22
+#: /views/shooting_formats/add.ctp:14
+#: /views/shooting_formats/edit.ctp:16
+#: /views/shooting_formats/index.ctp:47
+#: /views/shooting_formats/view.ctp:22
+#: /views/tags/add.ctp:15
+#: /views/tags/edit.ctp:17
+#: /views/tags/index.ctp:47
+#: /views/tags/view.ctp:22
 msgid "List Pieces"
 msgstr "Werkliste"
 
@@ -776,9 +1196,12 @@ msgstr "Deine Einreichungen"
 msgid "id"
 msgstr "ID"
 
-#: /views/pieces/index.ctp:7 /views/pieces/search.ctp:12
-#: /views/searches/view.ctp:9 /views/sections/view.ctp:9
-#: /views/tags/view.ctp:9 /views/types/view.ctp:9
+#: /views/pieces/index.ctp:7
+#: /views/pieces/search.ctp:12
+#: /views/searches/view.ctp:9
+#: /views/sections/view.ctp:9
+#: /views/tags/view.ctp:9
+#: /views/types/view.ctp:9
 msgid "Title"
 msgstr "Titel"
 
@@ -786,7 +1209,8 @@ msgstr "Titel"
 msgid "Submitted to"
 msgstr "Eingereicht in"
 
-#: /views/pieces/index.ctp:9 /views/pieces/view.ctp:120
+#: /views/pieces/index.ctp:9
+#: /views/pieces/view.ctp:125
 msgid "Submitted"
 msgstr "Eingereicht"
 
@@ -802,65 +1226,80 @@ msgstr "Diese Suche speichern"
 msgid "Search Results"
 msgstr "Suchergebnisse"
 
-#: /views/pieces/view.ctp:7
-msgid "Add images"
-msgstr "Bilder hinzufügen"
+#: /views/pieces/view.ctp:12
+msgid "Add files"
+msgstr "Dateien hinzufügen"
 
-#: /views/pieces/view.ctp:14 /views/screening_formats/view.ctp:32
-#: /views/shooting_formats/view.ctp:32 /views/tags/view.ctp:32
+#: /views/pieces/view.ctp:19
+#: /views/screening_formats/view.ctp:32
+#: /views/shooting_formats/view.ctp:32
+#: /views/tags/view.ctp:32
 msgid "Original Title"
 msgstr "Originaltitel"
 
-#: /views/pieces/view.ctp:22 /views/screening_formats/view.ctp:33
-#: /views/shooting_formats/view.ctp:33 /views/tags/view.ctp:33
+#: /views/pieces/view.ctp:27
+#: /views/screening_formats/view.ctp:33
+#: /views/shooting_formats/view.ctp:33
+#: /views/tags/view.ctp:33
 msgid "English Title"
 msgstr "Englischer Titel"
 
-#: /views/pieces/view.ctp:34
+#: /views/pieces/view.ctp:39
 msgid "Main Contact"
 msgstr "Kontaktperson"
 
-#: /views/pieces/view.ctp:48 /views/sections/view.ctp:2
+#: /views/pieces/view.ctp:53
+#: /views/sections/view.ctp:2
 msgid "Section"
 msgstr "Sektion"
 
-#: /views/pieces/view.ctp:64 /views/screening_formats/view.ctp:40
-#: /views/shooting_formats/view.ctp:40 /views/tags/view.ctp:40
+#: /views/pieces/view.ctp:69
+#: /views/screening_formats/view.ctp:40
+#: /views/shooting_formats/view.ctp:40
+#: /views/tags/view.ctp:40
 msgid "Production Year"
 msgstr "Produktionsjahr"
 
-#: /views/pieces/view.ctp:72 /views/screening_formats/view.ctp:41
-#: /views/shooting_formats/view.ctp:41 /views/tags/view.ctp:41
+#: /views/pieces/view.ctp:77
+#: /views/screening_formats/view.ctp:41
+#: /views/shooting_formats/view.ctp:41
+#: /views/tags/view.ctp:41
 msgid "Duration"
 msgstr "Dauer"
 
-#: /views/pieces/view.ctp:80
+#: /views/pieces/view.ctp:85
 msgid "Shooting Format"
 msgstr "Drehformat"
 
-#: /views/pieces/view.ctp:89
+#: /views/pieces/view.ctp:94
 msgid "Screening Format"
 msgstr "Vorführformat"
 
-#: /views/pieces/view.ctp:97
+#: /views/pieces/view.ctp:102
 msgid "Country"
 msgstr "Land"
 
-#: /views/pieces/view.ctp:105 /views/screening_formats/view.ctp:44
-#: /views/shooting_formats/view.ctp:44 /views/tags/view.ctp:44
+#: /views/pieces/view.ctp:110
+#: /views/screening_formats/view.ctp:44
+#: /views/shooting_formats/view.ctp:44
+#: /views/tags/view.ctp:44
 msgid "Genre"
 msgstr "Genre"
 
-#: /views/pieces/view.ctp:113 /views/screening_formats/view.ctp:45
-#: /views/shooting_formats/view.ctp:45 /views/tags/view.ctp:45
+#: /views/pieces/view.ctp:118
+#: /views/screening_formats/view.ctp:45
+#: /views/shooting_formats/view.ctp:45
+#: /views/tags/view.ctp:45
 msgid "Shown Before"
 msgstr "Bereits veröffentlicht"
 
-#: /views/pieces/view.ctp:127 /views/tags/view.ctp:47
+#: /views/pieces/view.ctp:132
+#: /views/tags/view.ctp:47
 msgid "Preview How"
 msgstr "Wie Vorschau"
 
-#: /views/pieces/view.ctp:135 /views/tags/view.ctp:48
+#: /views/pieces/view.ctp:140
+#: /views/tags/view.ctp:48
 msgid "Preview Url"
 msgstr "Vorschau-URL"
 
@@ -868,32 +1307,43 @@ msgstr "Vorschau-URL"
 msgid "Add Requirement"
 msgstr "Requirement hinzufügen"
 
-#: /views/requirements/add.ctp:20 /views/requirements/edit.ctp:18
+#: /views/requirements/add.ctp:20
+#: /views/requirements/edit.ctp:18
 #: /views/requirements/view.ctp:30
 msgid "List Requirements"
 msgstr "Requirement-Liste"
 
-#: /views/requirements/add.ctp:21 /views/requirements/edit.ctp:19
-#: /views/requirements/index.ctp:39 /views/requirements/view.ctp:32
-#: /views/types/add.ctp:14 /views/types/edit.ctp:16 /views/types/view.ctp:32
+#: /views/requirements/add.ctp:21
+#: /views/requirements/edit.ctp:19
+#: /views/requirements/index.ctp:39
+#: /views/requirements/view.ctp:32
+#: /views/types/add.ctp:14
+#: /views/types/edit.ctp:16
+#: /views/types/view.ctp:32
 msgid "List Types"
 msgstr "Typen-Liste"
 
-#: /views/requirements/add.ctp:22 /views/requirements/edit.ctp:20
-#: /views/requirements/index.ctp:40 /views/requirements/view.ctp:33
-#: /views/types/index.ctp:51 /views/types/view.ctp:33
+#: /views/requirements/add.ctp:22
+#: /views/requirements/edit.ctp:20
+#: /views/requirements/index.ctp:40
+#: /views/requirements/view.ctp:33
+#: /views/types/index.ctp:51
+#: /views/types/view.ctp:33
 msgid "New Type"
 msgstr "Neuer Typ"
 
-#: /views/requirements/edit.ctp:4 /views/requirements/view.ctp:28
+#: /views/requirements/edit.ctp:4
+#: /views/requirements/view.ctp:28
 msgid "Edit Requirement"
 msgstr "Requirement bearbeiten"
 
-#: /views/requirements/index.ctp:2 /views/types/view.ctp:21
+#: /views/requirements/index.ctp:2
+#: /views/types/view.ctp:21
 msgid "Requirements"
 msgstr "Requirements"
 
-#: /views/requirements/index.ctp:38 /views/requirements/show_by_type.ctp:52
+#: /views/requirements/index.ctp:38
+#: /views/requirements/show_by_type.ctp:52
 #: /views/requirements/view.ctp:31
 msgid "New Requirement"
 msgstr "Requirement hinzufügen"
@@ -906,7 +1356,8 @@ msgstr "Requirements für"
 msgid "Requirement"
 msgstr "Requirement"
 
-#: /views/requirements/view.ctp:9 /views/types/view.ctp:2
+#: /views/requirements/view.ctp:9
+#: /views/types/view.ctp:2
 msgid "Type"
 msgstr "Typ"
 
@@ -926,21 +1377,29 @@ msgstr "Requirement löschen"
 msgid "Add ScreeningFormat"
 msgstr "Vorführformat hinzufügen"
 
-#: /views/screening_formats/add.ctp:14 /views/screening_formats/edit.ctp:16
+#: /views/screening_formats/add.ctp:14
+#: /views/screening_formats/edit.ctp:16
 #: /views/screening_formats/view.ctp:20
 msgid "List ScreeningFormats"
 msgstr "Vorführformat-Liste"
 
-#: /views/screening_formats/add.ctp:16 /views/screening_formats/edit.ctp:18
+#: /views/screening_formats/add.ctp:16
+#: /views/screening_formats/edit.ctp:18
 #: /views/screening_formats/index.ctp:48
-#: /views/screening_formats/view.ctp:23;86 /views/shooting_formats/add.ctp:15
-#: /views/shooting_formats/edit.ctp:17 /views/shooting_formats/index.ctp:48
-#: /views/shooting_formats/view.ctp:23;86 /views/tags/add.ctp:16
-#: /views/tags/edit.ctp:18 /views/tags/index.ctp:48 /views/tags/view.ctp:23;90
+#: /views/screening_formats/view.ctp:23;86
+#: /views/shooting_formats/add.ctp:15
+#: /views/shooting_formats/edit.ctp:17
+#: /views/shooting_formats/index.ctp:48
+#: /views/shooting_formats/view.ctp:23;86
+#: /views/tags/add.ctp:16
+#: /views/tags/edit.ctp:18
+#: /views/tags/index.ctp:48
+#: /views/tags/view.ctp:23;90
 msgid "New Piece"
 msgstr "Neues Werk"
 
-#: /views/screening_formats/edit.ctp:4 /views/screening_formats/view.ctp:18
+#: /views/screening_formats/edit.ctp:4
+#: /views/screening_formats/view.ctp:18
 msgid "Edit ScreeningFormat"
 msgstr "Vorführformat bearbeiten"
 
@@ -948,7 +1407,8 @@ msgstr "Vorführformat bearbeiten"
 msgid "ScreeningFormats"
 msgstr "Vorführformate"
 
-#: /views/screening_formats/index.ctp:46 /views/screening_formats/view.ctp:21
+#: /views/screening_formats/index.ctp:46
+#: /views/screening_formats/view.ctp:21
 msgid "New ScreeningFormat"
 msgstr "Vorführformat hinzufügen"
 
@@ -960,47 +1420,57 @@ msgstr "Vorführformat"
 msgid "Delete ScreeningFormat"
 msgstr "Vorführformat löschen"
 
-#: /views/screening_formats/view.ctp:27 /views/shooting_formats/view.ctp:27
+#: /views/screening_formats/view.ctp:27
+#: /views/shooting_formats/view.ctp:27
 #: /views/tags/view.ctp:27
 msgid "Related Pieces"
 msgstr "Related Pieces"
 
-#: /views/screening_formats/view.ctp:34 /views/sections/view.ctp:29
-#: /views/shooting_formats/view.ctp:34 /views/tags/view.ctp:34
+#: /views/screening_formats/view.ctp:34
+#: /views/sections/view.ctp:29
+#: /views/shooting_formats/view.ctp:34
+#: /views/tags/view.ctp:34
 msgid "Type Id"
 msgstr "Type ID"
 
-#: /views/screening_formats/view.ctp:36 /views/shooting_formats/view.ctp:36
+#: /views/screening_formats/view.ctp:36
+#: /views/shooting_formats/view.ctp:36
 #: /views/tags/view.ctp:36
 msgid "Section Id"
 msgstr "Sektion ID"
 
-#: /views/screening_formats/view.ctp:37 /views/shooting_formats/view.ctp:37
+#: /views/screening_formats/view.ctp:37
+#: /views/shooting_formats/view.ctp:37
 #: /views/tags/view.ctp:37
 msgid "Selected"
 msgstr "Ausgewählt"
 
-#: /views/screening_formats/view.ctp:38 /views/shooting_formats/view.ctp:38
+#: /views/screening_formats/view.ctp:38
+#: /views/shooting_formats/view.ctp:38
 #: /views/tags/view.ctp:38
 msgid "Notes Team"
 msgstr "Anmerkungen Team"
 
-#: /views/screening_formats/view.ctp:39 /views/shooting_formats/view.ctp:39
+#: /views/screening_formats/view.ctp:39
+#: /views/shooting_formats/view.ctp:39
 #: /views/tags/view.ctp:39
 msgid "Notes Artist"
 msgstr "Anmerkungen Künstler"
 
-#: /views/screening_formats/view.ctp:42 /views/shooting_formats/view.ctp:42
+#: /views/screening_formats/view.ctp:42
+#: /views/shooting_formats/view.ctp:42
 #: /views/tags/view.ctp:42
 msgid "Shooting Format Id"
 msgstr "Drehformat-ID"
 
-#: /views/screening_formats/view.ctp:43 /views/shooting_formats/view.ctp:43
+#: /views/screening_formats/view.ctp:43
+#: /views/shooting_formats/view.ctp:43
 #: /views/tags/view.ctp:43
 msgid "Country Id"
 msgstr "Länder-ID"
 
-#: /views/screening_formats/view.ctp:46 /views/shooting_formats/view.ctp:46
+#: /views/screening_formats/view.ctp:46
+#: /views/shooting_formats/view.ctp:46
 #: /views/tags/view.ctp:46
 msgid "Created"
 msgstr "Erstellt"
@@ -1013,11 +1483,13 @@ msgstr "Suche speichern"
 msgid "Add a title"
 msgstr "Titel hinzufügen"
 
-#: /views/searches/edit.ctp:4 /views/searches/view.ctp:23
+#: /views/searches/edit.ctp:4
+#: /views/searches/view.ctp:23
 msgid "Edit Search"
 msgstr "Suche bearbeiten"
 
-#: /views/searches/edit.ctp:16 /views/searches/view.ctp:25
+#: /views/searches/edit.ctp:16
+#: /views/searches/view.ctp:25
 msgid "List Searches"
 msgstr "Gespeicherte Suchen"
 
@@ -1029,7 +1501,8 @@ msgstr "Gespeicherte Suchen"
 msgid "Run"
 msgstr "Ausführen"
 
-#: /views/searches/index.ctp:46 /views/searches/view.ctp:26
+#: /views/searches/index.ctp:46
+#: /views/searches/view.ctp:26
 msgid "New Search"
 msgstr "Neue Suche erstellen"
 
@@ -1045,12 +1518,14 @@ msgstr "Suche löschen"
 msgid "Add Section"
 msgstr "Sektion hinzufügen"
 
-#: /views/sections/add.ctp:17 /views/sections/edit.ctp:19
+#: /views/sections/add.ctp:17
+#: /views/sections/edit.ctp:19
 #: /views/sections/view.ctp:40
 msgid "List Sections"
 msgstr "Sektionen-Liste"
 
-#: /views/sections/edit.ctp:4 /views/sections/view.ctp:38
+#: /views/sections/edit.ctp:4
+#: /views/sections/view.ctp:38
 msgid "Edit Section"
 msgstr "Sektion bearbeiten"
 
@@ -1058,7 +1533,8 @@ msgstr "Sektion bearbeiten"
 msgid "Sections"
 msgstr "Sektionen"
 
-#: /views/sections/index.ctp:62 /views/sections/view.ctp:41
+#: /views/sections/index.ctp:62
+#: /views/sections/view.ctp:41
 msgid "New Section"
 msgstr "Neue Sektion"
 
@@ -1099,6 +1575,7 @@ msgid "Closing Date"
 msgstr "Schlussdatum"
 
 #: /views/sections/view.ctp:24
+#: /views/uploads/view.ctp:9
 msgid "Description"
 msgstr "Beschreibung"
 
@@ -1110,12 +1587,14 @@ msgstr "Sektion löschen"
 msgid "Add ShootingFormat"
 msgstr "Drehformat hinzufügen"
 
-#: /views/shooting_formats/add.ctp:13 /views/shooting_formats/edit.ctp:15
+#: /views/shooting_formats/add.ctp:13
+#: /views/shooting_formats/edit.ctp:15
 #: /views/shooting_formats/view.ctp:20
 msgid "List ShootingFormats"
 msgstr "Drehformate-Liste"
 
-#: /views/shooting_formats/edit.ctp:4 /views/shooting_formats/view.ctp:18
+#: /views/shooting_formats/edit.ctp:4
+#: /views/shooting_formats/view.ctp:18
 msgid "Edit ShootingFormat"
 msgstr "Drehformat bearbeiten"
 
@@ -1123,7 +1602,8 @@ msgstr "Drehformat bearbeiten"
 msgid "ShootingFormats"
 msgstr "Drehformate"
 
-#: /views/shooting_formats/index.ctp:46 /views/shooting_formats/view.ctp:21
+#: /views/shooting_formats/index.ctp:46
+#: /views/shooting_formats/view.ctp:21
 msgid "New ShootingFormat"
 msgstr "Drehformat hinzufügen"
 
@@ -1139,11 +1619,14 @@ msgstr "Drehformat löschen"
 msgid "Add Tag"
 msgstr "Tag hinzufügen"
 
-#: /views/tags/add.ctp:14 /views/tags/edit.ctp:16 /views/tags/view.ctp:20
+#: /views/tags/add.ctp:14
+#: /views/tags/edit.ctp:16
+#: /views/tags/view.ctp:20
 msgid "List Tags"
 msgstr "Tag-Liste"
 
-#: /views/tags/edit.ctp:4 /views/tags/view.ctp:18
+#: /views/tags/edit.ctp:4
+#: /views/tags/view.ctp:18
 msgid "Edit Tag"
 msgstr "Tag bearbeiten"
 
@@ -1151,7 +1634,8 @@ msgstr "Tag bearbeiten"
 msgid "Tags"
 msgstr "Tags"
 
-#: /views/tags/index.ctp:46 /views/tags/view.ctp:21
+#: /views/tags/index.ctp:46
+#: /views/tags/view.ctp:21
 msgid "New Tag"
 msgstr "Neues Tag"
 
@@ -1167,7 +1651,8 @@ msgstr "Tag löschen"
 msgid "Add Type"
 msgstr "Typ hinzufügen"
 
-#: /views/types/edit.ctp:4 /views/types/view.ctp:30
+#: /views/types/edit.ctp:4
+#: /views/types/view.ctp:30
 msgid "Edit Type"
 msgstr "Typ bearbeiten"
 
@@ -1188,11 +1673,8 @@ msgid "Terms for submitting a %s"
 msgstr "Bedingungen zur %s-Einreichung"
 
 #: /views/types/select.ctp:14
-msgid ""
-"Please tick this box to indicate you have read and understood the conditions"
-msgstr ""
-"Bitte bestätige mit einem Häkchen, dass du die Bedingungen gelesen und "
-"verstanden hast."
+msgid "Please tick this box to indicate you have read and understood the conditions"
+msgstr "Bitte bestätige mit einem Häkchen, dass du die Bedingungen gelesen und verstanden hast."
 
 #: /views/types/select.ctp:19
 msgid "Go back and submit something other"
@@ -1210,27 +1692,98 @@ msgstr "Bedingungen"
 msgid "Delete Type"
 msgstr "Typ löschen"
 
+#: /views/uploads/add.ctp:8
+msgid "Add Upload"
+msgstr "Upload hinzufügen"
+
+#: /views/uploads/add.ctp:13
+msgid "Select file, %01.2f MB max. Allowed types: %s"
+msgstr "Datei wählen, %01.2f MB max. Mögliche Dateitypen: %s"
+
+#: /views/uploads/add.ctp:17
+msgid "Please observe the allowed file types."
+msgstr "Bitte beachte die erlaubten Dateitypen."
+
+#: /views/uploads/add.ctp:20
+msgid "Shortly describe what is in this file, please"
+msgstr "Bitte beschreibe kurz, was in dieser Datei steckt."
+
+#: /views/uploads/add.ctp:26
+msgid "FTP upload"
+msgstr "FTP-Upload"
+
+#: /views/uploads/edit.ctp:4
+#: /views/uploads/view.ctp:28
+#, fuzzy
+msgid "Edit Upload"
+msgstr "Hochladen"
+
+#: /views/uploads/edit.ctp:17
+#: /views/uploads/view.ctp:30
+#, fuzzy
+msgid "List Uploads"
+msgstr "Hochladen"
+
+#: /views/uploads/index.ctp:2
+msgid "Uploads"
+msgstr "Uploads"
+
+#: /views/uploads/index.ctp:54
+#: /views/uploads/view.ctp:31
+#, fuzzy
+msgid "New Upload"
+msgstr "Hochladen"
+
+#: /views/uploads/view.ctp:2
+msgid "Upload"
+msgstr "Hochladen"
+
+#: /views/uploads/view.ctp:14
+msgid "Extension"
+msgstr "Erweiterung"
+
+#: /views/uploads/view.ctp:19
+msgid "Piece Id"
+msgstr "Piece ID"
+
+#: /views/uploads/view.ctp:29
+#, fuzzy
+msgid "Delete Upload"
+msgstr "Tag löschen"
+
 #: /webroot/test.php:99
 msgid "Debug setting does not allow access to this url."
 msgstr "Debug setting does not allow access to this url."
 
+#~ msgid "Invalid Picture."
+#~ msgstr "Ungültiges Bild"
+#~ msgid "Only JPEG images are allowed."
+#~ msgstr "Es sind nur JPEG-Bilder erlaubt."
+#~ msgid "The Picture has been saved. Add another one, if you like."
+#~ msgstr ""
+#~ "Das Bild wurde gespeichert. Du kannst jetzt weitere hochladen, wenn du "
+#~ "möchtest."
+#~ msgid "The Picture could not be saved. Please, try again."
+#~ msgstr ""
+#~ "Das Bild konnte nicht gespeichert werden. Bitte versuche es noch einmal."
+#~ msgid "Image Error:"
+#~ msgstr "Fehler beim Bild:"
+#~ msgid "Invalid id for Picture"
+#~ msgstr "Ungültige Bild-ID"
+#~ msgid "Picture deleted"
+#~ msgstr "Bild wurde gelöscht."
+#~ msgid "Add Pictures to "
+#~ msgstr "Bilder hinzufügen"
+#~ msgid "JPEG Image File, %d KB max"
+#~ msgstr "JPEG-Bilddatei, %d KB max"
+#~ msgid "Back to your "
+#~ msgstr "Zurück zu"
 #~ msgid "Synopsis (brief, but min. 150 chars)"
 #~ msgstr "Synopsis (kurz, aber mindestens 150 Zeichen)"
-
 #~ msgid "Who else was involved in your work?"
 #~ msgstr "Wer war noch an Deiner Arbeit beteiligt?"
-
-#~ msgid "Component initialization and startup"
-#~ msgstr "Initialisiere und starte Komponenten."
-
-#~ msgid "Controller Action"
-#~ msgstr "Controller Action"
-
-#~ msgid "Render Controller Action"
-#~ msgstr "Render Controller Action"
-
 #~ msgid "Submittr: "
 #~ msgstr "Submittr:"
-
 #~ msgid "Invalid Artist"
 #~ msgstr "Ungültiger Artist."
+
