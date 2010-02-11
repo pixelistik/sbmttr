@@ -153,11 +153,22 @@ class PiecesController extends AppController {
 					'Requirement.kind >'=>0
 				)));
 				if($uploadsPossible>0){
-					$this->Session->setFlash(__('Your submission has been saved. Thank you. You can add files now.', true));
+					$this->Session->setFlash(
+						sprintf(
+							__('Your submission has been saved. Please note the submission number #%s. You can add files now.', true),
+							$this->Piece->id		
+						)
+					);
 					$this->redirect(array('controller'=>'uploads','action'=>'add',$this->Piece->id));
 				}else{
 					// Just display the piece:
 					$this->Session->setFlash(__('Your submission has been saved. Thank you. Here is an overview for printing/saving', true));
+					$this->Session->setFlash(
+						sprintf(
+							__('Your submission has been saved. Please note the submission number #%s. Here is an overview for printing/saving', true),
+							$this->Piece->id		
+						)
+					);
 					$this->redirect(array('action'=>'view',$this->Piece->id));
 				}
 			} else {
