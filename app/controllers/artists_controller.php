@@ -108,7 +108,7 @@ class ArtistsController extends AppController {
 	function logout(){
 		// If this was the user's first login, suggest to change the password:
 		if($this->Session->read('isInitialPassword')){
-			$this->Session->setFlash(__('You might want to choose a password, so you can come back later. Or just click "Log out" again. You can always use the "Forgot password" function later.', true));
+			$this->Session->setFlash(__('You might want to choose a password, so you can come back later. Click "Log out" again to leave without a password. You can request it later.', true));
 			$this->Session->del('isInitialPassword');
 			$this->redirect(array('action'=>'changePassword'));
 		}
