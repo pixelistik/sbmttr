@@ -28,7 +28,7 @@ Password: <?php echo $ftp_account['FtpAccount']['password']; ?>
 <div id="finished">
 	<h3><?php __('Finished')?></h3>
 	<p><?php __('Please enter a description');?></p>
-	<form id="UploadAddForm" method="post" action="/sbmttr/uploads/addFromFtp/<?php echo $ftp_account['FtpAccount']['id']; ?>">
+	<form id="UploadAddForm" method="post" action="<?php echo $html->url(array('controller'=>'uploads','action'=>'addFromFtp',$ftp_account['FtpAccount']['id']));?>">
 		<fieldset style="display:none;">
 			<input type="hidden" name="_method" value="POST" />
 		</fieldset>
