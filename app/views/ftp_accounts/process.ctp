@@ -5,6 +5,7 @@
 * Licensed under the AGPL v3 (GNU Affero General Public License)
 * http://www.fsf.org/licensing/licenses/agpl.html
 *
+* @package sbmttr
 */
 $javascript->link('jquery.min',false);
 ?>

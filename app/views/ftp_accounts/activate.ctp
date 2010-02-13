@@ -5,6 +5,7 @@
 * Licensed under the AGPL v3 (GNU Affero General Public License)
 * http://www.fsf.org/licensing/licenses/agpl.html
 *
+* @package sbmttr
 */
 ?>
 <h2><?php __('FTP File Upload');?></h2>
