@@ -118,18 +118,16 @@ class FtpAccountsController extends AppController {
 /**
  * Select and move uploaded files from the ftp folder
  * 
- * @param int $id ID of the FTP account
  * @param int $piece_id ID of the piece which the file is related to
- * @todo SECURITY: By manipulating $id we can see other logins
  */
-	function process($id=null,$piece_id=null){
-		if(empty($id) || empty($piece_id)){
-			$this->Session->setFlash(__('Invalid IDs',true));
+	function process($piece_id=null){
+		if(empty($piece_id)){
+			$this->Session->setFlash(__('Invalid ID',true));
 			$this->redirect('/');
 		}
-		$this->set('account_id',$id);
+		$ftp_account=$this->FtpAccount->find('first',array('conditions'=>array('artist_id'=>$this->Auth->user('id'))));
 		$this->set('piece_id',$piece_id);
-		$this->set('ftp_account',$this->FtpAccount->read(null,$id));
+		$this->set('ftp_account',$ftp_account);
 	}
 	
 /**
@@ -146,7 +144,7 @@ class FtpAccountsController extends AppController {
 		// If the current user already has an ftp account, redirect to /process
 		$ftp_account_id=$this->FtpAccount->field('id',array('artist_id'=>$this->Auth->user('id')));
 		if($ftp_account_id){
-			$this->redirect(array('action'=>'process',$ftp_account_id,$piece_id));
+			$this->redirect(array('action'=>'process',$piece_id));
 		}
 		// If start button was clicked, assign an account to user, then reload to proceed
 		if(!empty($this->data)){

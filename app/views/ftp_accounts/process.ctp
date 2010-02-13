@@ -45,7 +45,7 @@ Password: <?php echo $ftp_account['FtpAccount']['password']; ?>
     });
 
     function refreshFilelist(){
-    	$.getJSON('<?php echo $html->url(array('controller'=>'ftp_accounts','action'=>'listFiles',$account_id)); ?>', function(data) {
+    	$.getJSON('<?php echo $html->url(array('controller'=>'ftp_accounts','action'=>'listFiles',$ftp_account['FtpAccount']['id'])); ?>', function(data) {
         	if(data.loading || data.finished){
         		$('#getting-started').hide();            	
         	}else{
