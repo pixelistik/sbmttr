@@ -7,7 +7,7 @@
 *
 */
 ?>
-<h1><?php __('FTP File Upload');?></h1>
+<h2><?php __('FTP File Upload');?></h2>
 <p>
 <?php __('With FTP, you can upload big files more easily. You will need an FTP program for this.'); ?>
 </p>
