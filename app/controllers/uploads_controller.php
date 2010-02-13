@@ -109,7 +109,7 @@ class UploadsController extends AppController {
 			// Check access:
 			if(!
 					$this->Upload->Piece->artistHasAccess(
-						$this->$upload['piece_id'],
+						$upload['piece_id'],
 						$this->Auth->user('id')
 					)
 				){
