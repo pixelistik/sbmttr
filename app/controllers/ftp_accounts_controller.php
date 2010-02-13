@@ -125,8 +125,19 @@ class FtpAccountsController extends AppController {
 			$this->Session->setFlash(__('Invalid ID',true));
 			$this->redirect('/');
 		}
+		// Check access:
+		if(!
+			$this->FtpAccount->Artist->Piece->artistHasAccess(
+				$piece_id,
+				$this->Auth->user('id')
+			)
+		){
+			$this->Session->setFlash(__('You are not logged in or not allowed to edit this piece.', true));
+			$this->redirect(array('controller'=>'pieces','action'=>'index'));
+		}
 		$ftp_account=$this->FtpAccount->find('first',array('conditions'=>array('artist_id'=>$this->Auth->user('id'))));
-		$this->set('piece_id',$piece_id);
+		$piece=$this->FtpAccount->Artist->Piece->findById($piece_id);
+		$this->set('piece',$piece);
 		$this->set('ftp_account',$ftp_account);
 	}
 	

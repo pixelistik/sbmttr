@@ -75,7 +75,7 @@ Password: <?php echo $ftp_account['FtpAccount']['password']; ?>
 								$('fieldset.finished').length,
 								data.finished[i].filename,
 								data.finished[i].hash,
-								<?php echo $piece_id; ?>
+								<?php echo $piece['Piece']['id']; ?>
 								));						
 					}
 				}
