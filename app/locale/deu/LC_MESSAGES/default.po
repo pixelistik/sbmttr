@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.5\n"
 "POT-Creation-Date: 2010-02-11 16:15+0100\n"
-"PO-Revision-Date: 2010-02-11 16:33+0100\n"
+"PO-Revision-Date: 2010-02-13 18:17+0100\n"
 "Last-Translator: Pixelistik <code@pixelistik.de>\n"
 "Language-Team: deu <till@emergeandsee.org>\n"
 "MIME-Version: 1.0\n"
@@ -378,7 +378,7 @@ msgstr "Der Upload konnte nicht gespeichert werden. Bitte probiere es noch einma
 
 #: /controllers/uploads_controller.php:149
 msgid "Error! Your FTP upload could not be processed. There is a problem with file permissions. Please talk to staff, meanwhile, your uploaded file is safe."
-msgstr "Fehler! Der FTP-Upload konnte nicht bearbeitet werden. Es gibt ein Problem mit den Dateiberechtigungen. Bitte melde dich bei uns. Der Download ist solange sicher gespeichert."
+msgstr "Fehler! Der FTP-Upload konnte nicht bearbeitet werden. Es gibt ein Problem mit den Dateiberechtigungen. Bitte melde dich bei uns. Die Datei ist solange sicher gespeichert."
 
 #: /controllers/uploads_controller.php:153
 msgid "Error! Your FTP upload could not be processed. "
