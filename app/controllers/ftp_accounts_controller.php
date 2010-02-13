@@ -120,6 +120,7 @@ class FtpAccountsController extends AppController {
  * 
  * @param int $id ID of the FTP account
  * @param int $piece_id ID of the piece which the file is related to
+ * @todo SECURITY: By manipulating $id we can see other logins
  */
 	function process($id=null,$piece_id=null){
 		if(empty($id) || empty($piece_id)){
