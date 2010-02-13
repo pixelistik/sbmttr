@@ -99,7 +99,8 @@ class UploadsController extends AppController {
  * Creates db records for files uploaded via FTP and moves them into the right folder.
  * 
  * @param int $ftp_account_id ID of the FTP account from which the files were uploaded
- * @todo Authority checks: does the ftp account belong to the current user? For every upload: does the user have acess to the piece?
+ * @todo Authority checks: does the ftp account belong to the current user?
+ * @todo Check file types
  */	
 	function addFromFtp($ftp_account_id){
 		debug($this->data);
