@@ -16,6 +16,9 @@ Server: <?php echo Configure::read('ftp-hostname'); ?><br/>
 Username: <?php echo $ftp_account['FtpAccount']['username']; ?><br/>
 Password: <?php echo $ftp_account['FtpAccount']['password']; ?>
 </p>
+<p>
+<?php __('This is your personal account. Just upload your files to the top folder. They are protected from public access.');?>
+</p>
 </div>
 <h2><?php __('Your files'); ?></h2>
 <p id="getting-started">
