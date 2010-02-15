@@ -149,7 +149,7 @@ class UploadsController extends AppController {
 					)){
 						$this->Upload->del($this->Upload->id);
 						$this->Session->setFlash(__('Error! Your FTP upload could not be processed. There is a problem with file permissions. Please talk to staff, meanwhile, your uploaded file is safe.', true));
-					}					
+					}			
 				}else{
 					$this->Upload->del($this->Upload->id);
 					$this->Session->setFlash(__('Error! Your FTP upload could not be processed. ', true).$uploadErrorReport);
@@ -159,7 +159,9 @@ class UploadsController extends AppController {
 				$this->Session->setFlash(__('The Upload could not be saved. Please, try again.', true));
 			}
 			
-		}		
+		}
+		$this->Session->setFlash(__('FTP upload saved. Your files have been moved, the upload folder is empty again.', true));
+		$this->redirect(array('controller'=>'pieces','action'=>'index'));		
 	}
 	
 	function edit($id = null) {
