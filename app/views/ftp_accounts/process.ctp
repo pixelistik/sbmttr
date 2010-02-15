@@ -10,7 +10,8 @@
 $javascript->link('jquery.min',false);
 ?>
 <div>
-<h2><?php __('Your ftp information'); ?><a href="#" onClick="javascript:$('#ftp-account-info').toggle();false;">(toggle)</a></h2>
+<h2><?php __('Your ftp information'); ?></h2>
+<a href="#" onClick="javascript:$('#ftp-account-info').toggle();false;">(toggle)</a>
 <p  id="ftp-account-info">
 Server: <?php echo Configure::read('ftp-hostname'); ?><br/>
 Username: <?php echo $ftp_account['FtpAccount']['username']; ?><br/>
