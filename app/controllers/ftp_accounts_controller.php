@@ -163,7 +163,7 @@ class FtpAccountsController extends AppController {
 			$free_ftp_account=$this->FtpAccount->find('first',array('conditions'=>array('artist_id'=>null)));
 			$free_ftp_account['FtpAccount']['artist_id']=$this->Auth->user('id');
 			$this->FtpAccount->save($free_ftp_account);
-			$this->redirect('activate',$this->data['FtpAccount']['piece_id']);
+			$this->redirect('activate/'.$this->data['FtpAccount']['piece_id']);
 		}else{
 			$this->data['FtpAccount']['piece_id']=$piece_id;
 		}
