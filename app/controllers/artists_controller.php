@@ -45,7 +45,7 @@ class ArtistsController extends AppController {
 				$this->data['Artist']['picture']=null;
 			}
 			if ($this->Artist->save($this->data)) {
-				$this->Session->setFlash(__('Your artist account was created.', true));
+				$this->Session->setFlash(__('Your account was created.', true));
 				// Login automatically:
 				$this->Auth->login($this->Artist->find('first',array('conditions'=>array('email'=>$this->data['Artist']['email']))));
 				// Remember that this is the first login, so we can remind the user to set a custom password at logout:
@@ -53,7 +53,7 @@ class ArtistsController extends AppController {
 				// Continue to submit a new piece:
 				$this->redirect(array('controller'=>'Pieces','action'=>'add'));
 			} else {
-				$this->Session->setFlash(__('Your artist information could not be saved. Please check the data you entered.', true));
+				$this->Session->setFlash(__('Your information could not be saved. Please check the data you entered.', true));
 			}
 		}
 		

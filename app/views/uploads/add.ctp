@@ -17,10 +17,12 @@ echo $form->create('Upload',array(
 			'after'=>$form->error('Upload.extension',array('allowedType'=>__('Please observe the allowed file types.',true)))
 		) 
 		);
-		echo $form->input('description',array('label'=>__('Shortly describe what is in this file, please',true)));
+		echo $form->input('description',array('label'=>__('What is this? Please shortly describe if this is a film still, a construction plan or the whole work itself.',true)));
 		echo $form->input('piece_id',array('type'=>'hidden','value'=>$this->passedArgs[0]));
 	?>
 	</fieldset>
 <?php echo $form->end('Submit');?>
 </div>
-<?php echo $html->link(__('FTP upload',true),array('controller'=>'ftp_accounts','action'=>'activate',$piece_id))?>
+<?php 
+__('For bigger files: ');
+echo $html->link(__('FTP upload',true),array('controller'=>'ftp_accounts','action'=>'activate',$piece_id))?>
