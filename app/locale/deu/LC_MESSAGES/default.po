@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.5\n"
 "POT-Creation-Date: 2010-02-11 16:15+0100\n"
-"PO-Revision-Date: 2010-02-13 18:17+0100\n"
+"PO-Revision-Date: 2010-02-16 20:29+0100\n"
 "Last-Translator: Pixelistik <code@pixelistik.de>\n"
 "Language-Team: deu <till@emergeandsee.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr "Ungültiger Artist"
 
 #: /controllers/artists_controller.php:47
 msgid "Your artist account was created."
-msgstr "Dein Künstler-Account wurde eingerichtet"
+msgstr "Dein Account wurde eingerichtet"
 
 #: /controllers/artists_controller.php:55
 msgid "Your artist information could not be saved. Please check the data you entered."
@@ -46,7 +46,7 @@ msgstr "Künstler gelöscht"
 
 #: /controllers/artists_controller.php:111
 msgid "You might want to choose a password, so you can come back later. Click \"Log out\" again to leave without a password. You can request it later."
-msgstr "Vielleicht möchtest du dir ein neues Passwort überlegen, damit du dich später wieder einloggen kannst. Du kannst auch einfach nochmal auf \"Log out\" klicken. Später kannst du immer noch ein neues Passwort per Mail bekommen."
+msgstr "Du kannst jetzt ein eigenes Login-Passwort wählen, um dich später wieder einloggen zu können. Ansonsten klicke ein zweites Mail auf \"Log out\" um dich auszuloggen. Über \"Ich habe mein Passwort vergessen\" kannst du auch später noch ein Passwort erhalten."
 
 #: /controllers/artists_controller.php:136
 msgid "Your new password has been saved"
