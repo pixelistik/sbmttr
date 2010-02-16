@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.5\n"
-"POT-Creation-Date: 2010-02-11 16:15+0100\n"
-"PO-Revision-Date: 2010-02-16 20:29+0100\n"
+"POT-Creation-Date: 2010-02-16 20:38+0100\n"
+"PO-Revision-Date: 2010-02-16 20:47+0100\n"
 "Last-Translator: Pixelistik <code@pixelistik.de>\n"
 "Language-Team: deu <till@emergeandsee.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,383 +16,388 @@ msgstr ""
 msgid "Login failed. Please try again."
 msgstr "Login fehlgeschlagen. Bitte versuche es noch einmal."
 
-#: /controllers/artists_controller.php:22;63
+#: /controllers/artists_controller.php:23;64
 msgid "Invalid Artist."
 msgstr "Ungültiger Artist"
 
-#: /controllers/artists_controller.php:47
-msgid "Your artist account was created."
+#: /controllers/artists_controller.php:48
+msgid "Your account was created."
 msgstr "Dein Account wurde eingerichtet"
 
-#: /controllers/artists_controller.php:55
-msgid "Your artist information could not be saved. Please check the data you entered."
+#: /controllers/artists_controller.php:56
+msgid "Your information could not be saved. Please check the data you entered."
 msgstr "Deine Daten konnten nicht gespeichert werden. Bitte überprüfe sie auf Fehler"
 
-#: /controllers/artists_controller.php:68
+#: /controllers/artists_controller.php:69
 msgid "The Artist has been saved"
 msgstr "Der Künstler wurde gespeichert"
 
-#: /controllers/artists_controller.php:71
+#: /controllers/artists_controller.php:72
 msgid "The Artist could not be saved. Please, try again."
 msgstr "Der Künstler konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/artists_controller.php:81
+#: /controllers/artists_controller.php:82
 msgid "Invalid id for Artist"
 msgstr "Ungültige ID für Künstler"
 
-#: /controllers/artists_controller.php:85
+#: /controllers/artists_controller.php:86
 msgid "Artist deleted"
 msgstr "Künstler gelöscht"
 
-#: /controllers/artists_controller.php:111
+#: /controllers/artists_controller.php:112
 msgid "You might want to choose a password, so you can come back later. Click \"Log out\" again to leave without a password. You can request it later."
 msgstr "Du kannst jetzt ein eigenes Login-Passwort wählen, um dich später wieder einloggen zu können. Ansonsten klicke ein zweites Mail auf \"Log out\" um dich auszuloggen. Über \"Ich habe mein Passwort vergessen\" kannst du auch später noch ein Passwort erhalten."
 
-#: /controllers/artists_controller.php:136
+#: /controllers/artists_controller.php:137
 msgid "Your new password has been saved"
 msgstr "Dein neues Passwort wurde gespeichert."
 
-#: /controllers/artists_controller.php:140
+#: /controllers/artists_controller.php:141
 msgid "Your new password could not be saved. Please, try again."
 msgstr "Dein neues Passwort konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/artists_controller.php:142
+#: /controllers/artists_controller.php:143
 msgid "Your password is not secure."
 msgstr "Dein Passwort ist nicht sicher genug."
 
-#: /controllers/artists_controller.php:146
+#: /controllers/artists_controller.php:147
 msgid "The two fields do not match."
 msgstr "Die beiden Felder stimmen nicht überein."
 
-#: /controllers/artists_controller.php:180
+#: /controllers/artists_controller.php:181
 msgid "Please check your email (Spam folder, too) and click the recovery link."
 msgstr "Du hast eine E-Mail von uns bekommen (vergiss nicht, evt. auch in den Spam-Ordner zu schauen). Bitte klicke auf den Aktivierunglink."
 
-#: /controllers/artists_controller.php:182
+#: /controllers/artists_controller.php:183
 msgid "There was an error sending the email. Please try again or contact us."
 msgstr "Es gab einen Fehler beim Versenden der E-Mail. Bitte probiere es nochmal oder wende dich direkt an uns."
 
-#: /controllers/artists_controller.php:186
+#: /controllers/artists_controller.php:187
 msgid "Password recovery failed. Please try again or contact us via email."
 msgstr "Passwort zurücksetzen gescheitert. Bitte melde dich bei uns."
 
-#: /controllers/artists_controller.php:191
+#: /controllers/artists_controller.php:192
 msgid "Sorry, your email address is unknown to us. Are you sure you used this one?"
 msgstr "Leider ist uns diese E-Mail-Adresse nicht bekannt. Bist du sicher, dass du dich damit angemeldet hast?"
 
-#: /controllers/artists_controller.php:200
+#: /controllers/artists_controller.php:201
 msgid "Please choose a new password now"
 msgstr "Bitte denke dir ein neues Passwort aus."
 
-#: /controllers/artists_controller.php:204
+#: /controllers/artists_controller.php:205
 msgid "Your recovery link is not valid or too old. Please request a new one."
 msgstr "Dein Aktivierunglink ist ungültig oder zu alt. Bitte fordere einen neuen an."
 
-#: /controllers/ftp_accounts_controller.php:22
+#: /controllers/ftp_accounts_controller.php:23
 msgid "Invalid FtpAccount."
 msgstr "Ungültiger FTP-Account"
 
-#: /controllers/ftp_accounts_controller.php:32;49
+#: /controllers/ftp_accounts_controller.php:33;50
 msgid "The FtpAccount has been saved"
 msgstr "Der FtpAccount wurde gespeichert."
 
-#: /controllers/ftp_accounts_controller.php:35;52
+#: /controllers/ftp_accounts_controller.php:36;53
 msgid "The FtpAccount could not be saved. Please, try again."
 msgstr "FtpAccount konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/ftp_accounts_controller.php:44
+#: /controllers/ftp_accounts_controller.php:45
 msgid "Invalid FtpAccount"
 msgstr "Ungültiger FtpAccount."
 
-#: /controllers/ftp_accounts_controller.php:64
+#: /controllers/ftp_accounts_controller.php:65
 msgid "Invalid id for FtpAccount"
 msgstr "Ungültige ID für FtpAccount."
 
-#: /controllers/ftp_accounts_controller.php:68
+#: /controllers/ftp_accounts_controller.php:69
 msgid "FtpAccount deleted"
 msgstr "FtpAccount wurde gelöscht."
 
-#: /controllers/ftp_accounts_controller.php:126
-msgid "Invalid IDs"
-msgstr "Ungültige ID."
-
-#: /controllers/ftp_accounts_controller.php:142
+#: /controllers/ftp_accounts_controller.php:126;153
 msgid "Invalid ID"
 msgstr "Ungültige ID."
 
-#: /controllers/pieces_controller.php:30
-msgid "Invalid Piece."
-msgstr "Ungültiges Werk."
-
-#: /controllers/pieces_controller.php:156
-msgid "Your submission has been saved. Thank you. You can add files now."
-msgstr "Deine Einreichung wurde gespeichert. Vielen Dank. Du kannst nun Dateien hinzufügen"
-
-#: /controllers/pieces_controller.php:160
-msgid "Your submission has been saved. Thank you. Here is an overview for printing/saving"
-msgstr "Deine Einreichung wurde gespeichert. Hier ist ein Überblick zum Ausdrucken oder Speichern."
-
-#: /controllers/pieces_controller.php:164
-msgid "Something is wrong or missing. Please check the error messages below the input fields."
-msgstr "Irgendwas stimmt nicht oder fehlt. Bitte überprüfe die Formularfelder auf Fehlermeldungen."
-
-#: /controllers/pieces_controller.php:201
-msgid "Invalid Piece"
-msgstr "Ungültiges Werk."
-
-#: /controllers/pieces_controller.php:206
-msgid "The Piece has been saved"
-msgstr "Das Werk wurde gespeichert."
-
-#: /controllers/pieces_controller.php:209
-msgid "The Piece could not be saved. Please, try again."
-msgstr "Das Werk konnte nicht gespeichert werden. Bitte probiere es noch einmal."
-
-#: /controllers/pieces_controller.php:227
-msgid "Invalid id for Piece"
-msgstr "Ungültige Werk-ID."
-
-#: /controllers/pieces_controller.php:231
-msgid "Piece deleted"
-msgstr "Werk wurde gelöscht."
-
-#: /controllers/requirements_controller.php:25
-msgid "Your changes have been saved"
-msgstr "Deine Änderungen wurden gespeichert."
-
-#: /controllers/requirements_controller.php:28
-msgid "There was an error saving your changes"
-msgstr "Es gab einen Fehler beim Speichern deiner Änderungen."
-
-#: /controllers/requirements_controller.php:42
-msgid "Invalid Requirement."
-msgstr "Ungültiges Requirement."
-
-#: /controllers/requirements_controller.php:52;69
-msgid "The Requirement has been saved"
-msgstr "Das Requirement wurde gespeichert."
-
-#: /controllers/requirements_controller.php:55;72
-msgid "The Requirement could not be saved. Please, try again."
-msgstr "Das Requirement konnte nicht gespeichert werden. Bitte probiere es noch einmal."
-
-#: /controllers/requirements_controller.php:64
-msgid "Invalid Requirement"
-msgstr "Ungültiges Requirement"
-
-#: /controllers/requirements_controller.php:84
-msgid "Invalid id for Requirement"
-msgstr "Ungültige Requirement-ID"
-
-#: /controllers/requirements_controller.php:88
-msgid "Requirement deleted"
-msgstr "Requirement wurde gelöscht."
-
-#: /controllers/screening_formats_controller.php:22
-msgid "Invalid ScreeningFormat."
-msgstr "Ungültiges Vorführformat."
-
-#: /controllers/screening_formats_controller.php:32;49
-msgid "The ScreeningFormat has been saved"
-msgstr "Das Vorführformat wurde gespeichert."
-
-#: /controllers/screening_formats_controller.php:35;52
-msgid "The ScreeningFormat could not be saved. Please, try again."
-msgstr "Das Vorführformat konnte nicht gespeichert werden. Bitte versuche es noch einmal."
-
-#: /controllers/screening_formats_controller.php:44
-msgid "Invalid ScreeningFormat"
-msgstr "Ungültiges Vorführformat."
-
-#: /controllers/screening_formats_controller.php:64
-msgid "Invalid id for ScreeningFormat"
-msgstr "Ungültige ID für Vorführformat."
-
-#: /controllers/screening_formats_controller.php:68
-msgid "ScreeningFormat deleted"
-msgstr "Vorführformat gespeichert."
-
-#: /controllers/searches_controller.php:21
-msgid "Invalid Search."
-msgstr "Ungültige Suche."
-
-#: /controllers/searches_controller.php:30
-msgid "Please run a search. You can then save it."
-msgstr "Bitte führe eine Suche durch. Danach kannst du diese speichern."
-
-#: /controllers/searches_controller.php:39;63
-msgid "The Search has been saved"
-msgstr "Die Suche wurde gespeichert."
-
-#: /controllers/searches_controller.php:42;66
-msgid "The Search could not be saved. Please, try again."
-msgstr "Die Suche konnte nicht gespeichert werden. Bitte probiere es noch einmal."
-
-#: /controllers/searches_controller.php:49
-msgid "No search was specified."
-msgstr "Es wurde keine Suche angegeben."
-
-#: /controllers/searches_controller.php:58
-msgid "Invalid Search"
-msgstr "Ungültige Suche."
-
-#: /controllers/searches_controller.php:76
-msgid "Invalid id for Search"
-msgstr "Ungültige ID für Suche."
-
-#: /controllers/searches_controller.php:80
-msgid "Search deleted"
-msgstr "Suche wurde gelöscht."
-
-#: /controllers/sections_controller.php:21
-msgid "Invalid Section."
-msgstr "Ungültige Sektion."
-
-#: /controllers/sections_controller.php:44;61
-msgid "The Section has been saved"
-msgstr "Die Sektion wurde gespeichert."
-
-#: /controllers/sections_controller.php:47;64
-msgid "The Section could not be saved. Please, try again."
-msgstr "Die Sektion konnte nicht gespeichert werden. Bitte probiere es noch einmal."
-
-#: /controllers/sections_controller.php:56
-msgid "Invalid Section"
-msgstr "Ungültige Sektion."
-
-#: /controllers/sections_controller.php:76
-msgid "Invalid id for Section"
-msgstr "Ungültige ID für Sektion."
-
-#: /controllers/sections_controller.php:80
-msgid "Section deleted"
-msgstr "Sektion wurde gelöscht."
-
-#: /controllers/shooting_formats_controller.php:22
-msgid "Invalid ShootingFormat."
-msgstr "Ungültiges Drehformat."
-
-#: /controllers/shooting_formats_controller.php:32;47
-msgid "The ShootingFormat has been saved"
-msgstr "Das Drehformat wurde gespeichert."
-
-#: /controllers/shooting_formats_controller.php:35;50
-msgid "The ShootingFormat could not be saved. Please, try again."
-msgstr "Das Drehformat konnte nicht gespeichert werden. Bitte probiere es noch einmal."
-
-#: /controllers/shooting_formats_controller.php:42
-msgid "Invalid ShootingFormat"
-msgstr "Ungültiges Drehformat."
-
-#: /controllers/shooting_formats_controller.php:60
-msgid "Invalid id for ShootingFormat"
-msgstr "Ungültige ID für Drehformat."
-
-#: /controllers/shooting_formats_controller.php:64
-msgid "ShootingFormat deleted"
-msgstr "Drehformat wurde gelöscht."
-
-#: /controllers/tags_controller.php:22
-msgid "Invalid Tag."
-msgstr "Ungültiges Tag."
-
-#: /controllers/tags_controller.php:32;49
-msgid "The Tag has been saved"
-msgstr "Das Tag wurde gespeichert."
-
-#: /controllers/tags_controller.php:35;52
-msgid "The Tag could not be saved. Please, try again."
-msgstr "Das Tag konnte nicht gespeichert werden. Bitte probiere es noch einmal."
-
-#: /controllers/tags_controller.php:44
-msgid "Invalid Tag"
-msgstr "Ungültiges Tag."
-
-#: /controllers/tags_controller.php:64
-msgid "Invalid id for Tag"
-msgstr "Ungültige ID für Tag."
-
-#: /controllers/tags_controller.php:68
-msgid "Tag deleted"
-msgstr "Tag wurde gelöscht."
-
-#: /controllers/types_controller.php:44
-msgid "Invalid Type."
-msgstr "Ungültiger Typ."
-
-#: /controllers/types_controller.php:54;69
-msgid "The Type has been saved"
-msgstr "Der Typ wurde gespeichert."
-
-#: /controllers/types_controller.php:57;72
-msgid "The Type could not be saved. Please, try again."
-msgstr "Der Typ konnte nicht gespeichert werden. Bitte probiere es noch einmal."
-
-#: /controllers/types_controller.php:64
-msgid "Invalid Type"
-msgstr "Ungültiger Typ."
-
-#: /controllers/types_controller.php:82
-msgid "Invalid id for Type"
-msgstr "Ungültige ID für Typ."
-
-#: /controllers/types_controller.php:86
-msgid "Type deleted"
-msgstr "Typ wurde gelöscht."
-
-#: /controllers/uploads_controller.php:22;202
-msgid "Invalid Upload."
-msgstr "Ungültiger Upload."
-
-#: /controllers/uploads_controller.php:31
-msgid "No piece specified."
-msgstr "Es wurde kein Piece angegeben."
-
-#: /controllers/uploads_controller.php:51;116
+#: /controllers/ftp_accounts_controller.php:136
+#: /controllers/uploads_controller.php:52;118
 msgid "You are not logged in or not allowed to edit this piece."
 msgstr "Du bist nicht eingeloggt oder darfst dieses Werk nicht bearbeiten."
 
-#: /controllers/uploads_controller.php:65
+#: /controllers/pieces_controller.php:31
+msgid "Invalid Piece."
+msgstr "Ungültiges Werk."
+
+#: /controllers/pieces_controller.php:159
+msgid "Your submission has been saved. Please note the submission number #%s. You can add files now."
+msgstr "Deine Einreichung wurde gespeichert. Bitte notiere die Einreichnummer #%s. Du kannst nun Dateien hinzufügen."
+
+#: /controllers/pieces_controller.php:166
+msgid "Your submission has been saved. Thank you. Here is an overview for printing/saving"
+msgstr "Deine Einreichung wurde gespeichert. Hier ist ein Überblick zum Ausdrucken oder Speichern."
+
+#: /controllers/pieces_controller.php:169
+msgid "Your submission has been saved. Please note the submission number #%s. Here is an overview for printing/saving"
+msgstr "Deine Einreichung wurde gespeichert. Bitte notiere die Einreichnummer #%s. Hier ist ein Überblick zum Ausdrucken oder Speichern."
+
+#: /controllers/pieces_controller.php:176
+msgid "Something is wrong or missing. Please check the error messages below the input fields."
+msgstr "Irgendwas stimmt nicht oder fehlt. Bitte überprüfe die Formularfelder auf Fehlermeldungen."
+
+#: /controllers/pieces_controller.php:213
+msgid "Invalid Piece"
+msgstr "Ungültiges Werk."
+
+#: /controllers/pieces_controller.php:218
+msgid "The Piece has been saved"
+msgstr "Das Werk wurde gespeichert."
+
+#: /controllers/pieces_controller.php:221
+msgid "The Piece could not be saved. Please, try again."
+msgstr "Das Werk konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+
+#: /controllers/pieces_controller.php:239
+msgid "Invalid id for Piece"
+msgstr "Ungültige Werk-ID."
+
+#: /controllers/pieces_controller.php:243
+msgid "Piece deleted"
+msgstr "Werk wurde gelöscht."
+
+#: /controllers/requirements_controller.php:26
+msgid "Your changes have been saved"
+msgstr "Deine Änderungen wurden gespeichert."
+
+#: /controllers/requirements_controller.php:29
+msgid "There was an error saving your changes"
+msgstr "Es gab einen Fehler beim Speichern deiner Änderungen."
+
+#: /controllers/requirements_controller.php:43
+msgid "Invalid Requirement."
+msgstr "Ungültiges Requirement."
+
+#: /controllers/requirements_controller.php:53;70
+msgid "The Requirement has been saved"
+msgstr "Das Requirement wurde gespeichert."
+
+#: /controllers/requirements_controller.php:56;73
+msgid "The Requirement could not be saved. Please, try again."
+msgstr "Das Requirement konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+
+#: /controllers/requirements_controller.php:65
+msgid "Invalid Requirement"
+msgstr "Ungültiges Requirement"
+
+#: /controllers/requirements_controller.php:85
+msgid "Invalid id for Requirement"
+msgstr "Ungültige Requirement-ID"
+
+#: /controllers/requirements_controller.php:89
+msgid "Requirement deleted"
+msgstr "Requirement wurde gelöscht."
+
+#: /controllers/screening_formats_controller.php:23
+msgid "Invalid ScreeningFormat."
+msgstr "Ungültiges Vorführformat."
+
+#: /controllers/screening_formats_controller.php:33;50
+msgid "The ScreeningFormat has been saved"
+msgstr "Das Vorführformat wurde gespeichert."
+
+#: /controllers/screening_formats_controller.php:36;53
+msgid "The ScreeningFormat could not be saved. Please, try again."
+msgstr "Das Vorführformat konnte nicht gespeichert werden. Bitte versuche es noch einmal."
+
+#: /controllers/screening_formats_controller.php:45
+msgid "Invalid ScreeningFormat"
+msgstr "Ungültiges Vorführformat."
+
+#: /controllers/screening_formats_controller.php:65
+msgid "Invalid id for ScreeningFormat"
+msgstr "Ungültige ID für Vorführformat."
+
+#: /controllers/screening_formats_controller.php:69
+msgid "ScreeningFormat deleted"
+msgstr "Vorführformat gespeichert."
+
+#: /controllers/searches_controller.php:22
+msgid "Invalid Search."
+msgstr "Ungültige Suche."
+
+#: /controllers/searches_controller.php:31
+msgid "Please run a search. You can then save it."
+msgstr "Bitte führe eine Suche durch. Danach kannst du diese speichern."
+
+#: /controllers/searches_controller.php:40;64
+msgid "The Search has been saved"
+msgstr "Die Suche wurde gespeichert."
+
+#: /controllers/searches_controller.php:43;67
+msgid "The Search could not be saved. Please, try again."
+msgstr "Die Suche konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+
+#: /controllers/searches_controller.php:50
+msgid "No search was specified."
+msgstr "Es wurde keine Suche angegeben."
+
+#: /controllers/searches_controller.php:59
+msgid "Invalid Search"
+msgstr "Ungültige Suche."
+
+#: /controllers/searches_controller.php:77
+msgid "Invalid id for Search"
+msgstr "Ungültige ID für Suche."
+
+#: /controllers/searches_controller.php:81
+msgid "Search deleted"
+msgstr "Suche wurde gelöscht."
+
+#: /controllers/sections_controller.php:22
+msgid "Invalid Section."
+msgstr "Ungültige Sektion."
+
+#: /controllers/sections_controller.php:45;62
+msgid "The Section has been saved"
+msgstr "Die Sektion wurde gespeichert."
+
+#: /controllers/sections_controller.php:48;65
+msgid "The Section could not be saved. Please, try again."
+msgstr "Die Sektion konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+
+#: /controllers/sections_controller.php:57
+msgid "Invalid Section"
+msgstr "Ungültige Sektion."
+
+#: /controllers/sections_controller.php:77
+msgid "Invalid id for Section"
+msgstr "Ungültige ID für Sektion."
+
+#: /controllers/sections_controller.php:81
+msgid "Section deleted"
+msgstr "Sektion wurde gelöscht."
+
+#: /controllers/shooting_formats_controller.php:23
+msgid "Invalid ShootingFormat."
+msgstr "Ungültiges Drehformat."
+
+#: /controllers/shooting_formats_controller.php:33;48
+msgid "The ShootingFormat has been saved"
+msgstr "Das Drehformat wurde gespeichert."
+
+#: /controllers/shooting_formats_controller.php:36;51
+msgid "The ShootingFormat could not be saved. Please, try again."
+msgstr "Das Drehformat konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+
+#: /controllers/shooting_formats_controller.php:43
+msgid "Invalid ShootingFormat"
+msgstr "Ungültiges Drehformat."
+
+#: /controllers/shooting_formats_controller.php:61
+msgid "Invalid id for ShootingFormat"
+msgstr "Ungültige ID für Drehformat."
+
+#: /controllers/shooting_formats_controller.php:65
+msgid "ShootingFormat deleted"
+msgstr "Drehformat wurde gelöscht."
+
+#: /controllers/tags_controller.php:23
+msgid "Invalid Tag."
+msgstr "Ungültiges Tag."
+
+#: /controllers/tags_controller.php:33;50
+msgid "The Tag has been saved"
+msgstr "Das Tag wurde gespeichert."
+
+#: /controllers/tags_controller.php:36;53
+msgid "The Tag could not be saved. Please, try again."
+msgstr "Das Tag konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+
+#: /controllers/tags_controller.php:45
+msgid "Invalid Tag"
+msgstr "Ungültiges Tag."
+
+#: /controllers/tags_controller.php:65
+msgid "Invalid id for Tag"
+msgstr "Ungültige ID für Tag."
+
+#: /controllers/tags_controller.php:69
+msgid "Tag deleted"
+msgstr "Tag wurde gelöscht."
+
+#: /controllers/types_controller.php:45
+msgid "Invalid Type."
+msgstr "Ungültiger Typ."
+
+#: /controllers/types_controller.php:55;70
+msgid "The Type has been saved"
+msgstr "Der Typ wurde gespeichert."
+
+#: /controllers/types_controller.php:58;73
+msgid "The Type could not be saved. Please, try again."
+msgstr "Der Typ konnte nicht gespeichert werden. Bitte probiere es noch einmal."
+
+#: /controllers/types_controller.php:65
+msgid "Invalid Type"
+msgstr "Ungültiger Typ."
+
+#: /controllers/types_controller.php:83
+msgid "Invalid id for Type"
+msgstr "Ungültige ID für Typ."
+
+#: /controllers/types_controller.php:87
+msgid "Type deleted"
+msgstr "Typ wurde gelöscht."
+
+#: /controllers/uploads_controller.php:23;206
+msgid "Invalid Upload."
+msgstr "Ungültiger Upload."
+
+#: /controllers/uploads_controller.php:32
+msgid "No piece specified."
+msgstr "Es wurde kein Piece angegeben."
+
+#: /controllers/uploads_controller.php:66
 msgid "You did not choose a file."
 msgstr "Du hast keine Datei gewählt."
 
-#: /controllers/uploads_controller.php:70
+#: /controllers/uploads_controller.php:71
 msgid "The file is too big."
 msgstr "Die Datei ist zu groß."
 
-#: /controllers/uploads_controller.php:74
+#: /controllers/uploads_controller.php:75
 msgid "Upload Error."
 msgstr "Uploadfehler."
 
-#: /controllers/uploads_controller.php:84
+#: /controllers/uploads_controller.php:85
 msgid "The Upload has been saved."
 msgstr "Der Upload wurde gespeichert."
 
-#: /controllers/uploads_controller.php:89
+#: /controllers/uploads_controller.php:90
 msgid "Error! The Upload could not be created."
 msgstr "Fehler! Der Upload konnte nicht erstellt werden."
 
-#: /controllers/uploads_controller.php:92;157;173
+#: /controllers/uploads_controller.php:93;159;177
 msgid "The Upload could not be saved. Please, try again."
 msgstr "Der Upload konnte nicht gespeichert werden. Bitte probiere es noch einmal."
 
-#: /controllers/uploads_controller.php:149
+#: /controllers/uploads_controller.php:151
 msgid "Error! Your FTP upload could not be processed. There is a problem with file permissions. Please talk to staff, meanwhile, your uploaded file is safe."
 msgstr "Fehler! Der FTP-Upload konnte nicht bearbeitet werden. Es gibt ein Problem mit den Dateiberechtigungen. Bitte melde dich bei uns. Die Datei ist solange sicher gespeichert."
 
-#: /controllers/uploads_controller.php:153
+#: /controllers/uploads_controller.php:155
 msgid "Error! Your FTP upload could not be processed. "
 msgstr "Fehler! Der FTP-Upload konnte nicht bearbeitet werden."
 
-#: /controllers/uploads_controller.php:165
+#: /controllers/uploads_controller.php:163
+msgid "FTP upload saved. Your files have been moved, the upload folder is empty again."
+msgstr ""
+
+#: /controllers/uploads_controller.php:169
 msgid "Invalid Upload"
 msgstr "Ungültiger Upload."
 
-#: /controllers/uploads_controller.php:170
+#: /controllers/uploads_controller.php:174
 msgid "The Upload has been saved"
 msgstr "Der Upload wurde gespeichert."
 
-#: /controllers/uploads_controller.php:213
+#: /controllers/uploads_controller.php:217
 msgid "You may not download this file."
 msgstr ""
 
@@ -969,15 +974,15 @@ msgstr "Gespeicherte Suchen"
 msgid "(show all)"
 msgstr "(alle anzeigen)"
 
-#: /views/ftp_accounts/activate.ctp:10
+#: /views/ftp_accounts/activate.ctp:11
 msgid "FTP File Upload"
 msgstr "FTP-Upload"
 
-#: /views/ftp_accounts/activate.ctp:12
+#: /views/ftp_accounts/activate.ctp:13
 msgid "With FTP, you can upload big files more easily. You will need an FTP program for this."
 msgstr "Per FTP kannst du auch große Dateien hochladen. Dafür brauchst du ein FTP-Programm."
 
-#: /views/ftp_accounts/activate.ctp:17
+#: /views/ftp_accounts/activate.ctp:18
 msgid "Give me an FTP account"
 msgstr "Ich will einen FTP-Zugang"
 
@@ -1006,27 +1011,31 @@ msgstr ""
 msgid "New FtpAccount"
 msgstr ""
 
-#: /views/ftp_accounts/process.ctp:12
+#: /views/ftp_accounts/process.ctp:13
 msgid "Your ftp information"
 msgstr "Dein FTP-Account"
 
-#: /views/ftp_accounts/process.ctp:19
+#: /views/ftp_accounts/process.ctp:21
+msgid "This is your personal account. Just upload your files to the top folder. They are protected from public access."
+msgstr ""
+
+#: /views/ftp_accounts/process.ctp:24
 msgid "Your files"
 msgstr "Deine Dateien"
 
-#: /views/ftp_accounts/process.ctp:21
+#: /views/ftp_accounts/process.ctp:26
 msgid "Please connect via FTP and start uploading files"
 msgstr "Bitte lade jetzt deine Dateien mit deinem FTP-Programm hoch"
 
-#: /views/ftp_accounts/process.ctp:24
+#: /views/ftp_accounts/process.ctp:29
 msgid "Uploading"
 msgstr "Ladende Dateien"
 
-#: /views/ftp_accounts/process.ctp:29
+#: /views/ftp_accounts/process.ctp:34
 msgid "Finished"
 msgstr "Fertig"
 
-#: /views/ftp_accounts/process.ctp:30
+#: /views/ftp_accounts/process.ctp:35
 msgid "Please enter a description"
 msgstr "Bitte gib eine Beschreibung ein"
 
@@ -1130,15 +1139,15 @@ msgstr "Verfügbare Vorführformate"
 
 #: /views/pieces/add.ctp:127
 msgid "How will we get a preview copy?"
-msgstr "Wie bekommen wir eine Vorschaukopie?"
+msgstr "Wie bekommen wir ein Ansichtsexemplar deiner Arbeit?"
 
 #: /views/pieces/add.ctp:129
-msgid "Via normal Mail (send us a DVD or miniDV tape)"
-msgstr "Mit normaler Post (schicke uns eine DVD oder ein miniDV-Tape)"
+msgid "Via normal Mail (send us a DVD, CD or miniDV tape)"
+msgstr "Mit normaler Post (schicke uns eine CD, DVD oder ein miniDV-Tape)"
 
 #: /views/pieces/add.ctp:129
 msgid "I want to upload it (in the next step)"
-msgstr "Lade das Video hoch (im nächsten Schritt)"
+msgstr "Lade Dateien hoch (im nächsten Schritt)"
 
 #: /views/pieces/add.ctp:129
 msgid "It is online anyway (tell us the URL)"
@@ -1705,10 +1714,14 @@ msgid "Please observe the allowed file types."
 msgstr "Bitte beachte die erlaubten Dateitypen."
 
 #: /views/uploads/add.ctp:20
-msgid "Shortly describe what is in this file, please"
-msgstr "Bitte beschreibe kurz, was in dieser Datei steckt."
+msgid "What is this? Please shortly describe if this is a film still, a construction plan or the whole work itself."
+msgstr "Bitte beschreibe kurz den Inhalt dieser Datei. Handelt es sich um ein Standbild, eine technische Beschreibung oder die komplette Arbeit selbst?"
 
-#: /views/uploads/add.ctp:26
+#: /views/uploads/add.ctp:27
+msgid "For bigger files: "
+msgstr "Für größere Dateien"
+
+#: /views/uploads/add.ctp:28
 msgid "FTP upload"
 msgstr "FTP-Upload"
 
@@ -1755,6 +1768,10 @@ msgstr "Tag löschen"
 msgid "Debug setting does not allow access to this url."
 msgstr "Debug setting does not allow access to this url."
 
+#~ msgid "Invalid IDs"
+#~ msgstr "Ungültige ID."
+#~ msgid "Shortly describe what is in this file, please"
+#~ msgstr "Bitte beschreibe kurz, was in dieser Datei steckt."
 #~ msgid "Invalid Picture."
 #~ msgstr "Ungültiges Bild"
 #~ msgid "Only JPEG images are allowed."
