@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2010-02-11 16:15+0100\n"
+"POT-Creation-Date: 2010-02-16 20:38+0100\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -22,383 +22,388 @@ msgstr ""
 msgid "Login failed. Please try again."
 msgstr ""
 
-#: /controllers/artists_controller.php:22;63
+#: /controllers/artists_controller.php:23;64
 msgid "Invalid Artist."
 msgstr ""
 
-#: /controllers/artists_controller.php:47
-msgid "Your artist account was created."
+#: /controllers/artists_controller.php:48
+msgid "Your account was created."
 msgstr ""
 
-#: /controllers/artists_controller.php:55
-msgid "Your artist information could not be saved. Please check the data you entered."
+#: /controllers/artists_controller.php:56
+msgid "Your information could not be saved. Please check the data you entered."
 msgstr ""
 
-#: /controllers/artists_controller.php:68
+#: /controllers/artists_controller.php:69
 msgid "The Artist has been saved"
 msgstr ""
 
-#: /controllers/artists_controller.php:71
+#: /controllers/artists_controller.php:72
 msgid "The Artist could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/artists_controller.php:81
+#: /controllers/artists_controller.php:82
 msgid "Invalid id for Artist"
 msgstr ""
 
-#: /controllers/artists_controller.php:85
+#: /controllers/artists_controller.php:86
 msgid "Artist deleted"
 msgstr ""
 
-#: /controllers/artists_controller.php:111
+#: /controllers/artists_controller.php:112
 msgid "You might want to choose a password, so you can come back later. Click \"Log out\" again to leave without a password. You can request it later."
 msgstr ""
 
-#: /controllers/artists_controller.php:136
+#: /controllers/artists_controller.php:137
 msgid "Your new password has been saved"
 msgstr ""
 
-#: /controllers/artists_controller.php:140
+#: /controllers/artists_controller.php:141
 msgid "Your new password could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/artists_controller.php:142
+#: /controllers/artists_controller.php:143
 msgid "Your password is not secure."
 msgstr ""
 
-#: /controllers/artists_controller.php:146
+#: /controllers/artists_controller.php:147
 msgid "The two fields do not match."
 msgstr ""
 
-#: /controllers/artists_controller.php:180
+#: /controllers/artists_controller.php:181
 msgid "Please check your email (Spam folder, too) and click the recovery link."
 msgstr ""
 
-#: /controllers/artists_controller.php:182
+#: /controllers/artists_controller.php:183
 msgid "There was an error sending the email. Please try again or contact us."
 msgstr ""
 
-#: /controllers/artists_controller.php:186
+#: /controllers/artists_controller.php:187
 msgid "Password recovery failed. Please try again or contact us via email."
 msgstr ""
 
-#: /controllers/artists_controller.php:191
+#: /controllers/artists_controller.php:192
 msgid "Sorry, your email address is unknown to us. Are you sure you used this one?"
 msgstr ""
 
-#: /controllers/artists_controller.php:200
+#: /controllers/artists_controller.php:201
 msgid "Please choose a new password now"
 msgstr ""
 
-#: /controllers/artists_controller.php:204
+#: /controllers/artists_controller.php:205
 msgid "Your recovery link is not valid or too old. Please request a new one."
 msgstr ""
 
-#: /controllers/ftp_accounts_controller.php:22
+#: /controllers/ftp_accounts_controller.php:23
 msgid "Invalid FtpAccount."
 msgstr ""
 
-#: /controllers/ftp_accounts_controller.php:32;49
+#: /controllers/ftp_accounts_controller.php:33;50
 msgid "The FtpAccount has been saved"
 msgstr ""
 
-#: /controllers/ftp_accounts_controller.php:35;52
+#: /controllers/ftp_accounts_controller.php:36;53
 msgid "The FtpAccount could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/ftp_accounts_controller.php:44
+#: /controllers/ftp_accounts_controller.php:45
 msgid "Invalid FtpAccount"
 msgstr ""
 
-#: /controllers/ftp_accounts_controller.php:64
+#: /controllers/ftp_accounts_controller.php:65
 msgid "Invalid id for FtpAccount"
 msgstr ""
 
-#: /controllers/ftp_accounts_controller.php:68
+#: /controllers/ftp_accounts_controller.php:69
 msgid "FtpAccount deleted"
 msgstr ""
 
-#: /controllers/ftp_accounts_controller.php:126
-msgid "Invalid IDs"
-msgstr ""
-
-#: /controllers/ftp_accounts_controller.php:142
+#: /controllers/ftp_accounts_controller.php:126;153
 msgid "Invalid ID"
 msgstr ""
 
-#: /controllers/pieces_controller.php:30
-msgid "Invalid Piece."
-msgstr ""
-
-#: /controllers/pieces_controller.php:156
-msgid "Your submission has been saved. Thank you. You can add files now."
-msgstr ""
-
-#: /controllers/pieces_controller.php:160
-msgid "Your submission has been saved. Thank you. Here is an overview for printing/saving"
-msgstr ""
-
-#: /controllers/pieces_controller.php:164
-msgid "Something is wrong or missing. Please check the error messages below the input fields."
-msgstr ""
-
-#: /controllers/pieces_controller.php:201
-msgid "Invalid Piece"
-msgstr ""
-
-#: /controllers/pieces_controller.php:206
-msgid "The Piece has been saved"
-msgstr ""
-
-#: /controllers/pieces_controller.php:209
-msgid "The Piece could not be saved. Please, try again."
-msgstr ""
-
-#: /controllers/pieces_controller.php:227
-msgid "Invalid id for Piece"
-msgstr ""
-
-#: /controllers/pieces_controller.php:231
-msgid "Piece deleted"
-msgstr ""
-
-#: /controllers/requirements_controller.php:25
-msgid "Your changes have been saved"
-msgstr ""
-
-#: /controllers/requirements_controller.php:28
-msgid "There was an error saving your changes"
-msgstr ""
-
-#: /controllers/requirements_controller.php:42
-msgid "Invalid Requirement."
-msgstr ""
-
-#: /controllers/requirements_controller.php:52;69
-msgid "The Requirement has been saved"
-msgstr ""
-
-#: /controllers/requirements_controller.php:55;72
-msgid "The Requirement could not be saved. Please, try again."
-msgstr ""
-
-#: /controllers/requirements_controller.php:64
-msgid "Invalid Requirement"
-msgstr ""
-
-#: /controllers/requirements_controller.php:84
-msgid "Invalid id for Requirement"
-msgstr ""
-
-#: /controllers/requirements_controller.php:88
-msgid "Requirement deleted"
-msgstr ""
-
-#: /controllers/screening_formats_controller.php:22
-msgid "Invalid ScreeningFormat."
-msgstr ""
-
-#: /controllers/screening_formats_controller.php:32;49
-msgid "The ScreeningFormat has been saved"
-msgstr ""
-
-#: /controllers/screening_formats_controller.php:35;52
-msgid "The ScreeningFormat could not be saved. Please, try again."
-msgstr ""
-
-#: /controllers/screening_formats_controller.php:44
-msgid "Invalid ScreeningFormat"
-msgstr ""
-
-#: /controllers/screening_formats_controller.php:64
-msgid "Invalid id for ScreeningFormat"
-msgstr ""
-
-#: /controllers/screening_formats_controller.php:68
-msgid "ScreeningFormat deleted"
-msgstr ""
-
-#: /controllers/searches_controller.php:21
-msgid "Invalid Search."
-msgstr ""
-
-#: /controllers/searches_controller.php:30
-msgid "Please run a search. You can then save it."
-msgstr ""
-
-#: /controllers/searches_controller.php:39;63
-msgid "The Search has been saved"
-msgstr ""
-
-#: /controllers/searches_controller.php:42;66
-msgid "The Search could not be saved. Please, try again."
-msgstr ""
-
-#: /controllers/searches_controller.php:49
-msgid "No search was specified."
-msgstr ""
-
-#: /controllers/searches_controller.php:58
-msgid "Invalid Search"
-msgstr ""
-
-#: /controllers/searches_controller.php:76
-msgid "Invalid id for Search"
-msgstr ""
-
-#: /controllers/searches_controller.php:80
-msgid "Search deleted"
-msgstr ""
-
-#: /controllers/sections_controller.php:21
-msgid "Invalid Section."
-msgstr ""
-
-#: /controllers/sections_controller.php:44;61
-msgid "The Section has been saved"
-msgstr ""
-
-#: /controllers/sections_controller.php:47;64
-msgid "The Section could not be saved. Please, try again."
-msgstr ""
-
-#: /controllers/sections_controller.php:56
-msgid "Invalid Section"
-msgstr ""
-
-#: /controllers/sections_controller.php:76
-msgid "Invalid id for Section"
-msgstr ""
-
-#: /controllers/sections_controller.php:80
-msgid "Section deleted"
-msgstr ""
-
-#: /controllers/shooting_formats_controller.php:22
-msgid "Invalid ShootingFormat."
-msgstr ""
-
-#: /controllers/shooting_formats_controller.php:32;47
-msgid "The ShootingFormat has been saved"
-msgstr ""
-
-#: /controllers/shooting_formats_controller.php:35;50
-msgid "The ShootingFormat could not be saved. Please, try again."
-msgstr ""
-
-#: /controllers/shooting_formats_controller.php:42
-msgid "Invalid ShootingFormat"
-msgstr ""
-
-#: /controllers/shooting_formats_controller.php:60
-msgid "Invalid id for ShootingFormat"
-msgstr ""
-
-#: /controllers/shooting_formats_controller.php:64
-msgid "ShootingFormat deleted"
-msgstr ""
-
-#: /controllers/tags_controller.php:22
-msgid "Invalid Tag."
-msgstr ""
-
-#: /controllers/tags_controller.php:32;49
-msgid "The Tag has been saved"
-msgstr ""
-
-#: /controllers/tags_controller.php:35;52
-msgid "The Tag could not be saved. Please, try again."
-msgstr ""
-
-#: /controllers/tags_controller.php:44
-msgid "Invalid Tag"
-msgstr ""
-
-#: /controllers/tags_controller.php:64
-msgid "Invalid id for Tag"
-msgstr ""
-
-#: /controllers/tags_controller.php:68
-msgid "Tag deleted"
-msgstr ""
-
-#: /controllers/types_controller.php:44
-msgid "Invalid Type."
-msgstr ""
-
-#: /controllers/types_controller.php:54;69
-msgid "The Type has been saved"
-msgstr ""
-
-#: /controllers/types_controller.php:57;72
-msgid "The Type could not be saved. Please, try again."
-msgstr ""
-
-#: /controllers/types_controller.php:64
-msgid "Invalid Type"
-msgstr ""
-
-#: /controllers/types_controller.php:82
-msgid "Invalid id for Type"
-msgstr ""
-
-#: /controllers/types_controller.php:86
-msgid "Type deleted"
-msgstr ""
-
-#: /controllers/uploads_controller.php:22;202
-msgid "Invalid Upload."
-msgstr ""
-
-#: /controllers/uploads_controller.php:31
-msgid "No piece specified."
-msgstr ""
-
-#: /controllers/uploads_controller.php:51;116
+#: /controllers/ftp_accounts_controller.php:136
+#: /controllers/uploads_controller.php:52;118
 msgid "You are not logged in or not allowed to edit this piece."
 msgstr ""
 
-#: /controllers/uploads_controller.php:65
+#: /controllers/pieces_controller.php:31
+msgid "Invalid Piece."
+msgstr ""
+
+#: /controllers/pieces_controller.php:159
+msgid "Your submission has been saved. Please note the submission number #%s. You can add files now."
+msgstr ""
+
+#: /controllers/pieces_controller.php:166
+msgid "Your submission has been saved. Thank you. Here is an overview for printing/saving"
+msgstr ""
+
+#: /controllers/pieces_controller.php:169
+msgid "Your submission has been saved. Please note the submission number #%s. Here is an overview for printing/saving"
+msgstr ""
+
+#: /controllers/pieces_controller.php:176
+msgid "Something is wrong or missing. Please check the error messages below the input fields."
+msgstr ""
+
+#: /controllers/pieces_controller.php:213
+msgid "Invalid Piece"
+msgstr ""
+
+#: /controllers/pieces_controller.php:218
+msgid "The Piece has been saved"
+msgstr ""
+
+#: /controllers/pieces_controller.php:221
+msgid "The Piece could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/pieces_controller.php:239
+msgid "Invalid id for Piece"
+msgstr ""
+
+#: /controllers/pieces_controller.php:243
+msgid "Piece deleted"
+msgstr ""
+
+#: /controllers/requirements_controller.php:26
+msgid "Your changes have been saved"
+msgstr ""
+
+#: /controllers/requirements_controller.php:29
+msgid "There was an error saving your changes"
+msgstr ""
+
+#: /controllers/requirements_controller.php:43
+msgid "Invalid Requirement."
+msgstr ""
+
+#: /controllers/requirements_controller.php:53;70
+msgid "The Requirement has been saved"
+msgstr ""
+
+#: /controllers/requirements_controller.php:56;73
+msgid "The Requirement could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/requirements_controller.php:65
+msgid "Invalid Requirement"
+msgstr ""
+
+#: /controllers/requirements_controller.php:85
+msgid "Invalid id for Requirement"
+msgstr ""
+
+#: /controllers/requirements_controller.php:89
+msgid "Requirement deleted"
+msgstr ""
+
+#: /controllers/screening_formats_controller.php:23
+msgid "Invalid ScreeningFormat."
+msgstr ""
+
+#: /controllers/screening_formats_controller.php:33;50
+msgid "The ScreeningFormat has been saved"
+msgstr ""
+
+#: /controllers/screening_formats_controller.php:36;53
+msgid "The ScreeningFormat could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/screening_formats_controller.php:45
+msgid "Invalid ScreeningFormat"
+msgstr ""
+
+#: /controllers/screening_formats_controller.php:65
+msgid "Invalid id for ScreeningFormat"
+msgstr ""
+
+#: /controllers/screening_formats_controller.php:69
+msgid "ScreeningFormat deleted"
+msgstr ""
+
+#: /controllers/searches_controller.php:22
+msgid "Invalid Search."
+msgstr ""
+
+#: /controllers/searches_controller.php:31
+msgid "Please run a search. You can then save it."
+msgstr ""
+
+#: /controllers/searches_controller.php:40;64
+msgid "The Search has been saved"
+msgstr ""
+
+#: /controllers/searches_controller.php:43;67
+msgid "The Search could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/searches_controller.php:50
+msgid "No search was specified."
+msgstr ""
+
+#: /controllers/searches_controller.php:59
+msgid "Invalid Search"
+msgstr ""
+
+#: /controllers/searches_controller.php:77
+msgid "Invalid id for Search"
+msgstr ""
+
+#: /controllers/searches_controller.php:81
+msgid "Search deleted"
+msgstr ""
+
+#: /controllers/sections_controller.php:22
+msgid "Invalid Section."
+msgstr ""
+
+#: /controllers/sections_controller.php:45;62
+msgid "The Section has been saved"
+msgstr ""
+
+#: /controllers/sections_controller.php:48;65
+msgid "The Section could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/sections_controller.php:57
+msgid "Invalid Section"
+msgstr ""
+
+#: /controllers/sections_controller.php:77
+msgid "Invalid id for Section"
+msgstr ""
+
+#: /controllers/sections_controller.php:81
+msgid "Section deleted"
+msgstr ""
+
+#: /controllers/shooting_formats_controller.php:23
+msgid "Invalid ShootingFormat."
+msgstr ""
+
+#: /controllers/shooting_formats_controller.php:33;48
+msgid "The ShootingFormat has been saved"
+msgstr ""
+
+#: /controllers/shooting_formats_controller.php:36;51
+msgid "The ShootingFormat could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/shooting_formats_controller.php:43
+msgid "Invalid ShootingFormat"
+msgstr ""
+
+#: /controllers/shooting_formats_controller.php:61
+msgid "Invalid id for ShootingFormat"
+msgstr ""
+
+#: /controllers/shooting_formats_controller.php:65
+msgid "ShootingFormat deleted"
+msgstr ""
+
+#: /controllers/tags_controller.php:23
+msgid "Invalid Tag."
+msgstr ""
+
+#: /controllers/tags_controller.php:33;50
+msgid "The Tag has been saved"
+msgstr ""
+
+#: /controllers/tags_controller.php:36;53
+msgid "The Tag could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/tags_controller.php:45
+msgid "Invalid Tag"
+msgstr ""
+
+#: /controllers/tags_controller.php:65
+msgid "Invalid id for Tag"
+msgstr ""
+
+#: /controllers/tags_controller.php:69
+msgid "Tag deleted"
+msgstr ""
+
+#: /controllers/types_controller.php:45
+msgid "Invalid Type."
+msgstr ""
+
+#: /controllers/types_controller.php:55;70
+msgid "The Type has been saved"
+msgstr ""
+
+#: /controllers/types_controller.php:58;73
+msgid "The Type could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/types_controller.php:65
+msgid "Invalid Type"
+msgstr ""
+
+#: /controllers/types_controller.php:83
+msgid "Invalid id for Type"
+msgstr ""
+
+#: /controllers/types_controller.php:87
+msgid "Type deleted"
+msgstr ""
+
+#: /controllers/uploads_controller.php:23;206
+msgid "Invalid Upload."
+msgstr ""
+
+#: /controllers/uploads_controller.php:32
+msgid "No piece specified."
+msgstr ""
+
+#: /controllers/uploads_controller.php:66
 msgid "You did not choose a file."
 msgstr ""
 
-#: /controllers/uploads_controller.php:70
+#: /controllers/uploads_controller.php:71
 msgid "The file is too big."
 msgstr ""
 
-#: /controllers/uploads_controller.php:74
+#: /controllers/uploads_controller.php:75
 msgid "Upload Error."
 msgstr ""
 
-#: /controllers/uploads_controller.php:84
+#: /controllers/uploads_controller.php:85
 msgid "The Upload has been saved."
 msgstr ""
 
-#: /controllers/uploads_controller.php:89
+#: /controllers/uploads_controller.php:90
 msgid "Error! The Upload could not be created."
 msgstr ""
 
-#: /controllers/uploads_controller.php:92;157;173
+#: /controllers/uploads_controller.php:93;159;177
 msgid "The Upload could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/uploads_controller.php:149
+#: /controllers/uploads_controller.php:151
 msgid "Error! Your FTP upload could not be processed. There is a problem with file permissions. Please talk to staff, meanwhile, your uploaded file is safe."
 msgstr ""
 
-#: /controllers/uploads_controller.php:153
+#: /controllers/uploads_controller.php:155
 msgid "Error! Your FTP upload could not be processed. "
 msgstr ""
 
-#: /controllers/uploads_controller.php:165
+#: /controllers/uploads_controller.php:163
+msgid "FTP upload saved. Your files have been moved, the upload folder is empty again."
+msgstr ""
+
+#: /controllers/uploads_controller.php:169
 msgid "Invalid Upload"
 msgstr ""
 
-#: /controllers/uploads_controller.php:170
+#: /controllers/uploads_controller.php:174
 msgid "The Upload has been saved"
 msgstr ""
 
-#: /controllers/uploads_controller.php:213
+#: /controllers/uploads_controller.php:217
 msgid "You may not download this file."
 msgstr ""
 
@@ -957,15 +962,15 @@ msgstr ""
 msgid "(show all)"
 msgstr ""
 
-#: /views/ftp_accounts/activate.ctp:10
+#: /views/ftp_accounts/activate.ctp:11
 msgid "FTP File Upload"
 msgstr ""
 
-#: /views/ftp_accounts/activate.ctp:12
+#: /views/ftp_accounts/activate.ctp:13
 msgid "With FTP, you can upload big files more easily. You will need an FTP program for this."
 msgstr ""
 
-#: /views/ftp_accounts/activate.ctp:17
+#: /views/ftp_accounts/activate.ctp:18
 msgid "Give me an FTP account"
 msgstr ""
 
@@ -993,27 +998,31 @@ msgstr ""
 msgid "New FtpAccount"
 msgstr ""
 
-#: /views/ftp_accounts/process.ctp:12
+#: /views/ftp_accounts/process.ctp:13
 msgid "Your ftp information"
 msgstr ""
 
-#: /views/ftp_accounts/process.ctp:19
-msgid "Your files"
-msgstr ""
-
 #: /views/ftp_accounts/process.ctp:21
-msgid "Please connect via FTP and start uploading files"
+msgid "This is your personal account. Just upload your files to the top folder. They are protected from public access."
 msgstr ""
 
 #: /views/ftp_accounts/process.ctp:24
-msgid "Uploading"
+msgid "Your files"
+msgstr ""
+
+#: /views/ftp_accounts/process.ctp:26
+msgid "Please connect via FTP and start uploading files"
 msgstr ""
 
 #: /views/ftp_accounts/process.ctp:29
+msgid "Uploading"
+msgstr ""
+
+#: /views/ftp_accounts/process.ctp:34
 msgid "Finished"
 msgstr ""
 
-#: /views/ftp_accounts/process.ctp:30
+#: /views/ftp_accounts/process.ctp:35
 msgid "Please enter a description"
 msgstr ""
 
@@ -1118,7 +1127,7 @@ msgid "How will we get a preview copy?"
 msgstr ""
 
 #: /views/pieces/add.ctp:129
-msgid "Via normal Mail (send us a DVD or miniDV tape)"
+msgid "Via normal Mail (send us a DVD, CD or miniDV tape)"
 msgstr ""
 
 #: /views/pieces/add.ctp:129
@@ -1690,10 +1699,14 @@ msgid "Please observe the allowed file types."
 msgstr ""
 
 #: /views/uploads/add.ctp:20
-msgid "Shortly describe what is in this file, please"
+msgid "What is this? Please shortly describe if this is a film still, a construction plan or the whole work itself."
 msgstr ""
 
-#: /views/uploads/add.ctp:26
+#: /views/uploads/add.ctp:27
+msgid "For bigger files: "
+msgstr ""
+
+#: /views/uploads/add.ctp:28
 msgid "FTP upload"
 msgstr ""
 
