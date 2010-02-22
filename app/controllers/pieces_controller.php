@@ -192,7 +192,11 @@ class PiecesController extends AppController {
 		$screeningFormats = $this->Piece->ScreeningFormat->find('list');
 		$tags = $this->Piece->Tag->find('list');
 		// Only show sections that are open for the selected type:
-		$sections = $this->Piece->Section->find('list',array('conditions'=>array('Section.type_id'=>$this->data['Piece']['type_id']) ));
+		$sections = $this->Piece->Section->find('list',array('conditions'=>array(
+			'Section.type_id'=>$this->data['Piece']['type_id'],
+			'Section.opening_date <'=>date('Y-m-d H:i:s'),
+			'Section.closing_date >'=>date('Y-m-d H:i:s')
+		 )));
 		$shootingFormats = $this->Piece->ShootingFormat->find('list');
 		$countries = $this->Piece->Country->find('list');
 
