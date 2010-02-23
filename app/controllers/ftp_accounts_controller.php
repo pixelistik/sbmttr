@@ -12,7 +12,7 @@ class FtpAccountsController extends AppController {
 	var $name = 'FtpAccounts';
 	var $helpers = array('Html', 'Form', 'Javascript');
 	var $components=array('RequestHandler','Auth');
-
+/* @todo fix Auth for commented actions
 	function index() {
 		$this->FtpAccount->recursive = 0;
 		$this->set('ftpAccounts', $this->paginate());
@@ -70,7 +70,7 @@ class FtpAccountsController extends AppController {
 			$this->redirect(array('action'=>'index'));
 		}
 	}
-	
+	*/
 /**
  * List all new files in the upload folder for further processing (AJAX)
  *

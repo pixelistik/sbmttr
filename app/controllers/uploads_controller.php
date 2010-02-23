@@ -12,7 +12,7 @@ class UploadsController extends AppController {
 	var $name = 'Uploads';
 	var $helpers = array('Html', 'Form');
 	var $components=array('Auth');
-
+/*
 	function index() {
 		$this->Upload->recursive = 0;
 		$this->set('uploads', $this->paginate());
@@ -24,7 +24,7 @@ class UploadsController extends AppController {
 			$this->redirect(array('action'=>'index'));
 		}
 		$this->set('upload', $this->Upload->read(null, $id));
-	}
+	} */
 
 	function add($piece_id=null) {
 		// Check if piece is specified an hand it back to view:
@@ -163,7 +163,7 @@ class UploadsController extends AppController {
 		$this->Session->setFlash(__('FTP upload saved. Your files have been moved, the upload folder is empty again.', true));
 		$this->redirect(array('controller'=>'pieces','action'=>'index'));		
 	}
-	
+	/*
 	function edit($id = null) {
 		if (!$id && empty($this->data)) {
 			$this->Session->setFlash(__('Invalid Upload', true));
@@ -182,7 +182,7 @@ class UploadsController extends AppController {
 		}
 		$pieces = $this->Upload->Piece->find('list');
 		$this->set(compact('pieces'));
-	}
+	}*/
 
 /*	function delete($id = null) {
 		if (!$id) {
