@@ -12,7 +12,11 @@ class FtpAccountsController extends AppController {
 	var $name = 'FtpAccounts';
 	var $helpers = array('Html', 'Form', 'Javascript');
 	var $components=array('RequestHandler','Auth');
-/* @todo fix Auth for commented actions
+/**
+ * These actions are accessible for logged in users
+ */	
+	var $userAccess=array('listFiles','process','activate');
+	
 	function index() {
 		$this->FtpAccount->recursive = 0;
 		$this->set('ftpAccounts', $this->paginate());
@@ -70,7 +74,7 @@ class FtpAccountsController extends AppController {
 			$this->redirect(array('action'=>'index'));
 		}
 	}
-	*/
+	
 /**
  * List all new files in the upload folder for further processing (AJAX)
  *
@@ -168,15 +172,5 @@ class FtpAccountsController extends AppController {
 			$this->data['FtpAccount']['piece_id']=$piece_id;
 		}
 	}
-		
-function isAuthorized(){
-		// A user must be logged in
-		if($this->Auth->user('email')){
-			return true;
-		}
-		// Ask parent if no rule found so far:
-		return parent::isAuthorized();
-	}
-
 }
 ?>
