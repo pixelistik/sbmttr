@@ -70,10 +70,19 @@ class AppController extends Controller {
 	function isAuthorized(){
 		// Only admin can access all actions. Access for normal users is set in each controller.
 		$currentArtist=$this->Auth->user();
+		// All pages are accessible
+		if($this->name=='Pages'){
+			return true;
+		}
+		// Admin is allowed everything
 		if($currentArtist['Artist']['is_admin']){
 			return true;
 		}else{
-			return false;
+			if(isset($this->userAccess) && in_array($this->action,$this->userAccess)){
+				return true;
+			}else{
+				return false;
+			}
 		}
 	}
 	
