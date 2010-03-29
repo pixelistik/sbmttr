@@ -165,9 +165,15 @@ class FtpAccountsController extends AppController {
 		// If start button was clicked, assign an account to user, then reload to proceed
 		if(!empty($this->data)){
 			$free_ftp_account=$this->FtpAccount->find('first',array('conditions'=>array('artist_id'=>null)));
-			$free_ftp_account['FtpAccount']['artist_id']=$this->Auth->user('id');
-			$this->FtpAccount->save($free_ftp_account);
-			$this->redirect('activate/'.$this->data['FtpAccount']['piece_id']);
+			if(!empty($free_ftp_account)){
+				$free_ftp_account['FtpAccount']['artist_id']=$this->Auth->user('id');
+				$this->FtpAccount->save($free_ftp_account);
+				$this->redirect('activate/'.$this->data['FtpAccount']['piece_id']);
+			}else{
+				$this->Session->setFlash(__('Sorry, we ran out of FTP accounts. Please get in touch with us via email.',true));
+				$this->log('Could not serve FTP account, no more accounts left');
+				$this->redirect(array('controller'=>'uploads','action'=>'add',$this->data['FtpAccount']['piece_id']));
+			}
 		}else{
 			$this->data['FtpAccount']['piece_id']=$piece_id;
 		}
