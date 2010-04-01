@@ -3,6 +3,7 @@ app/tmp/*
 app/config/database.php
 uploads/*
 ftp-uploads-tmp/*
+file-uploads/*
 *.marks
 .buildpath
 .project
