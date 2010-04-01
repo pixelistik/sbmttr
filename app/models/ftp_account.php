@@ -24,6 +24,10 @@ class FtpAccount extends AppModel {
 			$ftp_account['FtpAccount']['folder'].DS
 		);
 	}
+	
+	function _countFreeAccounts(){
+		return $this->find('count',array('conditions'=>array('FtpAccount.artist_id'=>null)));
+	}
 
 }
 ?>
