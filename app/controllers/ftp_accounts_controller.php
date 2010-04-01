@@ -11,7 +11,7 @@ class FtpAccountsController extends AppController {
 
 	var $name = 'FtpAccounts';
 	var $helpers = array('Html', 'Form', 'Javascript');
-	var $components=array('RequestHandler','Auth');
+	var $components=array('RequestHandler','Auth','Email');
 /**
  * These actions are accessible for logged in users
  */	
@@ -168,10 +168,31 @@ class FtpAccountsController extends AppController {
 			if(!empty($free_ftp_account)){
 				$free_ftp_account['FtpAccount']['artist_id']=$this->Auth->user('id');
 				$this->FtpAccount->save($free_ftp_account);
+				
+				if($this->FtpAccount->_countFreeAccounts()<=Configure::read('low_ftp_accounts_threshold')){
+					debug("Low on FTP accounts, sending mail to admin.");
+					$this->Email->to=Configure::read('admin_notification_email');
+					$this->Email->replyTo='noreply@'.Configure::read('organisation_email_domain');
+					$this->Email->from=Configure::read('organisation_name').' <noreply@'.Configure::read('organisation_email_domain').'>';
+					$this->Email->subject='Low FTP accounts';
+					$this->Email->template='adminnotification';
+					$this->Email->sendAs='text';
+					$this->set('msg',__('There are only little FTP accounts left for file upload. Please create new ones.',true));
+					$this->Email->send();
+				}
 				$this->redirect('activate/'.$this->data['FtpAccount']['piece_id']);
 			}else{
 				$this->Session->setFlash(__('Sorry, we ran out of FTP accounts. Please get in touch with us via email.',true));
 				$this->log('Could not serve FTP account, no more accounts left');
+				debug("No more FTP accounts, sending mail to admin.");
+				$this->Email->to=Configure::read('admin_notification_email');
+				$this->Email->replyTo='noreply@'.Configure::read('organisation_email_domain');
+				$this->Email->from=Configure::read('organisation_name').' <noreply@'.Configure::read('organisation_email_domain').'>';
+				$this->Email->subject='No more FTP accounts';
+				$this->Email->template='adminnotification';
+				$this->Email->sendAs='text';
+				$this->set('msg',__('There are no FTP accounts left for file upload. Please create new ones.',true));
+				$this->Email->send();
 				$this->redirect(array('controller'=>'uploads','action'=>'add',$this->data['FtpAccount']['piece_id']));
 			}
 		}else{

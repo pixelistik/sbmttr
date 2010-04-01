@@ -2,6 +2,7 @@
 // Maximum size for user uploaded pictures (bytes):
 $config['organisation_name']='Sample Organisation';
 $config['organisation_email_domain']='sample.organisation.tld';
+$config['admin_notification_email']='sample@organisation.tld';
 $config['header-title']='Sample Submissions';
 $config['max_http_upload_size']=524288;
 $config['max_file_upload_size']=524288; //deprecated
@@ -27,5 +28,7 @@ $config['accepted_file_extensions']=array(
 		'avi',
 		'mov'
 		)
-	)
+	);
+// If number of free FTP accounts drops to this level, an admin warning will be sent:	
+$config['low_ftp_accounts_threshold']=3;
 ?>
