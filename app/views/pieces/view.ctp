@@ -129,14 +129,15 @@
 		</dd>
 		
 		<?php if($requirements['preview_how']>0):?>
+		<?php $preview_methods=array(__('Normal mail',true),__('File upload',true),__('Preview URL',true));?>
 		<dt><?php __('Preview How'); ?></dt>
 		<dd>
-			<?php echo $piece['Piece']['preview_how']; ?>
+			<?php echo $preview_methods[$piece['Piece']['preview_how']]; ?>
 			&nbsp;
 		</dd>
 		<?php endif; ?>
 		
-		<?php if($requirements['preview_how']>0):?>
+		<?php if($piece['Piece']['preview_how']==2):?>
 		<dt><?php __('Preview Url'); ?></dt>
 		<dd>
 			<?php echo $html->link($piece['Piece']['preview_url'],$piece['Piece']['preview_url']); ?>
