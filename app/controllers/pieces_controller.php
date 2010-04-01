@@ -33,17 +33,6 @@ class PiecesController extends AppController {
 		}
 		$piece=$this->Piece->find('first',array('conditions'=>array('Piece.id'=>$id) ) );
 		$this->set('piece',$piece);
-		// Check if artist is allowed to view this piece:
-		/* $allowed=false;
-		foreach($piece['Artist'] as $artist){
-			$allowed= $allowed || $artist['id'] == $this->Auth->user('id');
-		}
-		
-		if(!$allowed){
-			$this->Session->setFlash(__('Invalid Piece.', true));
-			$this->redirect(array('action'=>'index'));
-		}
-		*/
 		//Retrieve rules for the selected media type:
 		$requirements=$this->Piece->Type->Requirement->find('all',array('recursive'=>0,'conditions'=>'Requirement.type_id='.$piece['Piece']['type_id']));
 		$temp_requirements=array();
