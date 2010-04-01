@@ -143,11 +143,13 @@
 			&nbsp;
 		</dd>
 		<?php endif; ?>
-		<?php /* foreach($piece['Picture'] as $picture): ?>
-		<dt><?php __('Picture'); ?></dt>
-		<dd>
-			<?php echo $html->link($picture['name'],'/pictures/download/'.$picture['id']); ?>
-		<?php endforeach; ?>
-		</dd> <?php */ ?>
+		<?php if(!empty($piece['Upload'])):?>
+			<?php foreach($piece['Upload'] as $upload): ?>
+			<dt><?php __('File'); ?></dt>
+			<dd>
+				<?php echo $upload['description'].' ('.strtoupper($upload['extension']).')' ?>
+			<?php endforeach; ?>
+		<?php endif;?>
+		</dd>
 	</dl>
 </div>
