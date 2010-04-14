@@ -35,7 +35,7 @@ class FtpAccountsController extends AppController {
 			$this->FtpAccount->create();
 			if ($this->FtpAccount->save($this->data)) {
 				$this->Session->setFlash(__('The FtpAccount has been saved', true));
-				$this->redirect(array('action'=>'index'));
+				$this->redirect(array('action'=>'add'));
 			} else {
 				$this->Session->setFlash(__('The FtpAccount could not be saved. Please, try again.', true));
 			}
