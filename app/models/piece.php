@@ -12,10 +12,14 @@ class Piece extends AppModel {
 	var $name = 'Piece';
 	var $uses=array('Piece','Type');
 	var $order='Piece.id DESC';
+	static $PREVIEW_WAYS=array(
+		'normal_mail'=>0,
+		'upload'=>1,
+		'online'=>2
+	);
 	//Validation rules. required is set to none everywhere
 	//Additional rules for required and allowEmpty are loaded in beforeValidate(),
 	//depending on the submitted type!
-	//App::import('Core','i18n');
 	var $validate=array(
 		'original_title' => array(
 			'rule'=>'notEmpty',

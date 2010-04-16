@@ -126,7 +126,15 @@ echo $javascript->link('jquery.tools.min',false); ?>
 			<fieldset id="preview-copy-selection">
 			<legend><?php __('How will we get a preview copy?')?></legend>
 			<?php
-			if($requirements['preview_how']>0) echo $form->input('preview_how',array('class'=>'preview-copy-radio','type'=>'radio','legend'=>false,'options'=>array(__('Via normal Mail (send us a DVD, CD or miniDV tape)',true),__('I want to upload it (in the next step)',true),__('It is online anyway (tell us the URL)',true)) ) );
+			if($requirements['preview_how']>0) echo $form->input('preview_how',array(
+				'class'=>'preview-copy-radio',
+				'type'=>'radio','legend'=>false,
+				'options'=>array(
+					Piece::$PREVIEW_WAYS['normal_mail']=>__('Via normal Mail (send us a DVD, CD or miniDV tape)',true),
+					Piece::$PREVIEW_WAYS['upload']=>__('I want to upload it (in the next step)',true),
+					Piece::$PREVIEW_WAYS['online']=>__('It is online anyway (tell us the URL)',true)
+				)
+			));
 			if($helpText['preview_how']) echo $html->div('help-text',$helpText['preview_how']);
 			
 			if($requirements['preview_url']>0) echo $form->input('preview_url',array('type'=>'text','div'=>array('id'=>'preview-url-field'),'label'=>'please enter the URL where your work can be accessed' ) );
