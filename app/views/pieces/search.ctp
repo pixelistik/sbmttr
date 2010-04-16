@@ -9,6 +9,16 @@ echo $this->element('saved_searches',array('searches'=>$searches));
 echo $form->create('Piece',array('action'=>'search') );
 	echo $form->input('section_id',array('value'=>$this->passedArgs['section_id'],'empty'=>'-'));
 	echo $form->input('type_id',array('value'=>$this->passedArgs['type_id'],'empty'=>'-'));
+	echo $form->input('preview_how',array(
+		'type'=>'select',
+		'options'=>array(
+			Piece::$PREVIEW_WAYS['normal_mail']=>__('Normal Mail',true),
+			Piece::$PREVIEW_WAYS['upload']=>__('Upload',true),
+			Piece::$PREVIEW_WAYS['online']=>__('Online URL',true)
+		),
+		'value'=>$this->passedArgs['preview_how'],
+		'empty'=>'-'
+	));
 	echo $form->input('any_title',array('value'=>$this->passedArgs['any_title'],'label'=>__('Title',true)));
 echo $form->end('Search');
 ?>

@@ -41,7 +41,9 @@ class PiecesController extends AppController {
 		}
 		$this->set('requirements',$temp_requirements);
 	}
-	
+/**
+ * Perform a search for pieces in the database. Search parameters are included in the URL, so searches can be bookmarked/saved
+ */	
 	function search(){
 		// If data was passed from form, change it to named GET parameters and run again.
 		// We always want the parameters in the URL so we can save the search!
@@ -53,6 +55,7 @@ class PiecesController extends AppController {
 		$conditions=array();
 		if(!empty($this->params['named']['type_id'])) $conditions['and']['Piece.type_id']=$this->params['named']['type_id'];
 		if(!empty($this->params['named']['section_id'])) $conditions['and']['Piece.section_id']=$this->params['named']['section_id'];
+		if(!empty($this->params['named']['preview_how']) || $this->params['named']['preview_how']=='0') $conditions['and']['Piece.preview_how']=$this->params['named']['preview_how'];
 		// 'title' will search in both english and original:
 		if(!empty($this->params['named']['any_title'])) $conditions['and']['or']['Piece.original_title LIKE']='%'.$this->params['named']['any_title'].'%';
 		if(!empty($this->params['named']['any_title'])) $conditions['and']['or']['Piece.english_title LIKE']='%'.$this->params['named']['any_title'].'%';
