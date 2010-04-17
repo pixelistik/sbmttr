@@ -583,3 +583,23 @@ div.code-coverage-results span.result-good {
 	list-style-type: none;
 	padding-left: 18px;
 }
+.mini-form{
+	float: right;
+	width: auto;
+}
+.mini-form input{
+	width: 55px;
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+}
+.mini-form .input{
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.mini-form .submit{
+	float: left;
+	padding: 0;
+	margin: 0;
+}

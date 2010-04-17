@@ -45,6 +45,20 @@
 		<?php 
 		if($session->check('Auth.Artist.email')){
 			echo(__('Logged in as ',true).$session->read('Auth.Artist.email'));
+			if($session->read('Auth.Artist.is_admin')){
+				echo $form->create('Piece',array(
+					'action'=>'view',
+					'class'=>'mini-form',
+					'onSubmit'=>'javascript:window.location="'.$html->url(array('controller'=>'pieces','action'=>'view')).'/"+document.getElementById("PieceIdQuickJump").value;return false;'
+				));
+				echo $form->input('id',array(
+					'id'=>'PieceIdQuickJump',
+					'type'=>'text',
+					'value'=>__('Piece ID',true),
+					'label'=>false
+				));
+				echo $form->end('>>');
+			}
 			echo '&nbsp;';
 			if($session->read('Auth.Artist.is_admin')){
 				echo $html->link(__('Overview',true),array('controller'=>'sections','action'=>'overview') );
