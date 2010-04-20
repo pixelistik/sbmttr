@@ -19,6 +19,7 @@ echo $form->create('Piece',array('action'=>'search') );
 		'value'=>$this->passedArgs['preview_how'],
 		'empty'=>'-'
 	));
+	echo $form->input('id',array('value'=>$this->passedArgs['id'],'label'=>__('Piece ID (multiple: "1,7,3")',true),'type'=>'text'));
 	echo $form->input('any_title',array('value'=>$this->passedArgs['any_title'],'label'=>__('Title',true)));
 echo $form->end('Search');
 ?>

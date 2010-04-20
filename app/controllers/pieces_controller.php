@@ -56,6 +56,7 @@ class PiecesController extends AppController {
 		if(!empty($this->params['named']['type_id'])) $conditions['and']['Piece.type_id']=$this->params['named']['type_id'];
 		if(!empty($this->params['named']['section_id'])) $conditions['and']['Piece.section_id']=$this->params['named']['section_id'];
 		if(!empty($this->params['named']['preview_how']) || $this->params['named']['preview_how']=='0') $conditions['and']['Piece.preview_how']=$this->params['named']['preview_how'];
+		if(!empty($this->params['named']['id'])) $conditions['and']['Piece.id']=explode(',',$this->params['named']['id']);
 		// 'title' will search in both english and original:
 		if(!empty($this->params['named']['any_title'])) $conditions['and']['or']['Piece.original_title LIKE']='%'.$this->params['named']['any_title'].'%';
 		if(!empty($this->params['named']['any_title'])) $conditions['and']['or']['Piece.english_title LIKE']='%'.$this->params['named']['any_title'].'%';
