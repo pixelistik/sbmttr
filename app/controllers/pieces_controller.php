@@ -62,7 +62,19 @@ class PiecesController extends AppController {
 		if(!empty($this->params['named']['any_title'])) $conditions['and']['or']['Piece.english_title LIKE']='%'.$this->params['named']['any_title'].'%';
 		
 		$pieces=$this->paginate('Piece',$conditions);
+		
+		// Extract mail adresses of all main contacts of the matching pieces:
+		$pieces_all=$this->Piece->find('all',array('conditions'=>$conditions));
+		$email_addresses=array();
+		foreach($pieces_all as $piece){
+			foreach($piece['Artist'] as $artist)
+			if($artist['ArtistsPiece']['is_main_contact']){
+				$email_addresses[]=$artist['email'];
+			}
+		}
+		
 		$this->set('pieces',$pieces);
+		$this->set('email_addresses',$email_addresses);
 		$this->set('sections',$this->Piece->Section->find('list'));
 		$this->set('types',$this->Piece->Type->find('list'));
 		

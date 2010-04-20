@@ -34,6 +34,9 @@ if(!empty($this->passedArgs)){
 	<li>
 	<?php echo $html->link(__('Save this search',true),$url); ?>
 	</li>
+	<li>
+	<?php echo $html->link(__('Email to all contacts of the matching pieces',true),'mailto:'.implode(',',$email_addresses));?>
+	</li>
 <?php
 }
 ?>
