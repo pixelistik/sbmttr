@@ -176,37 +176,10 @@ class Piece extends AppModel {
 	 * CakePHP hook function
 	 */
 	function beforeValidate(){
-		// $validate needs to be built from database before validation can take place:
-		$this->buildValidate($this->data['Piece']['type_id']);
+		// Fill validation rules, created from db by Type
+		$validationRules=$this->Type->buildModelValidates($this->data['Piece']['type_id']);
+		$this->validate=$validationRules['Piece'];
 		return(true);
-	}
-	/**
-	 * Builds the $validate variable from database, according to given type of piece
-	 * 
-	 * @param int $type_id
-	 */
-	function buildValidate($type_id){
-		// Retrieve Type
-		$type=$this->Type->find('first',array(
-			'conditions'=>'Type.id='.$type_id,
-			'recursive'=>-1
-		));
-		// Set rules for every field of this model
-		$fields=$this->schema();
-		foreach($fields as $fieldName=>$fieldDetails){
-			// Build column name in type table to look for
-			$requirementColumnName=strtolower($this->name).'_'.$fieldName.'_required';
-			// If requirement found, insert rule
-			if(!empty($type['Type'][$requirementColumnName])){
-				// Level 3 required fields are a must
-				$this->validate[$fieldName]['required']= $type['Type'][$requirementColumnName]==3;
-				// Other levels: may be empty
-				$this->validate[$fieldName]['allowEmpty']= $type['Type'][$requirementColumnName]!=3;
-				//If no rule is set in the model, set at least a "NotEmpty" one, to prevent error
-				if(!isset($this->validate[$fieldName]['rule'])) $this->validate[$fieldName]['rule']='notEmpty';
-			}
-		}
-		debug($this->validate);
 	}
 	
 	function selectMin($data,$min){

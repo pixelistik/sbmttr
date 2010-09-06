@@ -40,6 +40,34 @@ class Type extends AppModel {
 			'counterQuery' => ''
 		)
 	);
+	/**
+	 * Builds the $validate variable from database for other models
+	 * 
+	 * @param int $id
+	 */
+	function buildModelValidates($id){
+		// Retrieve Type
+		$type=$this->find('first',array(
+			'conditions'=>'Type.id='.$id,
+			'recursive'=>-1
+		));
+		// Set rules for every field of this model
+		$fields=$this->schema();
+		foreach($fields as $fieldName=>$fieldDetails){
+			// The part up to the first _ is the model name
+			// @todo this breaks with multiple-word models
+			$modelName=Inflector::camelize(
+				substr($fieldName,0,strpos($fieldName,'_'))
+			);
+			// The rest, minus "_required" at the end is the field name
+			$modelFieldName=substr($fieldName,strpos($fieldName,'_')+1,-9);
+			// Level 3 required fields are a must
+			$result[$modelName][$modelFieldName]['required']= $type['Type'][$fieldName]==3;
+			// Other levels: may be empty
+			$result[$modelName][$modelFieldName]['allowEmpty']= $type['Type'][$fieldName]!=3;
+		}
+		return $result;	
+	}
 
 }
 ?>
