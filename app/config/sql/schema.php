@@ -1,6 +1,6 @@
 <?php 
 /* SVN FILE: $Id$ */
-/* App schema generated on: 2010-09-06 11:09:51 : 1283763891*/
+/* App schema generated on: 2010-09-06 11:09:22 : 1283765182*/
 class AppSchema extends CakeSchema {
 	var $name = 'App';
 
@@ -113,23 +113,23 @@ class AppSchema extends CakeSchema {
 		'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 5, 'key' => 'primary'),
 		'title' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50),
 		'terms' => array('type' => 'text', 'null' => true, 'default' => NULL),
-		'artist.name.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'artist.surname.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'artist.email.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'artist.url.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'artist.picture.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'piece.original_title.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'piece.english_title.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'piece.synopsis.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'piece.notes_artist.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'piece.production_year.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'piece.duration.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'piece.shooting_format_id.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'piece.country_id.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'piece.genre.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'piece.shown_before.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'piece.preview_how.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
-		'piece.preview_url.required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'artist_name_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'artist_surname_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'artist_email_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'artist_url_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'artist_picture_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'piece_original_title_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'piece_english_title_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'piece_synopsis_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'piece_notes_artist_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'piece_production_year_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'piece_duration_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'piece_shooting_format_id_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'piece_country_id_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'piece_genre_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'piece_shown_before_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'piece_preview_how_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
+		'piece_preview_url_required' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 4),
 		'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1))
 	);
 	var $uploads = array(
