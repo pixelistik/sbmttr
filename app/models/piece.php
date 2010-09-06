@@ -172,26 +172,41 @@ class Piece extends AppModel {
 			'insertQuery' => ''
 		)
 	);
-	
+	/**
+	 * CakePHP hook function
+	 */
 	function beforeValidate(){
 		// $validate needs to be built from database before validation can take place:
 		$this->buildValidate($this->data['Piece']['type_id']);
 		return(true);
 	}
-	
+	/**
+	 * Builds the $validate variable from database, according to given type of piece
+	 * 
+	 * @param int $type_id
+	 */
 	function buildValidate($type_id){
-		// Builds the $validate variable from database, according to given type of piece
-		$requirements=$this->Type->find('first',array(
-			'conditions'=>'Type.id='.$type_id
-			));
-		foreach($requirements['Requirement'] as $requirement){
-			//If Requirement has type 2 (must) set as required:
-			$this->validate[$requirement['info_title']]['required']= ($requirement['kind']==2);
-			//If Requirement has type 0 (no) or 1 (optional), allow empty:
-			$this->validate[$requirement['info_title']]['allowEmpty']= ($requirement['kind']==0 || $requirement['kind']==1);
-			//If no rule is set in the model, set at least a "NotEmpty" one, to prevent error:
-			if(!isset($this->validate[$requirement['info_title']]['rule'])) $this->validate[$requirement['info_title']]['rule']='notEmpty';
+		// Retrieve Type
+		$type=$this->Type->find('first',array(
+			'conditions'=>'Type.id='.$type_id,
+			'recursive'=>-1
+		));
+		// Set rules for every field of this model
+		$fields=$this->schema();
+		foreach($fields as $fieldName=>$fieldDetails){
+			// Build column name in type table to look for
+			$requirementColumnName=strtolower($this->name).'_'.$fieldName.'_required';
+			// If requirement found, insert rule
+			if(!empty($type['Type'][$requirementColumnName])){
+				// Level 3 required fields are a must
+				$this->validate[$fieldName]['required']= $type['Type'][$requirementColumnName]==3;
+				// Other levels: may be empty
+				$this->validate[$fieldName]['allowEmpty']= $type['Type'][$requirementColumnName]!=3;
+				//If no rule is set in the model, set at least a "NotEmpty" one, to prevent error
+				if(!isset($this->validate[$fieldName]['rule'])) $this->validate[$fieldName]['rule']='notEmpty';
+			}
 		}
+		debug($this->validate);
 	}
 	
 	function selectMin($data,$min){
