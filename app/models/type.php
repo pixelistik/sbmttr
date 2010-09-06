@@ -26,19 +26,6 @@ class Type extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
-		'Requirement' => array(
-			'className' => 'Requirement',
-			'foreignKey' => 'type_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
 		'Section' => array(
 			'className' => 'Section',
 			'foreignKey' => 'type_id',
